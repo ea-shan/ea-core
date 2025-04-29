@@ -1,0 +1,23 @@
+{
+    "name": "expressanalytics/ea-webinar",
+    "description": "A comprehensive webinar management system with registration, Google Meet integration, and promotional features",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">=7.4",
+        "google/apiclient": "^2.15.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EAWebinar\\": "includes/"
+        },
+        "classmap": [
+            "includes/",
+            "admin/"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

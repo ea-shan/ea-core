@@ -1,0 +1,222 @@
+.jms-candidate-dashboard {
+    margin: 30px 0;
+}
+
+.jms-login-required {
+    padding: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.jms-applications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.jms-application-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.jms-application-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.jms-application-job-title {
+    margin: 0;
+    font-size: 1.3em;
+    flex: 1;
+}
+
+.jms-application-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.jms-status-applied {
+    background-color: #f0f0f0;
+    color: #666;
+}
+
+.jms-status-shortlisted {
+    background-color: #d9edf7;
+    color: #31708f;
+}
+
+.jms-status-interview_scheduled {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+
+.jms-status-interviewed {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.jms-status-offered {
+    background-color: #d9edf7;
+    color: #31708f;
+}
+
+.jms-status-hired {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.jms-status-rejected {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+.jms-application-meta {
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.jms-application-meta>div {
+    margin-bottom: 5px;
+}
+
+.jms-meta-label {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.jms-application-interview {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border-left: 3px solid #31708f;
+}
+
+.jms-application-interview h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #dc2836;
+}
+
+.jms-interview-date,
+.jms-interview-type {
+    margin-bottom: 5px;
+}
+
+.jms-interview-link {
+    margin-top: 10px;
+}
+
+.jms-application-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.jms-resume-button {
+    background-color: #5bc0de;
+}
+
+.jms-resume-button:hover {
+    background-color: #46b8da;
+}
+
+.jms-meet-button {
+    background-color: #dc2836;
+}
+
+.jms-meet-button:hover {
+    background-color: #000000;
+}
+
+.jms-loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.jms-no-applications {
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Document Upload Section */
+.jms-document-upload {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.jms-document-list {
+    margin-top: 20px;
+}
+
+.jms-document-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.jms-document-name {
+    flex: 1;
+}
+
+.jms-document-status {
+    margin: 0 15px;
+    font-size: 0.9em;
+}
+
+.jms-document-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.jms-upload-form {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .jms-applications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jms-application-header {
+        flex-direction: column;
+    }
+
+    .jms-application-status {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .jms-application-actions {
+        flex-direction: column;
+    }
+
+    .jms-button {
+        width: 100%;
+        text-align: center;
+    }
+}

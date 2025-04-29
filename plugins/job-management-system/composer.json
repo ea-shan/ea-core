@@ -1,0 +1,23 @@
+{
+    "name": "expressanalytics/job-management-system",
+    "description": "A comprehensive job posting and candidate management system with resume uploads, interview scheduling, and onboarding features",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">=7.4",
+        "google/apiclient": "^2.15.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JobManagementSystem\\": "includes/"
+        },
+        "classmap": [
+            "includes/",
+            "admin/"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

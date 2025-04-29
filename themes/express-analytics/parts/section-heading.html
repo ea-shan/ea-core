@@ -1,0 +1,11 @@
+<?php
+$left_title = get_field('left_title');
+if ($left_title):
+  echo esc_html($left_title);
+endif; ?>
+
+<?php
+$right_title = get_field('right_title');
+if ($right_title):
+  echo esc_html($right_title);
+endif; ?>

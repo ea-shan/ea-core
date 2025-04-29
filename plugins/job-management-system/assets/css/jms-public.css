@@ -1,0 +1,370 @@
+.jms-job-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.jms-jobs-filter {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.jms-filter-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.jms-filter-field {
+    flex: 1;
+    min-width: 200px;
+}
+
+.jms-filter-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.jms-filter-field input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.jms-filter-submit {
+    align-self: flex-end;
+}
+
+.jms-jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.jms-job-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.jms-job-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jms-job-title {
+    margin: 0 0 15px 0;
+    font-size: 1.25rem;
+}
+
+.jms-job-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.jms-job-title a:hover {
+    color: #dc2836;
+}
+
+.jms-job-meta {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.jms-meta-label {
+    font-weight: 500;
+    color: #dc2836;
+}
+
+.jms-meta-value {
+    margin-left: 5px;
+}
+
+.jms-job-excerpt {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.jms-job-actions {
+    text-align: right;
+}
+
+.jms-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #dc2836;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.jms-button:hover {
+    background: #dc2836;
+    color: #fff;
+}
+
+.jms-no-jobs {
+    text-align: center;
+    padding: 40px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+/* Job Details Styles */
+.jms-job-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.jms-job-header {
+    margin-bottom: 30px;
+}
+
+.jms-job-description,
+.jms-job-requirements {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Application Form Styles */
+.jms-application-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.jms-form-row {
+    margin-bottom: 20px;
+}
+
+.jms-form-row label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.jms-form-row input[type="text"],
+.jms-form-row input[type="email"],
+.jms-form-row input[type="tel"],
+.jms-form-row textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.jms-form-row textarea {
+    min-height: 120px;
+}
+
+.jms-form-submit {
+    text-align: center;
+}
+
+/* Notices */
+.jms-notice {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.jms-notice-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.jms-notice-error {
+    background-color: #f2dede;
+    color: #dc2836;
+    border: 1px solid #ebccd1;
+}
+
+.jms-notice-info {
+    background-color: #d9edf7;
+    color: #31708f;
+    border: 1px solid #bce8f1;
+}
+
+.jms-error {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f2dede;
+    color: #dc2836;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .jms-filter-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .jms-filter-field {
+        width: 100%;
+    }
+
+    .jms-jobs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Modal Styles */
+.jms-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.jms-modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(127, 1, 1, 0.1);
+}
+
+.jms-modal-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.jms-modal-close:hover {
+    color: #333;
+}
+
+.jms-modal-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.jms-modal-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.jms-modal-body {
+    margin-bottom: 20px;
+}
+
+.jms-candidate-info {
+    margin-bottom: 20px;
+}
+
+.jms-candidate-info-row {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.jms-candidate-info-label {
+    flex: 0 0 150px;
+    font-weight: 500;
+    color: #666;
+}
+
+.jms-candidate-info-value {
+    flex: 1;
+    color: #333;
+}
+
+.jms-modal-footer {
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: right;
+}
+
+.jms-modal-footer .jms-button {
+    margin-left: 10px;
+}
+
+/* Loading State */
+.jms-loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.jms-loading::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #dc2836;
+    border-radius: 50%;
+    animation: jms-spin 1s linear infinite;
+}
+
+@keyframes jms-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Interview Form Styles */
+.jms-interview-form {
+    margin-top: 20px;
+}
+
+.jms-interview-form .jms-form-row {
+    margin-bottom: 15px;
+}
+
+.jms-interview-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.jms-interview-form input[type="date"],
+.jms-interview-form input[type="time"],
+.jms-interview-form input[type="email"],
+.jms-interview-form select,
+.jms-interview-form textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.jms-interview-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}

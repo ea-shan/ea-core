@@ -1,0 +1,9 @@
+/uploads/*
+/uploads/.DS_Store
+debug.log
+/upgrade/*
+/upgrade/.DS_Store
+/updraft/*
+/updraft/.DS_Store
+/upgrade-temp/*
+/upgrade-temp/.DS_Store
