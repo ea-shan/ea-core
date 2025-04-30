@@ -1,10 +1,11 @@
 <?php
+
 /**
  * Title: Header with columns
  * Slug: twentytwentyfive/header-columns
  * Categories: header
  * Block Types: core/template-part/header
- * Description: Site header with site title and navigation in columns.
+ * Description: Header with site title and navigation in columns.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five

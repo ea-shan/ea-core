@@ -1,6 +1,10 @@
 <?php
 /**
+<<<<<<< HEAD
  * Title: Right-aligned home
+=======
+ * Title: Homepage for right-aligned blog
+>>>>>>> 290713186d473c26405fb8b7dc452a07776b49f6
  * Slug: twentytwentyfive/template-home-vertical-header-blog
  * Template Types: front-page, index, home
  * Viewport width: 1400
