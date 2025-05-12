@@ -5,11 +5,11 @@ Tags:              custom field, meta field, ACF custom field, block, Gutenberg
 Requires PHP:      7.4
 Requires at least: 6.7
 Tested up to:      6.8
-Stable tag:        1.4.0
+Stable tag:        1.4.2
 License:           GPL-3.0
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
-Display a custom field as a block on the front end. It supports custom fields for posts, terms, and users. It supports ACF, Meta Box fields explicitly.
+Display a custom field as a block on the front end. It supports custom fields for posts, terms, and users. It supports ACF, Meta Box fields explicitly
 
 == Description ==
 
@@ -126,7 +126,7 @@ The HTML output of a custom field on the front end depends on the context of the
 
 2. Single image types - The HTML output is from the [wp_get_attachment_image](https://developer.wordpress.org/reference/functions/wp_get_attachment_image/) function. The image size is from the `image_size` setting.
 
-3. Image list types (Cloneable Single image, Image, Image advanced, Image upload) - The HTML output is:
+3. Image list types (Image, Image advanced, Image upload) - The HTML output is:
 
         <figure class="image-list">
           <figure class="image-item"><img /></figure>
@@ -313,9 +313,20 @@ When using the `meta_field_block_get_block_content` hook to customize block cont
 = SAVE YOUR TIME WITH MFB PRO =
 
 To display simple data type fields for posts, terms, and users, you only need the free version of MFB. MFB Pro can save you 90% of development time when working with ACF, or Meta Box complex fields. It achieves this by transforming your ACF complex field types into container blocks, which work similarly to core container blocks. This eliminates the need for creating custom blocks or writing custom code for displaying complex fields.
-Below is a video tutorial on how to use MFB Pro to build a post template without coding
+
+Below are some video tutorials that demonstrate how MFB Pro can help you display complex fields:
+
+= How to build a post template without coding =
 
 [youtube https://www.youtube.com/watch?v=5VePClgZmlQ]
+
+= How to display ACF Repeater fields as a list, grid, or carousel =
+
+[youtube https://youtu.be/a9ptshyuJLM]
+
+= How to display ACF Gallery fields as a grid, masonry, or carousel =
+
+[youtube https://youtu.be/mRWIibbcHQ8]
 
 The main features of MFB PRO are:
 
@@ -332,8 +343,8 @@ The main features of MFB PRO are:
 * Display the Meta Box Group field, similar to the ACF Group field.
 * Display the Meta Box Cloneable Group field as a repeater block, similar to the ACF Repeater field. Supports row, stack, grid or carousel layouts.
 * Display the Meta Box Post field as a Query Loop.
-* Display the Meta Box single image fields as an image block.
-* Display the Meta Box image list fields as a gallery using grid or masonry layouts or as a carousel of images, similar to the ACF Gallery field.
+* Display the Meta Box single image fields as [an image block](https://youtu.be/bWLIv6CeV-8).
+* Display the Meta Box image list fields as [a gallery using grid or masonry layouts or as a carousel of images](https://youtu.be/bWLIv6CeV-8), similar to the ACF Gallery field.
 * Display the Meta Box File single input field as a video block, an image block, or a button.
 * Set a single image sub-field (ACF Image or Meta Box Image) as the background image of a group field.
 * [Display custom fields from a specific post, term or user](https://metafieldblock.com/docs/other-item-fields.mp4)
@@ -378,7 +389,7 @@ It supports all basic field types that return strings or cast to strings. Some c
 
 = Does it support all types of Meta Box fields? =
 
-It supports all basic field types and some complex field types such as Image, Video, Choice fields, Taxonomy, User, Post, in basic format. For other complex field types, you can use the built-in hook to display your fields with custom markup. [MFB PRO](https://metafieldblock.com/pro?utm_source=wp.org&utm_campaign=readme&utm_medium=link&utm_content=MFB%20Pro) allows you displaying the Group field as a container block, Cloneable Group field as a repeater block with v-stack, grid, or carousel layout, Post field as a Query Loop, Image list fields as a gallery with grid or masonry layouts, or as a carousel of images.
+It supports all basic field types and some complex field types such as Image, Video, Choice fields, Taxonomy, User, Post, in basic format. For other complex field types, you can use the built-in hook to display your fields with custom markup. [MFB PRO](https://metafieldblock.com/pro?utm_source=wp.org&utm_campaign=readme&utm_medium=link&utm_content=MFB%20Pro) allows you displaying the Group field as a container block, Cloneable Group field as a repeater block with group, row, stack, grid, or carousel layout, Post field as a Query Loop, Image list fields as a gallery with grid or masonry layouts, or as a carousel of images.
 
 = What are the prefix and suffix for? =
 
@@ -409,6 +420,26 @@ If you don't want to sanitize the content at all, use this hook `apply_filters( 
 4. Enable `Show in REST API` ACF setting
 
 == Changelog ==
+
+= 1.4.2 =
+*Release Date - 12 May 2025*
+
+* Improved - Ignored the cloneable setting for Meta Box image-related and choice-related field types
+* Added    - (MFB Pro) Set a video sub-field as the background video of a parent group field.
+* Added    - (MFB Pro) Bind a sub color field to the overlay color feature.
+* Improved – (MFB Pro) Handle missing media uploads for button and image block bindings.
+* Improved – (MFB Pro) Render only one item as the fallback value for a single ACF Post Object field.
+* Improved - (MFB Pro) Allow displaying the sample ID input setting when choosing the meta type as 'post' and the current post type is not post or page
+
+= 1.4.1 =
+*Release Date - 28 April 2025*
+
+* Fixed    - (MFB Pro) The target attribute of the ACF link was not binding correctly.
+* Fixed    - (MFB Pro) Removed the duplicate store registration warning.
+* Fixed    - (MFB Pro) Error when the hosting environment does not support mb_encode_numericentity.
+* Improved - (MFB Pro) Preload layout for carousels is now calculated correctly before the script executes.
+* Improved - (MFB Pro) Don't show carousel preview in the Block Editor on Mobile and Tablet modes
+* Improved - (MFB Pro) Some small adjustments on the carousel layout
 
 = 1.4 =
 *Release Date - 14 April 2025*

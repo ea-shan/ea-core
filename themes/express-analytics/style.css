@@ -14,8 +14,8 @@ Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-me
 */
 
 :root {
-    var(--wp--preset--color--primary): --wp--preset--color--primary;
-    var(--wp--preset--color--secondary): --wp--preset--color--secondary;
+    --wp--preset--color--primary: #dc1b36;
+    --wp--preset--color--secondary: #a01024;
     --dark: #000000;
     --white: #ffffff;
 }
@@ -24,6 +24,38 @@ Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-me
     /* font-family: "poppins"; */
 }
 
+/* Global Montserrat font for all text elements */
+body,
+html,
+input,
+textarea,
+select,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+div,
+ul,
+ol,
+li,
+blockquote,
+pre,
+code,
+table,
+th,
+td,
+address,
+cite,
+figcaption,
+label {
+    font-family: 'Montserrat', sans-serif !important;
+}
 
 a {
     color: var(--wp--preset--color--dark);

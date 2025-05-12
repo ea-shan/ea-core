@@ -45,7 +45,14 @@ if ( ! class_exists( MBFields::class ) ) :
 		/**
 		 * For simple fields, we can use the same separator for all fields.
 		 */
-		private $simple_field_types = [ 'text', 'url', 'email', 'checkbox', 'radio', 'range', 'number', 'slider', 'date', 'datetime', 'time' ];
+		private $simple_field_types = [ 'text', 'url', 'email', 'range', 'number', 'slider', 'date', 'datetime', 'time' ];
+
+		/**
+		 * List of field types that will be ignored when cloning enabled.
+		 *
+		 * @var array
+		 */
+		private $ignored_clone_fields = [ 'oembed', 'image', 'image_advanced', 'image_upload', 'image_single', 'video', 'post', 'taxonomy', 'taxonomy_advanced', 'user', 'checkbox', 'switch', 'checkbox_list', 'radio', 'select', 'select_advanced', 'button_group', 'autocomplete', 'image_select' ];
 
 		/**
 		 * Run main hooks
@@ -258,10 +265,6 @@ if ( ! class_exists( MBFields::class ) ) :
 				];
 			}
 
-			if ( 'oembed' === $field['type'] ) {
-				$field['ignore_clone'] = true;
-			}
-
 			$value = in_array( $field['type'], $this->embeded_fields, true ) ? rwmb_meta( $field_name, $args, $object_id ) : rwmb_get_value( $field_name, $args, $object_id );
 			$value = $this->normalize_value( $field, $value, $args, $object_id );
 
@@ -322,7 +325,7 @@ if ( ! class_exists( MBFields::class ) ) :
 					}
 				}
 
-				if ( ( $field['clone'] ?? false ) && ! ( $field['ignore_clone'] ?? false ) ) {
+				if ( ( $field['clone'] ?? false ) && ! ( in_array( $field_type, $this->ignored_clone_fields, true ) ) ) {
 					if ( $field_value ) {
 						if ( ! is_array( $field_value ) ) {
 							$field_value = [ $field_value ];
@@ -369,7 +372,7 @@ if ( ! class_exists( MBFields::class ) ) :
 		 * @param array $field
 		 * @param int   $post_id
 		 * @param mixed $field_value
-		 * @return string
+		 * @return array
 		 */
 		private function get_clone_field_tag( $field, $post_id, $field_value ) {
 			$tag = 'div';

@@ -267,26 +267,26 @@ function expressanalytics_register_taxonomies()
 {
 	// Category taxonomy for Resources
 	register_taxonomy(
-		'category',
+		'resource-category',
 		array('resource'),
 		array(
 			'labels' => array(
-				'name'              => __('Categories', 'expressanalytics'),
-				'singular_name'     => __('Category', 'expressanalytics'),
-				'search_items'      => __('Search Categories', 'expressanalytics'),
-				'all_items'         => __('All Categories', 'expressanalytics'),
-				'edit_item'         => __('Edit Category', 'expressanalytics'),
-				'update_item'       => __('Update Category', 'expressanalytics'),
-				'add_new_item'      => __('Add New Category', 'expressanalytics'),
-				'new_item_name'     => __('New Category Name', 'expressanalytics'),
-				'menu_name'         => __('Categories', 'expressanalytics'),
+				'name'              => __('Resource Categories', 'expressanalytics'),
+				'singular_name'     => __('Resource Category', 'expressanalytics'),
+				'search_items'      => __('Search Resource Categories', 'expressanalytics'),
+				'all_items'         => __('All Resource Categories', 'expressanalytics'),
+				'edit_item'         => __('Edit Resource Category', 'expressanalytics'),
+				'update_item'       => __('Update Resource Category', 'expressanalytics'),
+				'add_new_item'      => __('Add New Resource Category', 'expressanalytics'),
+				'new_item_name'     => __('New Resource Category Name', 'expressanalytics'),
+				'menu_name'         => __('Resource Categories', 'expressanalytics'),
 			),
-			'hierarchical'      => true,
-			'show_ui'          => true,
+			'hierarchical' => true,
+			'show_ui' => true,
 			'show_admin_column' => true,
-			'query_var'        => true,
-			'rewrite'          => array('slug' => 'category'),
-			'show_in_rest'     => true,
+			'query_var' => true,
+			'rewrite' => array('slug' => 'resource-category'),
+			'show_in_rest' => true
 		)
 	);
 
@@ -649,3 +649,13 @@ function shantanu_restrict_svg_uploads($file)
 	return $file;
 }
 add_filter('wp_handle_upload_prefilter', 'shantanu_restrict_svg_uploads');
+function ea_estimated_reading_time($atts)
+{
+	global $post;
+	$content = $post->post_content;
+	$word_count = str_word_count(strip_tags($content));
+	$read_time = ceil($word_count / 200); // 200 wpm average reading speed
+
+	return $read_time . ' min read';
+}
+add_shortcode('read_time', 'ea_estimated_reading_time');
