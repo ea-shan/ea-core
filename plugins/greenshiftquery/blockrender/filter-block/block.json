@@ -1,0 +1,7 @@
+{
+  "apiVersion": 3,
+  "name": "greenshift-blocks/filter-block",
+  "title": "Filter Block",
+  "description": "Filter Block",
+  "category": "greenShiftQuery"
+}

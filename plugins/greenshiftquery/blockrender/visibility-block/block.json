@@ -1,0 +1,7 @@
+{
+	"apiVersion": 3,
+	"name": "greenshift-blocks/visibility-block",
+    "title": "Visibility block",
+    "description": "For conditional visibility",
+	"category":"greenShiftQuery"
+}

@@ -1,0 +1,7 @@
+{
+	"apiVersion": 3,
+	"name": "greenshift-blocks/taxonomy",
+    "title": "Taxonomy block",
+	"category":"greenShiftQuery",
+	"textdomain": "greenshiftquery"
+}

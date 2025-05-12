@@ -1,0 +1,7 @@
+{
+	"apiVersion": 3,
+	"name": "greenshift-blocks/pagelist",
+    "title": "Parent-child categorizator",
+	"category":"greenShiftQuery",
+	"textdomain": "greenshiftquery"
+}

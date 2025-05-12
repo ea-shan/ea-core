@@ -1,0 +1,347 @@
+# Copyright (C) 2023 Wpsoul
+# This file is distributed under the same license as the GreenShift Advanced Animation Addon plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: GreenShift Advanced Animation Addon 3.4.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/greenshiftgsap\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-12-09T01:29:01+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: greenshiftgsap\n"
+
+#. Plugin Name of the plugin
+msgid "GreenShift Advanced Animation Addon"
+msgstr ""
+
+#. Description of the plugin
+msgid "Build most advanced animations with GSAP and Greenshift"
+msgstr ""
+
+#. Author of the plugin
+msgid "Wpsoul"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://greenshiftwp.com"
+msgstr ""
+
+#: greenshiftgsap.php:198
+msgid "What's New"
+msgstr ""
+
+#: build/index.js:1
+msgid "Duration"
+msgstr ""
+
+#: build/index.js:1
+msgid "Delay"
+msgstr ""
+
+#: build/index.js:1
+msgid "Ease type"
+msgstr ""
+
+#: build/index.js:1
+msgid "Enable infinite"
+msgstr ""
+
+#: build/index.js:1
+msgid "Enable Yoyo style"
+msgstr ""
+
+#: build/index.js:1
+msgid "Enable delay between animations"
+msgstr ""
+
+#: build/index.js:1
+msgid "Pin in Editor is very wobbly, you can enable Preview mode for smooth pin, but this also disables editing inner items"
+msgstr ""
+
+#: build/index.js:1
+msgid "Re-initialize"
+msgstr ""
+
+#: build/index.js:1
+msgid "Enable Preview Mode"
+msgstr ""
+
+#: build/index.js:1
+msgid "Play in reverse mode"
+msgstr ""
+
+#: build/index.js:1
+msgid "Select Render type"
+msgstr ""
+
+#: build/index.js:1
+msgid "Image"
+msgstr ""
+
+#: build/index.js:1
+msgid "Canvas"
+msgstr ""
+
+#: build/index.js:1
+msgid "Select Image Fill type"
+msgstr ""
+
+#: build/index.js:1
+msgid "Default"
+msgstr ""
+
+#: build/index.js:1
+msgid "Cover"
+msgstr ""
+
+#: build/index.js:1
+msgid "Fill"
+msgstr ""
+
+#: build/index.js:1
+msgid "Contain"
+msgstr ""
+
+#: build/index.js:1
+msgid "None"
+msgstr ""
+
+#: build/index.js:1
+msgid "Scale"
+msgstr ""
+
+#: build/index.js:1
+msgid "Original Image width"
+msgstr ""
+
+#: build/index.js:1
+msgid "Original Image Height"
+msgstr ""
+
+#: build/index.js:1
+msgid "Add custom ease coordinates"
+msgstr ""
+
+#: build/index.js:1
+msgid "Get coordinates"
+msgstr ""
+
+#: build/index.js:1
+msgid "Set Direction"
+msgstr ""
+
+#: build/index.js:1
+msgid "Mobile Options"
+msgstr ""
+
+#: build/index.js:1
+msgid "Shift X"
+msgstr ""
+
+#: build/index.js:1
+msgid "Rotation"
+msgstr ""
+
+#: build/index.js:1
+msgid "Opacity"
+msgstr ""
+
+#: build/index.js:1
+msgid "X (%)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Y (%)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Trigger start"
+msgstr ""
+
+#: build/index.js:1
+msgid "Mobile options currently work only on frontend side"
+msgstr ""
+
+#: build/index.js:1
+msgid "Select type"
+msgstr ""
+
+#: build/index.js:1
+msgid "Transform"
+msgstr ""
+
+#: build/index.js:1
+msgid "Stagger"
+msgstr ""
+
+#: build/index.js:1
+msgid "Inner Text"
+msgstr ""
+
+#: build/index.js:1
+msgid "SVG Path"
+msgstr ""
+
+#: build/index.js:1
+msgid "SVG draw"
+msgstr ""
+
+#: build/index.js:1
+msgid "Svg morph"
+msgstr ""
+
+#: build/index.js:1
+msgid "BatchScroll"
+msgstr ""
+
+#: build/index.js:1
+msgid "Set path"
+msgstr ""
+
+#: build/index.js:1
+msgid "can be ID (place here id with #) or svg coordinates."
+msgstr ""
+
+#: build/index.js:1
+msgid "Align ID"
+msgstr ""
+
+#: build/index.js:1
+msgid "By default, element is alighned by itself, but you can set id of path of another element to align."
+msgstr ""
+
+#: build/index.js:1
+msgid "Orient along path"
+msgstr ""
+
+#: build/index.js:1
+msgid "Align origin point X"
+msgstr ""
+
+#: build/index.js:1
+msgid "Align origin point Y"
+msgstr ""
+
+#: build/index.js:1
+msgid "Start point"
+msgstr ""
+
+#: build/index.js:1
+msgid "End point"
+msgstr ""
+
+#: build/index.js:1
+msgid "Set SVG path of end morph"
+msgstr ""
+
+#: build/index.js:1
+msgid "can be ID (place here id with #) or svg path coordinates."
+msgstr ""
+
+#: build/index.js:1
+msgid "Set ID of start shape"
+msgstr ""
+
+#: build/index.js:1
+msgid "By default, all svg which you place inside container will be used as start shape. In this field you can set ID of path which you want to use as start point"
+msgstr ""
+
+#: build/index.js:1
+msgid "Please, add any svg with paths inside Container and enjoy animation"
+msgstr ""
+
+#: build/index.js:1
+msgid "Translate X (%)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Translate Y (%)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Use separate for mobile"
+msgstr ""
+
+#: build/index.js:1
+msgid "Lines"
+msgstr ""
+
+#: build/index.js:1
+msgid "Chars"
+msgstr ""
+
+#: build/index.js:1
+msgid "Words"
+msgstr ""
+
+#: build/index.js:1
+msgid "Stagger delay"
+msgstr ""
+
+#: build/index.js:1
+msgid "Enable random order"
+msgstr ""
+
+#: build/index.js:1
+msgid "Enable text mask"
+msgstr ""
+
+#: build/index.js:1
+msgid "Enable stagger to child items"
+msgstr ""
+
+#: build/index.js:1
+msgid "Or Set Stagger class"
+msgstr ""
+
+#: build/index.js:1
+msgid "Enable batch to child items"
+msgstr ""
+
+#: build/index.js:1
+msgid "By default, trigger will be block itself, but you can set custom trigger. Use .class to search globally OR div.class, img, button to search selector inside current container"
+msgstr ""
+
+#: build/index.js:1
+msgid "Interval between items"
+msgstr ""
+
+#: build/index.js:1
+msgid "By default, interval is 0.15, but you can set other."
+msgstr ""
+
+#: build/index.js:1
+msgid "Trigger only once"
+msgstr ""
+
+#: build/index.js:1
+msgid "Shadow"
+msgstr ""
+
+#: build/index.js:1
+msgid "Play inner video"
+msgstr ""
+
+#: build/index.js:1
+msgid "Use custom transform origin"
+msgstr ""
+
+#: build/index.js:1
+msgid "Reset All values"
+msgstr ""
+
+#: build/index.js:1
+msgid "Reset in Editor"
+msgstr ""
+
+#: build/index.js:1
+msgid "Init in Editor"
+msgstr ""
+
+#: build/index.js:1
+msgid "Check documentation"
+msgstr ""

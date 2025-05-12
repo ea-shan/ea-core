@@ -1,0 +1,19 @@
+/*FILTER PANEL*/
+.gspb_filter_panel{position: relative;z-index: 7; margin: 0 0 32px 0; box-shadow: 0 1px 0 #E4E4E4; user-select: none; display:flex; align-items: center}
+.gspb_filter_panel ul.gspb_filter_ul{margin: 0; padding: 0}
+.gspb_filter_panel ul.gspb_filter_ul li{display: inline-block; margin: 0}
+.gspb_filter_panel ul.gspb_filter_ul li span {cursor: pointer;padding: 12px 16px;display: inline-block;transition: all .3s ease; font-size: 15px; line-height: 16px}
+div.sortingloading{position: relative;}
+div.sortingloading > *{opacity: 0.2;} 
+.gspb_query_preloader {z-index: 2;  position: absolute; top: 30px; left: 45%; font-size: 65px; opacity: 1; width:65px; height:65px;  justify-content: center; align-items: center; display:none; opacity: 1 !important;}
+div.sortingloading .gspb_query_preloader{display:flex;}
+.gspb_filter_heading{font-weight: bold;margin-right:15px; line-height: 20px; font-size:18px;padding: 10px 0}
+.rtl .gspb_filter_heading{margin-left:15px}
+
+@media screen and (max-width: 767px) {
+.gspb_filter_panel{display:block}
+.gspb_filter_panel ul.gspb_filter_ul li span {display: none;}
+.gspb_filter_panel ul.gspb_filter_ul li, .gspb_filter_panel ul.gspb_filter_ul li span.active, .gspb_filter_panel ul.gspb_filter_ul li span.showfiltermobile {display: block;}
+.gspb_filter_panel ul.gspb_filter_ul li span.active:after{ float: right; content: "☰"; margin-left:8px; }
+.tabsajax ul.gspb_filter_ul li span.active:after{display: none;}
+}

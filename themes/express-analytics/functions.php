@@ -16,7 +16,8 @@ if (! function_exists('express_analytics_setup')) :
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support('automatic-feed-links');
-
+		add_theme_support('wp-block-styles');
+		add_theme_support('editor-styles');
 		/*
 	 * Let WordPress manage the document title.
 	 */
@@ -266,26 +267,26 @@ function expressanalytics_register_taxonomies()
 {
 	// Category taxonomy for Resources
 	register_taxonomy(
-		'category',
+		'resource-category',
 		array('resource'),
 		array(
 			'labels' => array(
-				'name'              => __('Categories', 'expressanalytics'),
-				'singular_name'     => __('Category', 'expressanalytics'),
-				'search_items'      => __('Search Categories', 'expressanalytics'),
-				'all_items'         => __('All Categories', 'expressanalytics'),
-				'edit_item'         => __('Edit Category', 'expressanalytics'),
-				'update_item'       => __('Update Category', 'expressanalytics'),
-				'add_new_item'      => __('Add New Category', 'expressanalytics'),
-				'new_item_name'     => __('New Category Name', 'expressanalytics'),
-				'menu_name'         => __('Categories', 'expressanalytics'),
+				'name'              => __('Resource Categories', 'expressanalytics'),
+				'singular_name'     => __('Resource Category', 'expressanalytics'),
+				'search_items'      => __('Search Resource Categories', 'expressanalytics'),
+				'all_items'         => __('All Resource Categories', 'expressanalytics'),
+				'edit_item'         => __('Edit Resource Category', 'expressanalytics'),
+				'update_item'       => __('Update Resource Category', 'expressanalytics'),
+				'add_new_item'      => __('Add New Resource Category', 'expressanalytics'),
+				'new_item_name'     => __('New Resource Category Name', 'expressanalytics'),
+				'menu_name'         => __('Resource Categories', 'expressanalytics'),
 			),
-			'hierarchical'      => true,
-			'show_ui'          => true,
+			'hierarchical' => true,
+			'show_ui' => true,
 			'show_admin_column' => true,
-			'query_var'        => true,
-			'rewrite'          => array('slug' => 'category'),
-			'show_in_rest'     => true,
+			'query_var' => true,
+			'rewrite' => array('slug' => 'resource-category'),
+			'show_in_rest' => true
 		)
 	);
 
@@ -619,3 +620,42 @@ add_filter('block_editor_settings_all', function ($settings, $context) {
 	$settings['hasResponsivePreview'] = true;
 	return $settings;
 }, 10, 2);
+// Allow SVG upload
+function shantanu_allow_svg_uploads($mimes)
+{
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'shantanu_allow_svg_uploads');
+
+// Fix SVG display in media library
+function shantanu_fix_svg_display()
+{
+	echo '<style type="text/css">
+        .attachment-266x266, .thumbnail img {
+             width: 100% !important;
+             height: auto !important;
+        }
+    </style>';
+}
+add_action('admin_head', 'shantanu_fix_svg_display');
+
+// Optional: Extra check for admin users only
+function shantanu_restrict_svg_uploads($file)
+{
+	if ($file['type'] === 'image/svg+xml' && !current_user_can('administrator')) {
+		$file['error'] = 'Only administrators can upload SVG files.';
+	}
+	return $file;
+}
+add_filter('wp_handle_upload_prefilter', 'shantanu_restrict_svg_uploads');
+function ea_estimated_reading_time($atts)
+{
+	global $post;
+	$content = $post->post_content;
+	$word_count = str_word_count(strip_tags($content));
+	$read_time = ceil($word_count / 200); // 200 wpm average reading speed
+
+	return $read_time . ' min read';
+}
+add_shortcode('read_time', 'ea_estimated_reading_time');

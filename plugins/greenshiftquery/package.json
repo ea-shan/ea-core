@@ -1,0 +1,27 @@
+{
+  "name": "greenshiftquery",
+  "version": "0.1.0",
+  "description": "Marketing addon",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "packages-update": "wp-scripts packages-update",
+    "lint:js": "wp-scripts lint-js",
+    "lint:style": "wp-scripts lint-style"
+  },
+  "author": "wpsoul",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "26.9.0",
+    "raw-loader": "^4.0.2"
+  },
+  "dependencies": {
+    "debounce-promise": "^3.1.2",
+    "lodash": "^4.17.21",
+    "react-select": "^5.8.0",
+    "use-debounce": "^8.0.4",
+    "@dnd-kit/sortable": "^8.0.0"
+  }
+}

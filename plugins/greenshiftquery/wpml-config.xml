@@ -1,0 +1,82 @@
+<wpml-config>
+	<gutenberg-blocks>
+		<gutenberg-block
+			type="greenshift-blocks/login-form" translate="1"
+			label="Query-loginform">
+			<key name="username_label" />
+			<key name="username_placeholder" />
+			<key name="password_label" />
+			<key name="password_placeholder" />
+			<key name="remember_me_label" />
+			<key name="button_label" />
+			<key name="dont_have_acc_text" />
+			<key name="dont_have_acc_link_text" />
+			<key name="session_expired_label" />
+			<key name="empty_form_label" />
+			<key name="login_success_label" />
+			<key name="login_already_label" />
+			<key name="logout_label" />
+		</gutenberg-block>
+
+		<gutenberg-block
+			type="greenshift-blocks/breadcrumbs" translate="1" label="Query - Breadcrumbs">
+			<key name="homelabel" />
+		</gutenberg-block>
+
+		<gutenberg-block
+			type="greenshift-blocks/meta" translate="1" label="Query - Metagetter ">
+			<xpath>//*[contains(@class, 'gspb_meta')]</xpath>
+			<key name="prefix" />
+			<key name="postfix" />
+			<key name="replaceLabel" />
+		</gutenberg-block>
+		<gutenberg-block
+			type="greenshift-blocks/taxonomy" translate="1" label="Query - taxonomy archive ">
+			<key name="postLabel" />
+		</gutenberg-block>
+		<gutenberg-block
+			type="greenshift-blocks/querygrid" translate="1" label="Query Loop Builder ">
+			<key name="labelBtn" />
+			<key name="title" />
+			<key name="noMoreLabel" />
+			<key name="taxdroplabel" />
+			<key name="alldroplabel" />
+			<key name="filterheading" />
+		</gutenberg-block>
+		<gutenberg-block
+			type="greenshift-blocks/advanced-listing" translate="1" label="Advanced Query Listing Builder ">
+			<key name="labelBtn" />
+		</gutenberg-block>
+		<gutenberg-block
+			type="greenshift-blocks/filter-block" translate="1" label="Filter Block ">
+			<key name="labels">
+				<key name="instock" />
+				<key name="outofstock" />
+				<key name="onbackorder" />
+				<key name="select" />
+			</key>
+		</gutenberg-block>
+		<gutenberg-block
+			type="greenshift-blocks/filter-results-count" translate="1" label="Filter Results Count ">
+			<key name="searchPlaceholderText" />
+			<key name="labels">
+				<key name="showing" />
+				<key name="of" />
+				<key name="results" />
+			</key>
+		</gutenberg-block>
+		<gutenberg-block
+			type="greenshift-blocks/filter-sorting" translate="1" label="Filter Sorting ">
+			<key name="labels">
+				<key name="default" />
+				<key name="popularity" />
+				<key name="rating" />
+				<key name="date" />
+				<key name="price" />
+				<key name="price-desc" />
+			</key>
+		</gutenberg-block>
+
+
+	</gutenberg-blocks>
+</wpml-config>

@@ -1,0 +1,6 @@
+{
+	"apiVersion": 3,
+	"name": "greenshift-blocks/thumbcounter",
+    "title": "Thumbs counter",
+	"category":"greenShiftQuery"
+}

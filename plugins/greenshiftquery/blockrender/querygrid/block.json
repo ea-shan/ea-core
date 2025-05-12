@@ -1,0 +1,7 @@
+{
+	"apiVersion": 3,
+	"name": "greenshift-blocks/querygrid",
+    "title": "Query Loop Builder",
+    "description": "Query Loop Builder",
+	"category":"greenShiftQuery"
+}
