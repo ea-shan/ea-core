@@ -1,0 +1,7 @@
+{
+	"apiVersion": 3,
+	"name": "greenshift-blocks/dynamicgallery",
+    "title": "Dynamic gallery",
+    "description": "Dynamic gallery",
+	"category":"greenShiftQuery"
+}

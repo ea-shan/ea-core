@@ -16,7 +16,8 @@ if (! function_exists('express_analytics_setup')) :
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support('automatic-feed-links');
-
+		add_theme_support('wp-block-styles');
+		add_theme_support('editor-styles');
 		/*
 	 * Let WordPress manage the document title.
 	 */
@@ -619,3 +620,32 @@ add_filter('block_editor_settings_all', function ($settings, $context) {
 	$settings['hasResponsivePreview'] = true;
 	return $settings;
 }, 10, 2);
+// Allow SVG upload
+function shantanu_allow_svg_uploads($mimes)
+{
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'shantanu_allow_svg_uploads');
+
+// Fix SVG display in media library
+function shantanu_fix_svg_display()
+{
+	echo '<style type="text/css">
+        .attachment-266x266, .thumbnail img {
+             width: 100% !important;
+             height: auto !important;
+        }
+    </style>';
+}
+add_action('admin_head', 'shantanu_fix_svg_display');
+
+// Optional: Extra check for admin users only
+function shantanu_restrict_svg_uploads($file)
+{
+	if ($file['type'] === 'image/svg+xml' && !current_user_can('administrator')) {
+		$file['error'] = 'Only administrators can upload SVG files.';
+	}
+	return $file;
+}
+add_filter('wp_handle_upload_prefilter', 'shantanu_restrict_svg_uploads');

@@ -1,0 +1,7 @@
+{
+	"apiVersion": 3,
+	"name": "greenshift-blocks/advanced-listing",
+    "title": "Advanced Query Listing Builder",
+    "description": "For making listings based on posts and products",
+	"category":"greenShiftQuery"
+}

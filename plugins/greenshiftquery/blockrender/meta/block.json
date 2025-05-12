@@ -1,0 +1,8 @@
+{
+	"apiVersion": 3,
+    "name": "greenshift-blocks/meta",
+    "title": "Post Meta getter",
+	"category":"greenShiftQuery",
+    "editorScript" : "greenShiftQuery-block-js",
+    "editorStyle" : "greenShiftQuery-block-css"
+}

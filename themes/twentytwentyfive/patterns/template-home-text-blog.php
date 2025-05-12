@@ -1,10 +1,6 @@
 <?php
 /**
-<<<<<<< HEAD
  * Title: Text blog home
-=======
- * Title: Text-only blog, home
->>>>>>> 290713186d473c26405fb8b7dc452a07776b49f6
  * Slug: twentytwentyfive/template-home-text-blog
  * Template Types: front-page, home
  * Viewport width: 1400

@@ -1,0 +1,7 @@
+{
+	"apiVersion": 3,
+	"name": "greenshift-blocks/dynamic-post-title",
+    "title": "Dynamic post title",
+    "description": "Dynamic post title",
+	"category":"greenShiftQuery"
+}

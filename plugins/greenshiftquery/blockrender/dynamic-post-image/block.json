@@ -1,0 +1,7 @@
+{
+	"apiVersion": 3,
+	"name": "greenshift-blocks/dynamic-post-image",
+    "title": "Dynamic Post Image",
+    "description": "Dynamic Post Image",
+	"category":"greenShiftQuery"
+}

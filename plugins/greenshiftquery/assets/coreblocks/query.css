@@ -1,0 +1,1 @@
+.wp-block-post-title a{display:inline;background-repeat:no-repeat;background-image:linear-gradient(transparent calc(100% - 1px),currentColor 1px);transition:.7s cubic-bezier(0.165, 0.84, 0.44, 1);background-size:0 95%;}.wp-block-post-title a:hover{background-size:100% 95%}

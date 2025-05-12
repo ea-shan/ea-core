@@ -1,0 +1,9 @@
+.gspb-flex-center-align{align-items: center; display: flex;flex-direction: row;align-content: center;}
+.gspb-flex-stretch-align{align-items: stretch; display: flex;flex-direction: row;}
+.gspb-flex-justify-center{justify-content: center;}
+.gspb-flex-grow1 {flex-grow: 1;flex-basis: 0;}
+.gspb-text-center{text-align: center;}
+.gspb-alignleft{justify-content:flex-start}
+.gspb-alignright{justify-content:flex-end}
+.gspb-aligncenter{justify-content:center}
+.gspb-flex-wrap{flex-wrap: wrap;}

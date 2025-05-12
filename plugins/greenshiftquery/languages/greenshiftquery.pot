@@ -1,0 +1,3459 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Greenshift Query and Meta Addon\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-29 15:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.7; wp-6.5.2\n"
+"X-Domain: greenshiftquery"
+
+#: src/blocks/components/query/queryall/visible-settings.js:840
+#: src/blocks/components/query/queryall/query-settings.js:796
+#: src/blocks/components/query/queryall/query-settings.js:1077
+#: src/blocks/components/query/queryall/query-settings.js:1614
+msgid "!="
+msgstr ""
+
+#: src/blocks/threesixty/index.js:12
+msgid "360 Dynamic Gallery"
+msgstr ""
+
+#: src/blocks/threesixty/index.js:13
+msgid "360 gallery"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:837
+#: src/blocks/components/query/queryall/visible-settings.js:1135
+#: src/blocks/components/query/queryall/query-settings.js:793
+#: src/blocks/components/query/queryall/query-settings.js:1074
+#: src/blocks/components/query/queryall/query-settings.js:1611
+msgid "<"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:838
+#: src/blocks/components/query/queryall/visible-settings.js:1136
+#: src/blocks/components/query/queryall/query-settings.js:794
+#: src/blocks/components/query/queryall/query-settings.js:1075
+#: src/blocks/components/query/queryall/query-settings.js:1612
+msgid "<="
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:839
+#: src/blocks/components/query/queryall/visible-settings.js:1137
+#: src/blocks/components/query/queryall/query-settings.js:795
+#: src/blocks/components/query/queryall/query-settings.js:1076
+#: src/blocks/components/query/queryall/query-settings.js:1613
+msgid "="
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:841
+#: src/blocks/components/query/queryall/visible-settings.js:1138
+#: src/blocks/components/query/queryall/query-settings.js:797
+#: src/blocks/components/query/queryall/query-settings.js:1078
+#: src/blocks/components/query/queryall/query-settings.js:1615
+msgid ">"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:842
+#: src/blocks/components/query/queryall/visible-settings.js:1139
+#: src/blocks/components/query/queryall/query-settings.js:798
+#: src/blocks/components/query/queryall/query-settings.js:1079
+#: src/blocks/components/query/queryall/query-settings.js:1616
+msgid ">="
+msgstr ""
+
+#: src/blocks/meta/edit.js:733
+msgid "ACF Field"
+msgstr ""
+
+#: src/blocks/meta/edit.js:946
+msgid "ACF File Name"
+msgstr ""
+
+#: src/blocks/meta/edit.js:947
+msgid "ACF File Title"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:407 src/blocks/dynamicgallery/edit.js:608
+msgid "ACF Gallery field"
+msgstr ""
+
+#: src/blocks/meta/edit.js:945
+msgid "ACF image field value"
+msgstr ""
+
+#: src/blocks/meta/edit.js:944
+msgid "ACF multivalue field"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:625
+msgid "ACF Repeater Field"
+msgstr ""
+
+#: src/blocks/meta/edit.js:949
+msgid "ACF repeater table"
+msgstr ""
+
+#: src/blocks/meta/edit.js:948
+msgid "ACF repeater value"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:626
+msgid "ACPT Repeater Field"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:468
+msgid "Active icon color"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:153
+msgid "Active tab background"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:142
+msgid "Active tab text color"
+msgstr ""
+
+#: src/blocks/dynamic-post-title/edit.js:448
+msgid "Add also Background image for this option"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:426 src/blocks/dynamicgallery/edit.js:627
+msgid "Add also Post Thumbnail"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:330
+msgid "Add Attribute"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:1250
+#: src/blocks/components/query/queryall/query-settings.js:1183
+#: src/blocks/components/query/queryall/query-settings.js:1688
+msgid "Add Condition"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1083
+msgid "Add Data Format"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:104
+msgid "Add Filter item"
+msgstr ""
+
+#: src/blocks/dynamicgallery/edit.js:1254
+msgid "Add Grid Custom Range"
+msgstr ""
+
+#: src/blocks/components/query/queryall/custom-block-edit.js:66
+msgid "Add HTML Code"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1332
+msgid "Add Icon"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:497
+msgid "Add Image"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:688
+msgid "Add image"
+msgstr ""
+
+#: src/blocks/thumbcounter/index.js:13
+msgid "Add thumbs block to post or query block"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:215
+msgid "Add toggle block link"
+msgstr ""
+
+#: src/blocks/wishlist/index.js:13
+msgid "Add wishlist to page or query block"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1493
+msgid "Additional Query parameters"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:397
+msgid "After buttons"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:65 src/blocks/meta/edit.js:114
+#: src/blocks/breadcrumbs/edit.js:54
+msgid "Align Text Center"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:60 src/blocks/meta/edit.js:109
+#: src/blocks/breadcrumbs/edit.js:49
+msgid "Align Text Left"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:70 src/blocks/meta/edit.js:119
+#: src/blocks/breadcrumbs/edit.js:59
+msgid "Align Text Right"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:429
+#: src/blocks/components/query/queryall/filter-settings.js:234
+msgid "All"
+msgstr ""
+
+#: query.php:1425
+msgid "All categories"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:389
+#: src/blocks/components/query/queryall/query-settings.js:324
+msgid "All types of products"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:804
+msgid "Alphabetical"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:769
+#: src/blocks/components/query/queryall/query-settings.js:718
+msgid "Also Limit By user role"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:998
+#: src/blocks/components/query/queryall/query-settings.js:944
+msgid "AND"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:706 src/blocks/meta/edit.js:1621
+#: src/blocks/breadcrumbs/edit.js:418 src/blocks/dynamicgallery/edit.js:1565
+msgid "Animation"
+msgstr ""
+
+#: src/blocks/meta/edit.js:271 src/blocks/meta/edit.js:837
+msgid "Archive Description"
+msgstr ""
+
+#: src/blocks/meta/edit.js:729
+msgid "Archive Meta"
+msgstr ""
+
+#: src/blocks/meta/edit.js:838
+msgid "Archive Meta Field"
+msgstr ""
+
+#: src/blocks/meta/edit.js:836
+msgid "Archive Name"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1276
+msgid "Archive options. Use these only if you use block for Archive templates"
+msgstr ""
+
+#: src/blocks/meta/edit.js:267
+msgid "Archive Title"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:404 src/blocks/dynamicgallery/edit.js:605
+msgid "Array of Attachment IDs"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:405 src/blocks/dynamicgallery/edit.js:606
+msgid "Array of Attachment URLs"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:184
+msgid "As title and excerpt on column"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:185
+msgid "As title on separate row"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1216
+msgid "ASC"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:923
+msgid "Ascendant"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:230
+msgid "Ascending"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:846
+msgid "Aspect Ratio"
+msgstr ""
+
+#: src/blocks/meta/edit.js:803
+msgid "Attribute"
+msgstr ""
+
+#: src/blocks/meta/edit.js:804
+msgid "Attribute Link"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:465
+msgid "Attribute name"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:804
+#: src/blocks/components/query/queryall/query-settings.js:1509
+msgid "Author"
+msgstr ""
+
+#: src/blocks/meta/edit.js:917
+msgid "Author Email Link"
+msgstr ""
+
+#: src/blocks/meta/edit.js:916
+msgid "Author Link"
+msgstr ""
+
+#: src/blocks/meta/edit.js:919 src/blocks/meta/edit.js:1384
+msgid "Author Meta"
+msgstr ""
+
+#: src/blocks/meta/edit.js:915
+msgid "Author Name"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:531 src/blocks/threesixty/edit.js:585
+#: src/blocks/threesixty/edit.js:632 src/blocks/taxonomy/edit.js:1101
+#: src/blocks/dynamic-post-image/edit.js:853
+#: src/blocks/dynamic-post-image/edit.js:853
+#: src/blocks/dynamic-post-image/edit.js:996
+#: src/blocks/dynamicgallery/edit.js:1280
+#: src/blocks/dynamicgallery/edit.js:1387
+#: src/blocks/dynamicgallery/edit.js:1491
+msgid "Auto"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:310
+msgid "Auto detect archive data"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:311
+msgid "Auto detect Shop archive"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:484
+msgid "Autoplay"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:594 src/blocks/meta/edit.js:1496
+#: src/blocks/querygrid/edit.js:1584 src/blocks/thumbcounter/edit.js:599
+#: src/blocks/thumbcounter/edit.js:646 src/blocks/thumbcounter/edit.js:703
+#: src/blocks/thumbcounter/edit.js:763 src/blocks/repeater/edit.js:1625
+#: src/blocks/wishlist/edit.js:728 src/blocks/wishlist/edit.js:768
+msgid "Background"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:434 src/blocks/dynamic-post-title/edit.js:444
+#: src/blocks/dynamic-post-image/edit.js:1036
+msgid "Background and Opacity"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:749
+msgid "Background for Line"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:766
+msgid "Background for links"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:336
+msgid "Background for meta items"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:395
+msgid "Before buttons"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:845
+#: src/blocks/components/query/queryall/visible-settings.js:1142
+#: src/blocks/components/query/queryall/query-settings.js:801
+#: src/blocks/components/query/queryall/query-settings.js:1082
+#: src/blocks/components/query/queryall/query-settings.js:1621
+msgid "BETWEEN"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:396
+msgid "Between buttons"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:678 src/blocks/pagelist/edit.js:888
+#: src/blocks/taxonomy/edit.js:1437 src/blocks/dynamicgallery/edit.js:1537
+msgid "Block Background"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:900 src/blocks/taxonomy/edit.js:1449
+msgid "Block Border"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:394
+msgid ""
+"Block is for showing parent - child dependent list of custom post items (for "
+"example pages). It shows list depending on current page. If user is on top "
+"level page or child page, list shows also child items and highlight actual "
+"page and parent page. It shows placeholder inside editor for design "
+"configuration purpose. You can see actual work of block only on frontend "
+"side."
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:905 src/blocks/taxonomy/edit.js:1454
+msgid "Block Shadow"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:691 src/blocks/pagelist/edit.js:910
+#: src/blocks/dynamicgallery/edit.js:1550
+msgid "Block Size"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:673 src/blocks/login-form/edit.js:429
+#: src/blocks/pagelist/edit.js:882 src/blocks/querygrid/edit.js:1737
+#: src/blocks/advanced-listing/edit.js:300 src/blocks/taxonomy/edit.js:1431
+#: src/blocks/dynamic-post-title/edit.js:439 src/blocks/breadcrumbs/edit.js:409
+#: src/blocks/repeater/edit.js:1658 src/blocks/wishlist/edit.js:739
+#: src/blocks/wishlist/edit.js:779 src/blocks/dynamic-post-image/edit.js:1048
+#: src/blocks/dynamicgallery/edit.js:1532
+msgid "Block Spacing"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:337
+msgid "Bookmark"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:446 src/blocks/pagelist/edit.js:614
+#: src/blocks/meta/edit.js:1512 src/blocks/querygrid/edit.js:1610
+#: src/blocks/dynamic-post-title/edit.js:466
+#: src/blocks/thumbcounter/edit.js:609 src/blocks/thumbcounter/edit.js:656
+#: src/blocks/thumbcounter/edit.js:713 src/blocks/thumbcounter/edit.js:779
+#: src/blocks/repeater/edit.js:1642 src/blocks/wishlist/edit.js:753
+#: src/blocks/wishlist/edit.js:783 src/blocks/dynamic-post-image/edit.js:1053
+msgid "Border"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:798
+msgid "Border for links"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:361
+msgid "Border radius"
+msgstr ""
+
+#: src/blocks/breadcrumbs/index.js:12 src/blocks/breadcrumbs/index.js:13
+msgid "Breadcrumbs"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:319
+msgid "Button"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:401
+msgid "Button Background"
+msgstr ""
+
+#: src/blocks/advanced-listing/edit.js:269
+msgid "Button background"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:411
+msgid "Button Border"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:289
+msgid "Button Label"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:166
+msgid "Button label"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:414
+msgid "Button Shadow"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:391 src/blocks/advanced-listing/edit.js:251
+msgid "Button Typography"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:1028
+#: src/blocks/components/query/queryall/query-settings.js:970
+msgid "By Cookie"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:394
+msgid "By Default"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1120
+msgid "By default, first row will be used. You must add also subfield"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1203
+msgid "By Include field"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:401
+#: src/blocks/components/query/queryall/query-settings.js:337
+msgid "By Post Type"
+msgstr ""
+
+#: src/blocks/visibility-block/edit.js:76
+msgid "By Post Type query"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:1027
+#: src/blocks/components/query/queryall/query-settings.js:969
+msgid "By Referral Source"
+msgstr ""
+
+#: src/blocks/visibility-block/edit.js:85
+msgid "by Repeater builder options"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:402
+#: src/blocks/components/query/queryall/query-settings.js:338
+msgid "By Taxonomy"
+msgstr ""
+
+#: src/blocks/visibility-block/edit.js:77
+#: src/blocks/components/query/queryall/visible-settings.js:1023
+#: src/blocks/components/query/queryall/query-settings.js:965
+msgid "By Taxonomy query"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:1026
+#: src/blocks/components/query/queryall/query-settings.js:968
+msgid "By URL Query Path"
+msgstr ""
+
+#: src/blocks/visibility-block/edit.js:78
+msgid "By User Meta query"
+msgstr ""
+
+#: src/sidebars/reusable-templates/index.js:228
+msgid "By user role"
+msgstr ""
+
+#: src/blocks/visibility-block/edit.js:84
+msgid "by Woocommerce options"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1834 src/blocks/repeater/edit.js:1763
+msgid "Cancel"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:805
+msgid "Cards"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:491
+#: src/blocks/components/query/queryall/visible-settings.js:632
+#: src/blocks/components/query/queryall/query-settings.js:458
+#: src/blocks/components/query/queryall/query-settings.js:591
+#: src/blocks/components/query/queryall/query-settings.js:1208
+#: src/blocks/components/query/queryall/query-settings.js:1327
+msgid "Category"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:504
+#: src/blocks/components/query/queryall/visible-settings.js:645
+#: src/blocks/components/query/queryall/query-settings.js:469
+#: src/blocks/components/query/queryall/query-settings.js:602
+#: src/blocks/components/query/queryall/query-settings.js:1219
+#: src/blocks/components/query/queryall/query-settings.js:1338
+msgid "Category exclude"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1250
+msgid "Child Of"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:681
+msgid "Child of"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:661
+msgid "Child Selection"
+msgstr ""
+
+#: query.php:1422
+msgid "Choose category"
+msgstr ""
+
+#: src/blocks/meta/edit.js:972 src/blocks/components/toolbar.js:315
+msgid "Choose definite item"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:125
+msgid "Choose taxonomy to enable category select filter"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:335
+msgid "Circle"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:135
+msgid "Circle Color"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:1106
+msgid "Clip Path Transform"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1370 src/blocks/repeater/edit.js:1370
+#: src/blocks/dynamicgallery/edit.js:1137
+msgid "Col End"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1355 src/blocks/repeater/edit.js:1355
+#: src/blocks/dynamicgallery/edit.js:1122
+msgid "Col Start"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:603
+msgid "Color for text"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:594
+msgid "Color for value"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:438 src/blocks/wishlist/edit.js:448
+msgid "Colors and Size"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1418 src/blocks/repeater/edit.js:1416
+#: src/blocks/dynamicgallery/edit.js:1185
+msgid "Column Span"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:819 src/blocks/taxonomy/edit.js:954
+msgid "Columns"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:463
+msgid "Comma separated list of page IDs to exclude. Default is empty string."
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:453
+msgid "Comma separated list of page IDs to include. Default is empty string."
+msgstr ""
+
+#: src/blocks/meta/edit.js:1092
+msgid "Comma separator to list"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1093
+msgid "Comma separator to tags"
+msgstr ""
+
+#: src/blocks/meta/edit.js:856
+msgid "Comment count"
+msgstr ""
+
+#: src/blocks/dynamicgallery/edit.js:1238
+#: src/blocks/components/query/queryall/visible-settings.js:1232
+#: src/blocks/components/query/queryall/query-settings.js:1165
+#: src/blocks/components/query/queryall/query-settings.js:1674
+msgid "Condition #"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1717
+msgid "Connect Filter Query"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:1554
+msgid "Container Link"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1488
+msgid "Container Link & Image"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:543
+msgid "Content"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:696
+msgid "Content Egg Filters"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:631
+msgid "Content Egg plugin data"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:234
+msgid "Content Of toggle"
+msgstr ""
+
+#: src/blocks/meta/edit.js:858
+msgid "Content without formatting"
+msgstr ""
+
+#: src/blocks/dynamicgallery/edit.js:971
+msgid "Convert to grid"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:1539
+msgid "Convert to repeater"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:1540 src/blocks/dynamicgallery/edit.js:972
+msgid "Convert to slider"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:410
+#: src/blocks/components/query/queryall/query-settings.js:346
+msgid "Cookie"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:943
+#: src/blocks/components/query/queryall/visible-settings.js:1200
+#: src/blocks/components/query/queryall/query-settings.js:888
+#: src/blocks/components/query/queryall/query-settings.js:1133
+msgid "Cookie equal:"
+msgstr ""
+
+#: patterns/query/query-wishlist.php:5
+msgid "Core Loop with bookmarks"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1199
+msgid "Count"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:320
+msgid "Counter"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:484
+msgid "Counter color"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:656
+msgid "Counter Top Offset"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:633 src/blocks/taxonomy/edit.js:1102
+#: src/blocks/dynamic-post-image/edit.js:997
+#: src/blocks/dynamicgallery/edit.js:1492
+msgid "Cover"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1632 src/blocks/querygrid/edit.js:1636
+#: src/blocks/repeater/edit.js:1651
+msgid "CSS Transform"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:547 src/blocks/meta/edit.js:1262
+#: src/blocks/breadcrumbs/edit.js:258 src/blocks/breadcrumbs/edit.js:326
+#: src/blocks/breadcrumbs/edit.js:394
+#: src/blocks/components/query/queryall/data-settings.js:152
+msgid "CSS transform"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:717 src/blocks/breadcrumbs/edit.js:429
+#: src/blocks/dynamicgallery/edit.js:1576
+msgid "Css Transform"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:747
+msgid "Currency"
+msgstr ""
+
+#: src/blocks/meta/edit.js:881
+msgid "Current Month"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:805
+msgid "Current User"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1383
+msgid "Current User Meta"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:318
+msgid "Current user posts"
+msgstr ""
+
+#: src/blocks/meta/edit.js:880
+msgid "Current Year"
+msgstr ""
+
+#: src/blocks/meta/edit.js:962
+msgid "Current/Latest"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:535 src/blocks/threesixty/edit.js:586
+#: src/blocks/dynamic-post-image/edit.js:854
+#: src/blocks/dynamicgallery/edit.js:1284
+#: src/blocks/dynamicgallery/edit.js:1388
+msgid "Custom"
+msgstr ""
+
+#: src/blocks/components/query/queryall/custom-block-edit.js:39
+msgid "Custom code (Html and shortcode)"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1645
+msgid "Custom code area"
+msgstr ""
+
+#: src/blocks/meta/edit.js:726 src/blocks/components/toolbar.js:157
+#: src/blocks/components/toolbar.js:182 src/blocks/repeater/edit.js:802
+#: src/blocks/repeater/edit.js:827
+msgid "Custom Field"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1381 src/blocks/querygrid/edit.js:1502
+#: src/blocks/dynamic-post-title/edit.js:370
+#: src/blocks/dynamic-post-image/edit.js:559
+msgid "Custom field"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:627
+msgid "Custom Field Array"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:790
+#: src/blocks/components/query/queryall/visible-settings.js:1088
+#: src/blocks/components/query/queryall/query-settings.js:741
+#: src/blocks/components/query/queryall/query-settings.js:1027
+#: src/blocks/components/query/queryall/query-settings.js:1564
+msgid "Custom field key"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:823
+#: src/blocks/components/query/queryall/visible-settings.js:1121
+#: src/blocks/components/query/queryall/query-settings.js:779
+#: src/blocks/components/query/queryall/query-settings.js:1060
+#: src/blocks/components/query/queryall/query-settings.js:1597
+#: src/blocks/components/query/advanced-list/build-settings.js:238
+msgid "Custom field value"
+msgstr ""
+
+#: src/blocks/dynamicgallery/edit.js:977
+msgid "Custom Grid Options"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:404
+#: src/blocks/components/query/queryall/query-settings.js:340
+#: src/blocks/components/query/queryall/query-settings.js:1507
+msgid "Custom meta"
+msgstr ""
+
+#: src/blocks/visibility-block/edit.js:79
+#: src/blocks/visibility-block/edit.js:80
+#: src/blocks/components/query/queryall/visible-settings.js:1024
+#: src/blocks/components/query/queryall/query-settings.js:966
+msgid "Custom meta query"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:385
+#: src/blocks/components/query/queryall/query-settings.js:300
+#: src/blocks/components/query/queryall/query-settings.js:306
+msgid "Custom post type and taxonomy"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1335 src/blocks/repeater/edit.js:1337
+#: src/blocks/dynamicgallery/edit.js:1102
+msgid "Custom Range"
+msgstr ""
+
+#: src/blocks/meta/edit.js:761 src/blocks/components/toolbar.js:441
+msgid "Custom Repeater field"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:575
+#: src/blocks/components/query/queryall/query-settings.js:536
+#: src/blocks/components/query/queryall/query-settings.js:1286
+msgid "Custom Taxonomy"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1457
+msgid "Data must be saved as ids divides by commas or array of ids"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:471
+#: src/blocks/components/query/queryall/query-settings.js:440
+#: src/blocks/components/query/queryall/query-settings.js:1190
+msgid "Data query"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:14
+msgid "Data settings"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:414
+#: src/blocks/components/query/queryall/filter-settings.js:218
+#: src/blocks/components/query/queryall/data-settings.js:20
+msgid "Date"
+msgstr ""
+
+#: src/blocks/visibility-block/edit.js:83
+msgid "Date period"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1098
+msgid "Date to difference with current"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1097
+msgid "Date Y-m-d H:i:s to Wordpress date"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1095
+msgid "Date yyyy-mm-dd to Wordpress date"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1094
+msgid "Date YYYYMMDD to Wordpress date"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:885
+#: src/blocks/components/query/queryall/query-settings.js:839
+msgid "Date/Time From"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:408
+#: src/blocks/components/query/queryall/query-settings.js:344
+msgid "Date/Time Period"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:898
+#: src/blocks/components/query/queryall/query-settings.js:851
+msgid "Date/Time To"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1581
+msgid "Default"
+msgstr ""
+
+#: src/blocks/meta/edit.js:963
+msgid "Definite"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:426
+msgid "Depth"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1217
+msgid "DESC"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:924
+msgid "Descendant"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:229
+msgid "Descending"
+msgstr ""
+
+#: src/blocks/meta/edit.js:918 src/blocks/taxonomy/edit.js:1201
+msgid "Description"
+msgstr ""
+
+#: src/blocks/breadcrumbs/edit.js:202
+msgid "Design"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:98
+msgid "Design for button"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1206
+msgid "Design for tag items"
+msgstr ""
+
+#: src/blocks/dynamicgallery/edit.js:701
+msgid "Disable advanced attachments"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:401
+msgid "Disable counter value?"
+msgstr ""
+
+#: src/blocks/breadcrumbs/edit.js:172
+msgid "Disable current page"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:208
+msgid "Disable excerpt?"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:474 src/blocks/dynamicgallery/edit.js:695
+msgid "Disable lazy loading"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1108
+msgid "Disable list dots"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:175
+msgid "Disable numbers?"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:160
+msgid "Disable read more link?"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:371
+msgid "Disable stretch width on meta panel?"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:222
+msgid "Disclaimer"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:259
+msgid "Disclaimer meta key"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:223
+msgid "Discount"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:996 src/blocks/repeater/edit.js:938
+msgid "Display type"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:822
+#: src/blocks/components/query/queryall/visible-settings.js:1120
+#: src/blocks/components/query/queryall/query-settings.js:778
+#: src/blocks/components/query/queryall/query-settings.js:1059
+#: src/blocks/components/query/queryall/query-settings.js:1596
+msgid "Divide by | your range values, example 0|100"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:449
+#: src/blocks/components/query/queryall/query-settings.js:415
+msgid "Do not show content for selected"
+msgstr ""
+
+#: src/blocks/meta/edit.js:865
+msgid "Do not use this type in query loops"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1825 src/blocks/repeater/edit.js:1754
+msgid "Done"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:311
+msgid "Dont Have an Account Link Text"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:316
+msgid "Dont Have an Account Link Url"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:306
+msgid "Dont Have an Account Text"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:499
+msgid "Drag speed in ms"
+msgstr ""
+
+#: src/blocks/dynamicgallery/index.js:12
+msgid "Dynamic Gallery"
+msgstr ""
+
+#: src/blocks/dynamicgallery/index.js:13
+msgid "Dynamic gallery"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/index.js:12
+#: src/blocks/dynamic-post-image/index.js:13
+msgid "Dynamic Image"
+msgstr ""
+
+#: src/blocks/dynamic-post-title/index.js:12
+msgid "Dynamic Title"
+msgstr ""
+
+#: src/blocks/dynamic-post-title/index.js:13
+msgid "Dynamic title"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:976 src/blocks/repeater/edit.js:599
+msgid "Edit inner layout"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:565
+msgid "Element after links"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:457
+msgid "Empty"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:907
+msgid "Empty Cart"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:151
+msgid "Enable Button?"
+msgstr ""
+
+#: src/blocks/components/query/queryall/custom-block-edit.js:30
+msgid "Enable custom code area in grid"
+msgstr ""
+
+#: src/blocks/dynamic-post-title/edit.js:450
+msgid "Enable Image Mask"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:88
+msgid "Enable image?"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1307
+msgid "Enable inline style?"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1368 src/blocks/dynamic-post-title/edit.js:357
+msgid "Enable Link from Title"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:61
+msgid "Enable panel?"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:117
+msgid "Enable Review score?"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1534 src/blocks/dynamic-post-title/edit.js:488
+msgid "Enable Text Clamp?"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:146
+msgid "Enable User rating?"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:398
+msgid "End of block"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1511 src/blocks/repeater/edit.js:1575
+#: src/blocks/repeater/edit.js:1593
+msgid ""
+"Enter field name to get value from custom field. You can also use array-like "
+"values, example: fieldkey[0][keyname]"
+msgstr ""
+
+#: src/blocks/components/toolbar.js:442
+msgid ""
+"Enter field name to get value from repeater array or select field above. You "
+"can also use array-like values, example: fieldkey[0][keyname]"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1408 src/blocks/dynamic-post-title/edit.js:396
+#: src/blocks/dynamic-post-image/edit.js:584
+msgid ""
+"Enter field name to get value from repeater or custom field. You can also "
+"use array-like values, example: fieldkey[0][keyname]"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:738
+msgid "Enter one or more product groups, separated by commas"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:816
+msgid "Enter one or more user ids, separated by commas"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:828
+msgid ""
+"Enter the custom field key where user ids are stored as comma separated list "
+"of ids or array of ids"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:840
+msgid "Enter the user role to filter users"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:839
+#: src/blocks/components/query/queryall/visible-settings.js:840
+#: src/blocks/components/query/queryall/visible-settings.js:928
+#: src/blocks/components/query/queryall/visible-settings.js:930
+#: src/blocks/components/query/queryall/visible-settings.js:1137
+#: src/blocks/components/query/queryall/visible-settings.js:1185
+#: src/blocks/components/query/queryall/visible-settings.js:1187
+#: src/blocks/components/query/queryall/query-settings.js:795
+#: src/blocks/components/query/queryall/query-settings.js:796
+#: src/blocks/components/query/queryall/query-settings.js:880
+#: src/blocks/components/query/queryall/query-settings.js:880
+#: src/blocks/components/query/queryall/query-settings.js:1076
+#: src/blocks/components/query/queryall/query-settings.js:1077
+#: src/blocks/components/query/queryall/query-settings.js:1125
+#: src/blocks/components/query/queryall/query-settings.js:1125
+#: src/blocks/components/query/queryall/query-settings.js:1613
+#: src/blocks/components/query/queryall/query-settings.js:1614
+msgid "Equal"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:344
+msgid "Equal height for meta items"
+msgstr ""
+
+#: src/blocks/meta/edit.js:857
+msgid "Excerpt"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:462 src/blocks/taxonomy/edit.js:1238
+#: src/blocks/components/query/queryall/visible-settings.js:604
+#: src/blocks/components/query/queryall/visible-settings.js:733
+#: src/blocks/components/query/queryall/visible-settings.js:1067
+#: src/blocks/components/query/queryall/query-settings.js:563
+#: src/blocks/components/query/queryall/query-settings.js:684
+#: src/blocks/components/query/queryall/query-settings.js:1007
+#: src/blocks/components/query/queryall/query-settings.js:1313
+#: src/blocks/components/query/queryall/query-settings.js:1544
+msgid "Exclude"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1289
+msgid "Exclude current on archive pages"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:843
+#: src/blocks/components/query/queryall/visible-settings.js:933
+#: src/blocks/components/query/queryall/visible-settings.js:935
+#: src/blocks/components/query/queryall/visible-settings.js:1140
+#: src/blocks/components/query/queryall/visible-settings.js:1140
+#: src/blocks/components/query/queryall/visible-settings.js:1190
+#: src/blocks/components/query/queryall/visible-settings.js:1192
+#: src/blocks/components/query/queryall/query-settings.js:799
+#: src/blocks/components/query/queryall/query-settings.js:799
+#: src/blocks/components/query/queryall/query-settings.js:881
+#: src/blocks/components/query/queryall/query-settings.js:881
+#: src/blocks/components/query/queryall/query-settings.js:1080
+#: src/blocks/components/query/queryall/query-settings.js:1080
+#: src/blocks/components/query/queryall/query-settings.js:1126
+#: src/blocks/components/query/queryall/query-settings.js:1126
+#: src/blocks/components/query/queryall/query-settings.js:1617
+#: src/blocks/components/query/queryall/query-settings.js:1617
+msgid "Exist"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1091
+msgid "External link"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:963
+#: src/blocks/components/query/queryall/query-settings.js:909
+msgid "External type"
+msgstr ""
+
+#: src/blocks/components/toolbar.js:156
+msgid "Featured Image"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1542
+msgid "Featured Image as Background"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:391
+#: src/blocks/components/query/queryall/query-settings.js:326
+msgid "Featured products"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:59
+msgid "Fetch count"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:253
+#: src/blocks/components/query/advanced-list/build-settings.js:471
+msgid "Field key"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:854
+#: src/blocks/components/query/queryall/visible-settings.js:1153
+#: src/blocks/components/query/queryall/query-settings.js:811
+#: src/blocks/components/query/queryall/query-settings.js:1093
+msgid ""
+"Field support regular expression. Add them after word REGEX without spaces"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:619 src/blocks/repeater/edit.js:641
+msgid "Field Type"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:634 src/blocks/taxonomy/edit.js:1103
+#: src/blocks/dynamic-post-image/edit.js:998
+#: src/blocks/dynamicgallery/edit.js:1493
+msgid "Fill"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:380
+msgid "Filter by date of publishing"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:59
+msgid "Filter settings"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1623 src/blocks/repeater/edit.js:1663
+msgid "Flexible Content"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:641 src/blocks/dynamic-post-image/edit.js:1005
+#: src/blocks/dynamicgallery/edit.js:1500
+msgid "Focal point picker"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:1319 src/blocks/dynamicgallery/edit.js:1084
+msgid "for Item "
+msgstr ""
+
+#: src/blocks/pagelist/index.js:13
+msgid "For making dynamic page lists with relations"
+msgstr ""
+
+#: src/blocks/meta/edit.js:859
+msgid "Formatted Content"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1443
+msgid "From"
+msgstr ""
+
+#: src/blocks/dynamicgallery/edit.js:714
+msgid "Gallery Grid Settings"
+msgstr ""
+
+#: src/blocks/breadcrumbs/edit.js:197
+msgid "Gap for items"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:313
+msgid "Get all childs of current page"
+msgstr ""
+
+#. Description of the plugin
+msgid "Get any meta value, use better query block"
+msgstr ""
+
+#: src/blocks/meta/edit.js:987
+msgid "Get field"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:315
+msgid "Get Next Post"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:314
+msgid "Get Previous Post"
+msgstr ""
+
+#. Name of the plugin
+msgid "Greenshift Query and Meta Addon"
+msgstr ""
+
+#: integrations.php:21
+msgid "Greenshift Query Builder"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1011 src/blocks/taxonomy/edit.js:802
+#: src/blocks/repeater/edit.js:953 src/blocks/repeater/edit.js:953
+msgid "Grid"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1021 src/blocks/repeater/edit.js:962
+msgid "Grid Columns"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1057 src/blocks/repeater/edit.js:1050
+msgid "Grid Gap"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:877
+msgid "Grid gap"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:806
+msgid "Grid Hover"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:993 src/blocks/repeater/edit.js:935
+msgid "Grid settings"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:966
+#: src/blocks/components/query/queryall/query-settings.js:912
+msgid "Grouped type"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:737
+msgid "Groups"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:623
+#: src/blocks/components/query/queryall/query-settings.js:583
+msgid "Has Child items?"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:616
+#: src/blocks/components/query/queryall/query-settings.js:576
+msgid "Has Parent item?"
+msgstr ""
+
+#: src/blocks/dynamic-post-title/edit.js:332
+msgid "Heading Settings"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1457 src/blocks/repeater/edit.js:1454
+msgid "Heading Size"
+msgstr ""
+
+#: src/blocks/dynamic-post-title/edit.js:335
+msgid "Heading Tag"
+msgstr ""
+
+#: src/blocks/advanced-listing/edit.js:243
+msgid "Heading Typography"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:336
+msgid "Heart"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:572 src/blocks/dynamicgallery/edit.js:1374
+#: src/blocks/dynamicgallery/edit.js:1396
+msgid "Height"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:444
+msgid "Hide Children for Not Active"
+msgstr ""
+
+#: src/blocks/breadcrumbs/edit.js:185
+msgid "Home Label"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:384
+msgid "Hot counter"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://greenshiftwp.com"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:696 src/blocks/meta/edit.js:1328
+msgid "Icon"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:452
+msgid "Icon color"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:502
+msgid "Icon Size"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:742
+msgid "Icon Spacing"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:331
+msgid "Icon Type"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:412 src/blocks/taxonomy/edit.js:1198
+msgid "ID"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:682
+msgid "Id of page item if you want to show only children of item"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:801
+msgid "Ids"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:317
+msgid "Ids RelationShip"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:958
+#: src/blocks/components/query/queryall/query-settings.js:903
+msgid "If related products exists"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:959
+#: src/blocks/components/query/queryall/query-settings.js:904
+msgid "If upsell products exists"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:764
+#: src/blocks/components/query/queryall/query-settings.js:713
+msgid "If user is logged In"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:757
+msgid "If you do not select module, all modules will be used"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1137
+#: src/blocks/components/query/advanced-list/build-settings.js:659
+msgid "Image"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:663 src/blocks/taxonomy/edit.js:1320
+#: src/blocks/dynamicgallery/edit.js:1522
+msgid "Image Border"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:107
+msgid "Image column width"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:95
+msgid "Image height"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:626
+msgid "Image mapper"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1556
+msgid "Image Opacity"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:512 src/blocks/dynamicgallery/edit.js:1261
+msgid "Image Settings"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:668 src/blocks/dynamicgallery/edit.js:1527
+msgid "Image Shadow"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1067
+msgid "Image size"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:416 src/blocks/querygrid/edit.js:1550
+#: src/blocks/dynamic-post-image/edit.js:619
+#: src/blocks/dynamicgallery/edit.js:617
+msgid "Image Sizing"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:406 src/blocks/dynamicgallery/edit.js:607
+msgid "Images attached to Post"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1619
+msgid "IN"
+msgstr ""
+
+#: blockrender/querygrid/block.php:452
+msgid "In stock"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:452 src/blocks/taxonomy/edit.js:1226
+#: src/blocks/components/query/queryall/visible-settings.js:594
+#: src/blocks/components/query/queryall/visible-settings.js:723
+#: src/blocks/components/query/queryall/visible-settings.js:1057
+#: src/blocks/components/query/queryall/query-settings.js:553
+#: src/blocks/components/query/queryall/query-settings.js:674
+#: src/blocks/components/query/queryall/query-settings.js:997
+#: src/blocks/components/query/queryall/query-settings.js:1303
+#: src/blocks/components/query/queryall/query-settings.js:1534
+#: src/blocks/components/query/queryall/filter-settings.js:330
+msgid "Include"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:672
+msgid "Inherited from current"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1012 src/blocks/repeater/edit.js:954
+msgid "Inline by content"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1012 src/blocks/repeater/edit.js:954
+msgid "Inline Flex"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:359
+msgid "Input Background"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:369
+msgid "Input Border"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:378
+msgid "Input Label Typography"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:372
+msgid "Input Shadow"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:349
+msgid "Input Typography"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:1137
+msgid "Interaction Layers"
+msgstr ""
+
+#: src/blocks/advanced-listing/edit.js:281
+msgid "Item background"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1350
+msgid "Item Background and Opacity"
+msgstr ""
+
+#: src/blocks/advanced-listing/edit.js:292 src/blocks/taxonomy/edit.js:1361
+msgid "Item Border"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1331
+msgid "Item grid #"
+msgstr ""
+
+#: src/blocks/advanced-listing/edit.js:296
+msgid "Item Shadow"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1366 src/blocks/taxonomy/edit.js:1415
+msgid "Item Spacing"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:960
+#: src/blocks/components/query/queryall/query-settings.js:905
+msgid "Items in cart"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1862
+msgid "Items not found."
+msgstr ""
+
+#: src/blocks/components/TermSelect/TermSelect.js:162
+#: src/blocks/components/query/queryall/filter-settings.js:69
+#: src/blocks/components/query/queryall/filter-settings.js:284
+msgid "Label"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:166
+msgid "Label for read more"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:229
+msgid "Label for toggle link"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1291 src/blocks/querygrid/edit.js:1573
+#: src/blocks/breadcrumbs/edit.js:169
+msgid "Labels"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:534 src/blocks/dynamicgallery/edit.js:1283
+msgid "Large"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:221
+msgid "Last Modified Date"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:24
+msgid "Last modified date"
+msgstr ""
+
+#: src/blocks/meta/edit.js:780 src/blocks/components/toolbar.js:198
+msgid "Leave blank to show current post type"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:837
+#: src/blocks/components/query/queryall/visible-settings.js:838
+#: src/blocks/components/query/queryall/visible-settings.js:1135
+#: src/blocks/components/query/queryall/visible-settings.js:1136
+#: src/blocks/components/query/queryall/query-settings.js:793
+#: src/blocks/components/query/queryall/query-settings.js:794
+#: src/blocks/components/query/queryall/query-settings.js:1074
+#: src/blocks/components/query/queryall/query-settings.js:1075
+#: src/blocks/components/query/queryall/query-settings.js:1611
+#: src/blocks/components/query/queryall/query-settings.js:1612
+msgid "Less"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:984
+#: src/blocks/components/query/queryall/query-settings.js:930
+msgid "Less than value"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:479
+msgid "Lightbox"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1623
+msgid "LIKE"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:700 src/blocks/repeater/edit.js:850
+msgid "Limit"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1262
+msgid "Limit items"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1544 src/blocks/dynamic-post-title/edit.js:498
+msgid "Line Clamp"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1466 src/blocks/repeater/edit.js:1463
+msgid "Line Height"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1366
+msgid "Link"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:564
+msgid "Link After"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:471
+msgid "Link Before"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:546
+msgid "Link to Page"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1321
+msgid "Link Value Replacement"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1491 src/blocks/repeater/edit.js:1557
+msgid "Link whole container"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:803 src/blocks/wishlist/edit.js:321
+msgid "List"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:436
+msgid ""
+"List in editor is just placeholder, check real design of list on front end"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:96
+msgid "Load More Button"
+msgstr ""
+
+#: src/blocks/meta/edit.js:805
+msgid "Local Attribute"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:326
+msgid "Logged Link Label"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:331
+msgid "Logged Link Url"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:321
+msgid "Logged Text"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:336
+msgid "Login Already Label"
+msgstr ""
+
+#: blockrender/login-form/block.php:139
+msgid "Login successful, reloading page..."
+msgstr ""
+
+#: src/blocks/login-form/edit.js:341
+msgid "Logout Label"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:300
+msgid "Lost Password Url"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1088
+msgid "Mailto link"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:389 src/blocks/meta/edit.js:707
+#: src/blocks/taxonomy/edit.js:796 src/blocks/thumbcounter/edit.js:376
+#: src/blocks/wishlist/edit.js:312
+msgid "Main Settings"
+msgstr ""
+
+#: src/sidebars/reusable-templates/index.js:151
+msgid "Make sure that you saved template"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:386
+#: src/blocks/components/query/queryall/query-settings.js:301
+#: src/blocks/components/query/queryall/query-settings.js:307
+msgid "Manual Select and Order"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:355
+msgid "Margin between meta items"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:533 src/blocks/dynamicgallery/edit.js:1282
+msgid "Medium"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:224
+#: src/blocks/components/query/queryall/data-settings.js:23
+msgid "Menu Order"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:416
+msgid "Menu order"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:898
+msgid "Meta Compare"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1456
+msgid "Meta field Key"
+msgstr ""
+
+#: src/blocks/meta/index.js:11
+msgid "Meta getter"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:876
+#: src/blocks/components/query/queryall/data-settings.js:26
+msgid "Meta key"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:124
+msgid "meta key where review value is stored"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:282
+msgid "Meta panel"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:888
+msgid "Meta Value"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:459
+msgid "Meta value"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:28
+msgid "Meta value as DATE"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:29
+msgid "Meta value as DATETIME"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:27
+msgid "Meta value as number"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:284
+msgid "Meta Value section"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:316
+msgid "MetaBox RelationShip"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:442
+msgid "Minus/Thumb down color"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:458
+msgid "Minus/Thumb down color hover"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:409
+#: src/blocks/components/query/queryall/query-settings.js:345
+msgid "Mobile View"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:415
+msgid "Modified date"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:758
+msgid "Modules"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:841
+#: src/blocks/components/query/queryall/visible-settings.js:842
+#: src/blocks/components/query/queryall/visible-settings.js:1138
+#: src/blocks/components/query/queryall/visible-settings.js:1139
+#: src/blocks/components/query/queryall/query-settings.js:797
+#: src/blocks/components/query/queryall/query-settings.js:798
+#: src/blocks/components/query/queryall/query-settings.js:1078
+#: src/blocks/components/query/queryall/query-settings.js:1079
+#: src/blocks/components/query/queryall/query-settings.js:1615
+#: src/blocks/components/query/queryall/query-settings.js:1616
+msgid "More"
+msgstr ""
+
+#: parts/listbuilder.php:15
+msgid "More details +"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:976
+#: src/blocks/components/query/queryall/query-settings.js:922
+msgid "More than value"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1136
+msgid "Multi value (checkbox, select)"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:993
+#: src/blocks/components/query/queryall/query-settings.js:939
+msgid "Multiple Conditions"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:411 src/blocks/taxonomy/edit.js:1197
+msgid "Name"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:914
+#: src/blocks/components/query/queryall/visible-settings.js:1171
+#: src/blocks/components/query/queryall/query-settings.js:867
+#: src/blocks/components/query/queryall/query-settings.js:1112
+msgid "Name of cookie"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:221
+msgid "Near button"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:220
+msgid "Near image"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:219
+msgid "Near title"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:647
+msgid "Nested data"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:712
+msgid "Next"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1581
+#: src/blocks/components/query/advanced-list/build-settings.js:186
+#: src/blocks/components/query/advanced-list/build-settings.js:218
+msgid "No"
+msgstr ""
+
+#: src/blocks/advanced-listing/edit.js:341
+msgid "No items found."
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:435
+msgid "No items text"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1575
+msgid "No more posts label"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1205
+msgid "None"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1622
+msgid "NOT BETWEEN"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:844
+#: src/blocks/components/query/queryall/visible-settings.js:1141
+#: src/blocks/components/query/queryall/query-settings.js:800
+#: src/blocks/components/query/queryall/query-settings.js:1081
+#: src/blocks/components/query/queryall/query-settings.js:1618
+msgid "Not Exist"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:844
+#: src/blocks/components/query/queryall/visible-settings.js:845
+#: src/blocks/components/query/queryall/visible-settings.js:1141
+#: src/blocks/components/query/queryall/visible-settings.js:1142
+#: src/blocks/components/query/queryall/query-settings.js:800
+#: src/blocks/components/query/queryall/query-settings.js:801
+#: src/blocks/components/query/queryall/query-settings.js:1081
+#: src/blocks/components/query/queryall/query-settings.js:1082
+#: src/blocks/components/query/queryall/query-settings.js:1618
+#: src/blocks/components/query/queryall/query-settings.js:1619
+#: src/blocks/components/query/queryall/query-settings.js:1620
+#: src/blocks/components/query/queryall/query-settings.js:1621
+#: src/blocks/components/query/queryall/query-settings.js:1622
+#: src/blocks/components/query/queryall/query-settings.js:1623
+#: src/blocks/components/query/queryall/query-settings.js:1624
+#: src/blocks/components/query/queryall/query-settings.js:1625
+#: src/blocks/components/query/queryall/query-settings.js:1626
+msgid "Not exist"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1620
+msgid "NOT IN"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1624
+msgid "NOT LIKE"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1626
+msgid "NOT REGEXP"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1099
+msgid "Number format"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:222
+msgid "Number of Comments"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:25
+msgid "Number of comments"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:70
+msgid "Number of products to offset"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1122
+msgid "Number of row to get value"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:724
+#: src/blocks/components/query/queryall/data-settings.js:69
+msgid "Offset"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:593
+msgid "Open in new window?"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:831
+#: src/blocks/components/query/queryall/visible-settings.js:1129
+#: src/blocks/components/query/queryall/query-settings.js:787
+#: src/blocks/components/query/queryall/query-settings.js:1068
+#: src/blocks/components/query/queryall/query-settings.js:1605
+msgid "Operator"
+msgstr ""
+
+#: src/blocks/meta/edit.js:892 src/blocks/repeater/edit.js:686
+msgid "Option Name"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:999
+#: src/blocks/components/query/queryall/query-settings.js:945
+msgid "OR"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:1574 src/blocks/repeater/edit.js:1592
+msgid "Or Type field key"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1213 src/blocks/repeater/edit.js:920
+msgid "Order"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:910
+#: src/blocks/components/query/queryall/filter-settings.js:352
+msgid "Order By"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:408 src/blocks/taxonomy/edit.js:1194
+msgid "Order by"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:219
+msgid "Order by Post ID"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:21
+msgid "Order by post ID"
+msgstr ""
+
+#: src/sidebars/reusable-templates/index.js:144
+msgid "Overwrite Site pages by this template"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:82
+msgid "Pagination type"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:164
+msgid "Panel background"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:417 src/blocks/taxonomy/edit.js:1204
+msgid "Parent"
+msgstr ""
+
+#: src/blocks/pagelist/index.js:12
+msgid "Parent-child categorizator"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:277
+msgid "Password Placeholder"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:260
+msgid ""
+"Place here custom field key where you store disclaimer. If you use Post "
+"offer disclaimer, you can use key rehub_offer_disclaimer"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:125
+msgid "Place here custom meta key where your theme stores review value. "
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:389
+msgid "Place icon after text?"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1086
+msgid "Plain format"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:788
+msgid "Please enable Content Egg plugin and set up modules in the settings"
+msgstr ""
+
+#: blockrender/login-form/block.php:129
+msgid "Please fill all form fields"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:658
+msgid "Please select a post type first"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:474
+msgid "Plus/Thumb up color"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:490
+msgid "Plus/Thumb up color hover"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:726 src/blocks/meta/edit.js:1649
+#: src/blocks/breadcrumbs/edit.js:438 src/blocks/dynamicgallery/edit.js:1593
+msgid "Position"
+msgstr ""
+
+#: src/blocks/components/query/queryall/custom-block-edit.js:45
+msgid "Position in grid"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:391
+msgid "Position of counter"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:384
+#: src/blocks/components/query/queryall/query-settings.js:299
+#: src/blocks/components/query/queryall/query-settings.js:305
+msgid "Post Category or tag"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:237
+msgid "Post content (can slow down page)"
+msgstr ""
+
+#: src/blocks/meta/edit.js:730
+msgid "Post data"
+msgstr ""
+
+#: rest.php:968
+msgid "Post don't has a title."
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1501
+msgid "Post Link"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1090
+msgid "Post link"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:542
+#: src/blocks/components/query/queryall/query-settings.js:505
+#: src/blocks/components/query/queryall/query-settings.js:1255
+msgid "Post names"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1380 src/blocks/dynamic-post-title/edit.js:369
+#: src/blocks/dynamic-post-image/edit.js:558
+msgid "Post Title"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:556
+#: src/blocks/components/query/queryall/query-settings.js:519
+#: src/blocks/components/query/queryall/query-settings.js:1269
+#: src/blocks/components/query/queryall/query-settings.js:1389
+#: src/blocks/components/query/queryall/query-settings.js:1471
+msgid "Post Type"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1316
+msgid "Postfix label"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1467
+msgid "Postfix Typography"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1295
+msgid "Prefix Label"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1457
+msgid "Prefix Typography"
+msgstr ""
+
+#: patterns/query/query-prevnext.php:8
+msgid "Prev Next Query"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:308
+msgid "Price Range"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:681
+#: src/blocks/components/query/queryall/query-settings.js:636
+#: src/blocks/components/query/queryall/query-settings.js:1372
+msgid "Price range"
+msgstr ""
+
+#: src/blocks/advanced-listing/edit.js:259
+msgid "Price Typography"
+msgstr ""
+
+#: src/blocks/meta/edit.js:806
+msgid "Product Swatch"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:393
+#: src/blocks/components/query/queryall/query-settings.js:328
+msgid "Products which have sales"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:392
+#: src/blocks/components/query/queryall/query-settings.js:327
+msgid "Products with discount"
+msgstr ""
+
+#: src/blocks/meta/edit.js:854
+msgid "Publish Date"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:235
+msgid "Published last 24 hours"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:236
+msgid "Published last 7 days"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:237
+msgid "Published last month"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:238
+msgid "Published last year"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:899
+msgid "Put meta compare symbol"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:877
+msgid "Put meta key if you want to show only users with this user meta key"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:889
+msgid "Put meta value"
+msgstr ""
+
+#: patterns/query/query-cover.php:9
+msgid "Query Custom Grid with cover images"
+msgstr ""
+
+#: patterns/query/query-cover-simple.php:9
+msgid "Query Grid with cover images"
+msgstr ""
+
+#: patterns/query/query-hover.php:9
+msgid "Query Grid with Hover Container"
+msgstr ""
+
+#: src/blocks/querygrid/index.js:12 src/blocks/querygrid/index.js:13
+msgid "Query Loop Builder"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:409
+msgid "Query settings"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:853
+#: src/blocks/components/query/queryall/visible-settings.js:1151
+#: src/blocks/components/query/queryall/query-settings.js:809
+#: src/blocks/components/query/queryall/query-settings.js:1092
+msgid "Query String"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:418
+msgid "Random"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:225
+msgid "Random Order"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:30
+msgid "Random order"
+msgstr ""
+
+#: parts/listbuilder.php:16
+msgid "Read full review"
+msgstr ""
+
+#: src/blocks/advanced-listing/edit.js:337
+#: src/blocks/components/query/queryall/visible-settings.js:390
+#: src/blocks/components/query/queryall/query-settings.js:325
+msgid "Recent products"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:394
+#: src/blocks/components/query/queryall/query-settings.js:329
+msgid "Recent viewed products"
+msgstr ""
+
+#: src/blocks/visibility-block/edit.js:82
+msgid "Referal source"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:865
+#: src/blocks/components/query/queryall/visible-settings.js:1161
+#: src/blocks/components/query/queryall/query-settings.js:819
+#: src/blocks/components/query/queryall/query-settings.js:1102
+msgid "Referal Url"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:407
+#: src/blocks/components/query/queryall/query-settings.js:343
+msgid "Referral Source"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1625
+msgid "REGEXP"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:600
+msgid "Rel NoFollow?"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:607
+msgid "Rel sponsored?"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:309
+msgid "Related items By Post Author"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:308
+msgid "Related items By Taxonomy"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:395
+#: src/blocks/components/query/queryall/query-settings.js:330
+msgid "Related products"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1433
+msgid "Relationship ID"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:630 src/blocks/repeater/edit.js:649
+msgid "Relationship Post Ids"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:629 src/blocks/repeater/edit.js:648
+msgid "Relationship Post Objects"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1439
+msgid "Relationship type"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:283
+msgid "Remember me Label"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:503
+msgid "Remove"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:355
+msgid "Remove all text values if you want to show only icon"
+msgstr ""
+
+#: src/blocks/dynamicgallery/edit.js:1227
+#: src/blocks/components/query/queryall/visible-settings.js:1220
+#: src/blocks/components/query/queryall/query-settings.js:1153
+#: src/blocks/components/query/queryall/query-settings.js:1662
+msgid "Remove Condition"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:399
+msgid "Remove Counter"
+msgstr ""
+
+#: src/blocks/components/query/queryall/custom-block-edit.js:56
+msgid "Remove HTML Code"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:536
+msgid "Remove image"
+msgstr ""
+
+#: src/blocks/meta/edit.js:734
+msgid "Repeater"
+msgstr ""
+
+#: src/blocks/repeater/index.js:12 src/blocks/repeater/index.js:13
+msgid "Repeater builder"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1382 src/blocks/dynamic-post-title/edit.js:371
+#: src/blocks/dynamic-post-image/edit.js:560
+msgid "Repeater data"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:348
+msgid "Repeater fields"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1846 src/blocks/repeater/edit.js:1775
+msgid "Reset Layout"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1838 src/blocks/repeater/edit.js:1767
+msgid "Reset layout to default"
+msgstr ""
+
+#: src/blocks/visibility-block/edit.js:65
+msgid "Responsive"
+msgstr ""
+
+#: src/blocks/meta/index.js:12
+msgid "Retrieve Meta, ACF, Attribute or Taxonomy value"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:427
+msgid "Retrieve value"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:803 src/blocks/repeater/edit.js:839
+msgid "Role"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1399 src/blocks/repeater/edit.js:1399
+#: src/blocks/dynamicgallery/edit.js:1166
+msgid "Row End"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1162 src/blocks/repeater/edit.js:1153
+msgid "Row Gap"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1434 src/blocks/repeater/edit.js:1432
+#: src/blocks/dynamicgallery/edit.js:1201
+msgid "Row Span"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1384 src/blocks/repeater/edit.js:1384
+#: src/blocks/dynamicgallery/edit.js:1151
+msgid "Row Start"
+msgstr ""
+
+#: src/sidebars/reusable-templates/index.js:361
+msgid "Save template"
+msgstr ""
+
+#: src/sidebars/reusable-templates/index.js:361
+msgid "Saving to database"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:623 src/blocks/taxonomy/edit.js:1092
+#: src/blocks/dynamic-post-image/edit.js:987
+#: src/blocks/dynamicgallery/edit.js:1482
+msgid "Scale"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:635 src/blocks/taxonomy/edit.js:1104
+#: src/blocks/dynamic-post-image/edit.js:999
+#: src/blocks/dynamicgallery/edit.js:1494
+msgid "Scale Down"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:1098
+msgid "Scale to Fit image"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1711
+msgid "Search And Filter Connection"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1508
+msgid "Search by Title"
+msgstr ""
+
+#: src/blocks/components/toolbar.js:64
+msgid "Select Custom Field"
+msgstr ""
+
+#: src/blocks/meta/edit.js:238 src/blocks/dynamic-post-title/edit.js:134
+#: src/blocks/repeater/edit.js:1787
+msgid "Select Field"
+msgstr ""
+
+#: src/blocks/meta/edit.js:147 src/blocks/meta/edit.js:152
+#: src/blocks/meta/edit.js:169 src/blocks/components/toolbar.js:29
+msgid "Select field or type below"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:1322 src/blocks/dynamicgallery/edit.js:1087
+msgid "Select Item from grid"
+msgstr ""
+
+#: src/blocks/components/query/queryall/data-settings.js:19
+msgid "Select Order"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1013
+msgid "Select Post Type"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:117 src/blocks/pagelist/edit.js:398
+#: src/blocks/meta/edit.js:139 src/blocks/components/toolbar.js:51
+#: src/blocks/components/toolbar.js:303
+#: src/sidebars/reusable-templates/index.js:247
+#: src/sidebars/reusable-templates/index.js:260
+msgid "Select Post type"
+msgstr ""
+
+#: src/blocks/meta/edit.js:778 src/blocks/components/toolbar.js:197
+msgid "Select Post type for preview"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:436
+msgid "Select Query"
+msgstr ""
+
+#: src/blocks/meta/edit.js:693 src/blocks/meta/edit.js:1396
+#: src/blocks/components/toolbar.js:120 src/blocks/components/toolbar.js:432
+#: src/blocks/dynamic-post-title/edit.js:309
+#: src/blocks/dynamic-post-title/edit.js:383 src/blocks/repeater/edit.js:586
+#: src/blocks/dynamic-post-image/edit.js:475
+#: src/blocks/dynamic-post-image/edit.js:572
+msgid "Select Repeater Field"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:1565
+msgid "Select Repeater Field for link"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:1583
+msgid "Select Repeater Field for Title"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1726
+msgid "Select Search & Filter Query"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1377 src/blocks/querygrid/edit.js:1498
+#: src/blocks/dynamic-post-title/edit.js:366 src/blocks/repeater/edit.js:800
+#: src/blocks/dynamic-post-image/edit.js:555
+msgid "Select Source"
+msgstr ""
+
+#: src/blocks/components/toolbar.js:80 src/blocks/taxonomy/edit.js:1022
+#: src/blocks/repeater/edit.js:662
+msgid "Select Taxonomy"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1406
+msgid "Select Taxonomy base"
+msgstr ""
+
+#: src/blocks/meta/edit.js:204 src/blocks/components/toolbar.js:256
+#: src/blocks/components/toolbar.js:375
+msgid "Select Taxonomy or type below"
+msgstr ""
+
+#: src/blocks/components/toolbar.js:404
+msgid "Select Term"
+msgstr ""
+
+#: src/blocks/meta/edit.js:812 src/blocks/meta/edit.js:828
+msgid "Select Type"
+msgstr ""
+
+#: src/blocks/breadcrumbs/edit.js:191
+msgid "Separator"
+msgstr ""
+
+#: blockrender/login-form/block.php:124
+msgid "Session has expired, please reload the page and try again"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:431 src/blocks/wishlist/edit.js:366
+msgid "Set definite ID"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:682
+#: src/blocks/components/query/queryall/query-settings.js:637
+#: src/blocks/components/query/queryall/query-settings.js:1373
+#: src/blocks/components/query/queryall/filter-settings.js:309
+msgid ""
+"Set price range to show. Works only for posts with Main Post offer section. "
+"Example of using: 0-100. Will show products with price under 100"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1434
+msgid "Set relationship ID which you set in Metabox Relationship addon"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:451 src/blocks/pagelist/edit.js:537
+#: src/blocks/meta/edit.js:1252 src/blocks/meta/edit.js:1517
+#: src/blocks/querygrid/edit.js:1617 src/blocks/dynamic-post-title/edit.js:471
+#: src/blocks/thumbcounter/edit.js:629 src/blocks/thumbcounter/edit.js:676
+#: src/blocks/thumbcounter/edit.js:733 src/blocks/thumbcounter/edit.js:784
+#: src/blocks/breadcrumbs/edit.js:248 src/blocks/breadcrumbs/edit.js:316
+#: src/blocks/breadcrumbs/edit.js:384 src/blocks/repeater/edit.js:1646
+#: src/blocks/wishlist/edit.js:758 src/blocks/wishlist/edit.js:788
+#: src/blocks/dynamic-post-image/edit.js:1058
+#: src/blocks/components/query/queryall/data-settings.js:142
+msgid "Shadow"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:859
+msgid "Shadow for links"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:460
+#: src/blocks/components/query/advanced-list/build-settings.js:508
+msgid "Shortcode"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:202
+msgid "Shortcode Area Under content"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:210
+msgid "Show all Posts"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1033
+msgid "Show Category Image"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:181
+#: src/blocks/components/query/advanced-list/build-settings.js:454
+msgid "Show content"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1046
+msgid "Show Count"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:406
+msgid "Show counter line?"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:490
+msgid "Show each frame in ms"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1040
+msgid "Show Empty"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1171
+msgid "Show empty value?"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:944
+msgid "Show Hierarchy"
+msgstr ""
+
+#: src/blocks/breadcrumbs/edit.js:177
+msgid "Show Home"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1341
+msgid "Show icon after value"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1054
+msgid "Show image from meta"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1281
+msgid "Show only child of current on archive pages"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1348
+msgid "Show only Icon"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1299
+msgid "Show Prefix on separate line?"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:130
+msgid "Show score as review circle with 1-10 range?"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1443
+msgid "Show value as Check icon?"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1107 src/blocks/repeater/edit.js:1099
+msgid "Side Gap"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:965
+#: src/blocks/components/query/queryall/query-settings.js:911
+msgid "Simple type"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1135
+msgid "Single text value"
+msgstr ""
+
+#: src/blocks/meta/edit.js:731
+msgid "Site data"
+msgstr ""
+
+#: src/blocks/meta/edit.js:879
+msgid "Site Description"
+msgstr ""
+
+#: src/blocks/meta/edit.js:878
+msgid "Site Name"
+msgstr ""
+
+#: src/blocks/meta/edit.js:877
+msgid "Site Option"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:633
+msgid "Site Options"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:517 src/blocks/pagelist/edit.js:604
+msgid "Size"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1523
+msgid "Size and Clamp"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:862
+msgid "Size of Avatar"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1858
+msgid "Slider is updating..."
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1200
+msgid "Slug"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:532 src/blocks/dynamicgallery/edit.js:1281
+msgid "Small"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:211
+msgid "Sort by Comments Count"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:212
+msgid "Sort by Meta Field"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:213
+msgid "Sort by Price Range"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:214
+msgid "Sort by Taxonomy"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:366
+#: src/blocks/components/query/queryall/data-settings.js:37
+msgid "Sorting"
+msgstr ""
+
+#: src/blocks/meta/edit.js:955 src/blocks/repeater/edit.js:797
+msgid "Source"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:614
+msgid "Source field"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:393 src/blocks/dynamic-post-title/edit.js:324
+#: src/blocks/dynamic-post-image/edit.js:489
+#: src/blocks/dynamicgallery/edit.js:594
+msgid "Source Settings"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:527 src/blocks/pagelist/edit.js:624
+#: src/blocks/meta/edit.js:1242 src/blocks/meta/edit.js:1507
+#: src/blocks/querygrid/edit.js:1604 src/blocks/thumbcounter/edit.js:619
+#: src/blocks/thumbcounter/edit.js:666 src/blocks/thumbcounter/edit.js:723
+#: src/blocks/thumbcounter/edit.js:774 src/blocks/breadcrumbs/edit.js:238
+#: src/blocks/breadcrumbs/edit.js:306 src/blocks/breadcrumbs/edit.js:374
+#: src/blocks/repeater/edit.js:1636
+#: src/blocks/components/query/queryall/data-settings.js:132
+msgid "Spacing"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:856
+msgid "Spacing for Child List"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:827
+msgid "Spacing for links"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:748
+msgid ""
+"Specify a 3-letter ISO currency code to convert all offers in your product "
+"list to a single currency"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:271
+msgid "Stack elements on tablet?"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:962
+#: src/blocks/components/query/queryall/query-settings.js:908
+msgid "Stock value"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:593
+msgid "Styles"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:689
+msgid "Styles for Counter"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:595
+msgid "Styles for Thumbs Down/Minus"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:642
+msgid "Styles for Thumbs Up/Plus"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:1067
+msgid "SVG code for shape mask"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:1062
+msgid "SVG mask"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1477
+msgid "Table header design"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:517
+#: src/blocks/components/query/queryall/visible-settings.js:658
+#: src/blocks/components/query/queryall/query-settings.js:480
+#: src/blocks/components/query/queryall/query-settings.js:613
+#: src/blocks/components/query/queryall/query-settings.js:1230
+#: src/blocks/components/query/queryall/query-settings.js:1349
+msgid "Tag"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:528
+#: src/blocks/components/query/queryall/visible-settings.js:669
+#: src/blocks/components/query/queryall/query-settings.js:491
+#: src/blocks/components/query/queryall/query-settings.js:624
+#: src/blocks/components/query/queryall/query-settings.js:1241
+#: src/blocks/components/query/queryall/query-settings.js:1360
+msgid "Tag exclude"
+msgstr ""
+
+#: src/blocks/meta/edit.js:820
+#: src/blocks/components/query/queryall/visible-settings.js:704
+#: src/blocks/components/query/queryall/visible-settings.js:1039
+#: src/blocks/components/query/queryall/query-settings.js:657
+#: src/blocks/components/query/queryall/query-settings.js:981
+#: src/blocks/components/query/queryall/query-settings.js:1518
+msgid "Taxonomy"
+msgstr ""
+
+#: src/blocks/taxonomy/index.js:12
+msgid "Taxonomy archive"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:134
+msgid "Taxonomy dropdown label"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:128
+msgid "Taxonomy ids"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1062
+msgid "Taxonomy image meta field"
+msgstr ""
+
+#: src/blocks/meta/edit.js:821
+msgid "Taxonomy Link"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:628
+msgid "Taxonomy list data"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:405
+#: src/blocks/components/query/queryall/query-settings.js:341
+msgid "Taxonomy meta"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:1025
+#: src/blocks/components/query/queryall/query-settings.js:967
+msgid "Taxonomy meta query"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1506
+msgid "Taxonomy query"
+msgstr ""
+
+#: src/blocks/taxonomy/index.js:13
+msgid "Taxonomy query block"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:110
+#: src/blocks/components/query/queryall/filter-settings.js:316
+msgid "Taxonomy slug"
+msgstr ""
+
+#: src/blocks/meta/edit.js:728
+msgid "Taxonomy Terms"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1089
+msgid "Tel: link"
+msgstr ""
+
+#: src/sidebars/reusable-templates/index.js:381
+msgid "Template Replacement"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1202
+msgid "Term Group"
+msgstr ""
+
+#: src/blocks/meta/edit.js:275
+msgid "Term Meta Field Value"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:523
+msgid "Text after value"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:472
+msgid "Text before links"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:353
+msgid "Text for Add to Wishlist"
+msgstr ""
+
+#: src/blocks/wishlist/edit.js:361
+msgid "Text for Added to Wishlist"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:935
+msgid "Text for count items"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:256
+msgid "Text Settings"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1714
+msgid ""
+"This feature is in beta version. You need to have Search & Filter 3 plugin"
+msgstr ""
+
+#: src/blocks/meta/edit.js:230
+msgid ""
+"This is the Post Content block, it will display text of Content from post. "
+"That might be a simple arrangement like consecutive paragraphs, or a more "
+"elaborate composition that includes list, tables, columns. "
+msgstr ""
+
+#: src/blocks/meta/edit.js:842
+msgid ""
+"This type must be used only on Taxonomy Archive pages. It will detect "
+"taxonomy automatically"
+msgstr ""
+
+#: src/sidebars/reusable-templates/index.js:248
+msgid "This will overwrite default Post type archive page"
+msgstr ""
+
+#: src/sidebars/reusable-templates/index.js:261
+msgid "This will overwrite default Single Page template"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1466
+msgid "This will show latest items for current user"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1425
+msgid ""
+"This will take current page where you placed this block and will show all "
+"childs of this page using post_parent parameter. This option will work only "
+"on frontend and it must be used only on singular pages and not in archives. "
+"In editor, it will show all pages for preview purpose"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1430
+msgid ""
+"This will take current page where you placed this block and will show all "
+"related items of this page which you set via Metabox Relationship addon"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1453
+msgid "This will take IDs data from Meta field and show them as items"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:738
+msgid "This will work only inside Repeater builder block"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:787
+#: src/blocks/components/query/queryall/visible-settings.js:1085
+#: src/blocks/components/query/queryall/query-settings.js:735
+#: src/blocks/components/query/queryall/query-settings.js:1024
+#: src/blocks/components/query/queryall/query-settings.js:1561
+msgid "This will work only on taxonomy archive pages"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:399
+msgid "This works only with hierarchical post types"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:383
+msgid "Thumbs"
+msgstr ""
+
+#: src/blocks/thumbcounter/index.js:12
+msgid "Thumbs counter"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:413 src/blocks/components/toolbar.js:181
+#: src/blocks/components/query/queryall/query-settings.js:1634
+#: src/blocks/components/query/queryall/filter-settings.js:220
+#: src/blocks/components/query/queryall/data-settings.js:22
+msgid "Title"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1376
+msgid "Title background"
+msgstr ""
+
+#: blockrender/dynamic-post-title/block.php:142
+msgid "Title is not available."
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1423
+msgid "Title Spacing"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:1444
+msgid "To"
+msgstr ""
+
+#: src/blocks/meta/edit.js:882
+msgid "Today + 1 day"
+msgstr ""
+
+#: src/blocks/meta/edit.js:883
+msgid "Today + 2 days"
+msgstr ""
+
+#: src/blocks/meta/edit.js:884
+msgid "Today + 3 days"
+msgstr ""
+
+#: src/blocks/meta/edit.js:885
+msgid "Today + 7 days"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:243
+msgid "Toggle Link Color"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:613
+msgid "Tooltip text"
+msgstr ""
+
+#: patterns/query/query-syncslider.php:9
+msgid "Two synchronized Query Sliders"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1132 src/blocks/thumbcounter/edit.js:380
+#: src/blocks/wishlist/edit.js:315
+msgid "Type"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1407 src/blocks/querygrid/edit.js:1510
+#: src/blocks/dynamic-post-title/edit.js:395
+#: src/blocks/dynamic-post-image/edit.js:583
+msgid "Type field key"
+msgstr ""
+
+#: src/blocks/components/toolbar.js:218 src/blocks/components/toolbar.js:334
+msgid "Type field or click icon to select"
+msgstr ""
+
+#: src/blocks/components/toolbar.js:289 src/blocks/components/toolbar.js:419
+msgid "Type Field to retrieve"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:129
+msgid ""
+"Type here ids of taxonomy separated by comma which you need to show. Leave "
+"empty to show all"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:135
+msgid "Type here label for dropdown"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:303
+msgid "Type key for Meta"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:686
+#: src/blocks/components/query/queryall/query-settings.js:641
+#: src/blocks/components/query/queryall/query-settings.js:1377
+msgid "Type of products"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:419 src/blocks/pagelist/edit.js:584
+#: src/blocks/thumbcounter/edit.js:693 src/blocks/wishlist/edit.js:745
+#: src/blocks/wishlist/edit.js:796
+msgid "Typography"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1329
+msgid "Typography for Child"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1307
+msgid "Typography for Count"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:562
+msgid "Typography for label"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1401
+msgid "Typography for Letter in list"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1390
+msgid "Typography for Letters in Top"
+msgstr ""
+
+#: src/blocks/pagelist/edit.js:718
+msgid "Typography for links"
+msgstr ""
+
+#: src/blocks/taxonomy/edit.js:1296 src/blocks/dynamic-post-title/edit.js:429
+msgid "Typography for Title"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:530
+msgid "Typography for value"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:518
+msgid "Unit before value?"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:513
+msgid "Units"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1096
+msgid "Unix time to Wordpress date"
+msgstr ""
+
+#: src/blocks/meta/edit.js:855
+msgid "Update Date"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:508
+msgid "Upload Fallback image"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:396
+#: src/blocks/components/query/queryall/query-settings.js:331
+msgid "Upsell products"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:406
+#: src/blocks/components/query/queryall/query-settings.js:342
+msgid "URL Query"
+msgstr ""
+
+#: src/blocks/visibility-block/edit.js:81
+msgid "URL query"
+msgstr ""
+
+#: src/blocks/components/query/queryall/filter-settings.js:345
+msgid "Use filter taxonomy within general taxonomy option?"
+msgstr ""
+
+#: src/blocks/dynamic-post-image/edit.js:1075
+msgid "Use Image Coordinates"
+msgstr ""
+
+#: src/blocks/thumbcounter/edit.js:432 src/blocks/wishlist/edit.js:367
+msgid "Use this if you want to show button from definite post ID"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:439
+msgid "Use visibility settings"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:749
+#: src/blocks/components/query/queryall/query-settings.js:700
+#: src/blocks/components/query/queryall/query-settings.js:1640
+msgid "User"
+msgstr ""
+
+#: src/blocks/meta/edit.js:921
+msgid "User Archive Link"
+msgstr ""
+
+#: src/blocks/meta/edit.js:732
+msgid "User data"
+msgstr ""
+
+#: src/blocks/meta/edit.js:922
+msgid "User Description"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:794
+msgid "User Filters"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:815
+msgid "User Ids"
+msgstr ""
+
+#: src/blocks/meta/edit.js:923
+#: src/blocks/components/query/queryall/visible-settings.js:403
+#: src/blocks/components/query/queryall/query-settings.js:339
+msgid "User Meta"
+msgstr ""
+
+#: src/blocks/meta/edit.js:920
+msgid "User Name"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:261
+msgid "Username Label"
+msgstr ""
+
+#: src/blocks/login-form/edit.js:266
+msgid "Username Placeholder"
+msgstr ""
+
+#: src/blocks/repeater/edit.js:632
+msgid "Users data"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:653
+msgid "Value"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:961
+#: src/blocks/components/query/queryall/query-settings.js:906
+msgid "Value in cart"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1486
+msgid "Value Spacing"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1440
+msgid "Value Typography"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:964
+#: src/blocks/components/query/queryall/query-settings.js:910
+msgid "Variable type"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1597
+msgid "Vertical Align"
+msgstr ""
+
+#: src/blocks/visibility-block/edit.js:75
+msgid "Visibility is limited"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:435
+msgid "Visibility settings"
+msgstr ""
+
+#: greenshiftquery.php:213
+msgid "What's New"
+msgstr ""
+
+#: src/blocks/querygrid/edit.js:1652 src/blocks/querygrid/edit.js:1658
+msgid "Widget title"
+msgstr ""
+
+#: src/blocks/threesixty/edit.js:518 src/blocks/dynamicgallery/edit.js:1267
+#: src/blocks/dynamicgallery/edit.js:1292
+msgid "Width"
+msgstr ""
+
+#: src/blocks/dynamic-post-title/edit.js:477
+msgid "Width, Height, Clamp"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:430
+#: src/blocks/components/query/queryall/query-settings.js:404
+msgid ""
+"will be converted to unix time and compared with meta field with date format"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:390
+msgid ""
+"will be converted to unix time. You can use other English words related to "
+"date. Your field must have unix timestamp format"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:375
+msgid "will be replaced by current author ID"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:380
+msgid ""
+"will be replaced by current date and enabled date type of field. Your field "
+"must be saved in Y-m-d format"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:385
+msgid ""
+"will be replaced by current date and time and enabled datetime type of field."
+" Your field must be saved in Y-m-d H:i:s format"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:370
+msgid ""
+"will be replaced by meta field value _sku of current post, you can use any "
+"other keys also"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:365
+msgid "will be replaced with current post ID where you use block"
+msgstr ""
+
+#: src/blocks/wishlist/index.js:12
+msgid "Wishlist"
+msgstr ""
+
+#: src/blocks/components/query/queryall/query-settings.js:312
+msgid "Wishlist query"
+msgstr ""
+
+#: src/blocks/meta/edit.js:727
+msgid "Woocommerce"
+msgstr ""
+
+#: src/blocks/components/query/advanced-list/build-settings.js:458
+msgid "Woocommerce Attribute value"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:411
+#: src/blocks/components/query/queryall/query-settings.js:347
+msgid "Woocommerce fields"
+msgstr ""
+
+#. Author of the plugin
+msgid "Wpsoul"
+msgstr ""
+
+#: src/blocks/meta/edit.js:1087
+msgid "Wysiwyg formatting"
+msgstr ""
+
+#: src/blocks/dynamicgallery/edit.js:685
+msgid ""
+"You can also add Youtube videos to gallery once you enable lighbox. For this,"
+" when you edit media file in Media - Library or when you select media, "
+"assign Video url to image"
+msgstr ""
+
+#: src/blocks/meta/edit.js:893 src/blocks/meta/edit.js:1075
+#: src/blocks/components/toolbar.js:245 src/blocks/components/toolbar.js:362
+msgid "You can also use array-like values, example: fieldkey[0][keyname]"
+msgstr ""
+
+#: src/blocks/components/query/queryall/visible-settings.js:422
+#: src/blocks/components/query/queryall/query-settings.js:360
+#: src/blocks/components/query/queryall/query-settings.js:396
+msgid "You can use dynamic placeholders: "
+msgstr ""
+
+#: src/blocks/meta/edit.js:1322
+msgid ""
+"You can use this to replace link value with custom text when you use fields "
+"or formats with links"
+msgstr ""

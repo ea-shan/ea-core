@@ -1,0 +1,7 @@
+{
+  "apiVersion": 3,
+  "name": "greenshift-blocks/filter-panel",
+  "title": "Filter Panel",
+  "description": "Filter panel",
+  "category": "greenShiftQuery"
+}

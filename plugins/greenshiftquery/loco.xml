@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle name="Greenshift Query and Meta Addon">
+  <domain name="greenshiftquery">
+    <project name="Greenshift Query and Meta Addon" slug="greenshiftquery">
+      <source>
+        <directory>.</directory>
+      </source>
+      <target>
+        <directory>languages</directory>
+      </target>
+      <template>
+        <file>greenshiftquery.pot</file>
+      </template>
+    </project>
+  </domain>
+  <exclude>
+    <directory>node_modules</directory>
+    <directory>libs</directory>
+    <directory>libs_beauty</directory>
+    <directory>src</directory>
+  </exclude>
+</bundle>

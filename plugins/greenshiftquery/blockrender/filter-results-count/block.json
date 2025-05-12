@@ -1,0 +1,7 @@
+{
+    "apiVersion": 3,
+    "name": "greenshift-blocks/filter-results-count",
+    "title": "Filter Results Count",
+    "description": "Filter Results Count",
+    "category": "greenShiftQuery"
+}

@@ -1,0 +1,7 @@
+{
+	"apiVersion": 3,
+	"name": "greenshift-blocks/repeater",
+    "title": "Repeater Builder",
+    "description": "Repeater Builder",
+	"category":"greenShiftQuery"
+}
