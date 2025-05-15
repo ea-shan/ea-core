@@ -109,9 +109,7 @@ header {
     padding-bottom: 0;
 }
 
-body:has(.nojq) .header::before {
-    /* top: 77px; */
-}
+
 
 .header .top-bar {
     display: flex;
@@ -320,7 +318,7 @@ body:has(.nojq) .header::before {
     font-size: 16px;
     font-weight: 600;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 0;
     transition: 1s;
 }
@@ -3792,23 +3790,13 @@ label {
 }
 
 
-.wp-block-navigation__submenu-container.wp-block-navigation-submenu li .wp-block-navigation-item__content::before {
-    content: "\f0a4";
-    font-family: "Font Awesome 5 Free";
-    position: absolute;
-    inset: 0;
-    left: 15px;
-    top: 13px;
-    z-index: 1;
-    transition: 1s;
-    margin-left: -5px;
-}
+
 
 .wp-block-navigation__submenu-container.wp-block-navigation-submenu li .wp-block-navigation-item__content::after {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: var(--primary-color);
+    background-color: #dad8d8;
     width: 0;
     z-index: -1;
     transition: 1s;
@@ -4539,4 +4527,412 @@ video.wp-block-cover__video-background.has-parallax {
     video.wp-block-cover__video-background.has-parallax {
         background-attachment: fixed;
     }
+}
+
+/* New CSS for mega menu */
+.custom-mega-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.mega-menu-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    line-height: 1;
+}
+
+.mega-menu-item {
+    position: relative;
+}
+
+.mega-menu-item a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1;
+}
+
+.mega-menu-item a:hover {
+    color: var(--wp--preset--color--primary, #dc1b36);
+}
+
+/* Menu Icons */
+.menu-icon {
+    width: 16px;
+    height: 16px;
+    fill: #000000;
+    transition: fill 0.3s ease;
+}
+
+.mega-menu-item a:hover .menu-icon {
+    fill: var(--wp--preset--color--primary, #dc1b36);
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+    width: 12px;
+    height: 12px;
+    fill: #000000;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.has-mega-menu:hover .dropdown-arrow {
+    transform: rotate(180deg);
+    fill: var(--wp--preset--color--primary, #dc1b36);
+}
+
+.mega-menu-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: #ffffff !important;
+    /* Ensure white background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    max-width: 1200px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.has-mega-menu:hover .mega-menu-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.mega-menu-column {
+    flex: 1 1 33.33%;
+    padding: 15px;
+    border-right: 1px solid #e5e5e5;
+    min-width: 250px;
+    box-sizing: border-box;
+    background: transparent;
+    /* Ensure columns don't override parent background */
+}
+
+.mega-menu-column:last-child {
+    border-right: none;
+}
+
+.mega-menu-column-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+    display: block;
+    text-transform: uppercase;
+}
+
+.mega-menu-column a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #555;
+    padding: 8px 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mega-menu-column a:hover {
+    color: var(--wp--preset--color--primary, #dc1b36);
+}
+
+/* Dropdown Icons */
+.dropdown-icon {
+    width: 14px;
+    height: 14px;
+    fill: #555;
+    transition: fill 0.3s ease;
+}
+
+.mega-menu-column a:hover .dropdown-icon {
+    fill: var(--wp--preset--color--primary, #dc1b36);
+}
+
+/* Search Icon and Form Styling */
+.search-item {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-toggle svg {
+    width: 20px;
+    height: 20px;
+    fill: #dc1b36;
+    transition: fill 0.3s ease;
+}
+
+.search-toggle:hover svg {
+    fill: var(--wp--preset--color--primary, #dc1b36);
+}
+
+.search-form-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 300px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.search-toggle:focus+.search-form-content,
+.search-form-content:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-field {
+    width: 100%;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.search-submit {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.search-submit svg {
+    width: 20px;
+    height: 20px;
+    fill: #000000;
+}
+
+.search-submit:hover svg {
+    fill: var(--wp--preset--color--primary, #dc1b36);
+}
+
+/* Align Icons (Hamburger and Login) */
+.gspb_button_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.gspb-buttonbox {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.gspb-buttonbox-icon svg {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+/* Social Links Alignment */
+.wp-block-social-links {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .mega-menu-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .mega-menu-content {
+        flex-direction: column;
+        position: static;
+        transform: none;
+        box-shadow: none;
+        padding: 10px;
+        max-width: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .has-mega-menu:hover .mega-menu-content {
+        transform: none;
+    }
+
+    .mega-menu-column {
+        flex: 1 1 100%;
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 10px 0;
+        min-width: 100%;
+    }
+
+    .mega-menu-column:last-child {
+        border-bottom: none;
+    }
+
+    .search-item {
+        margin-left: 0;
+    }
+
+    .search-form-content {
+        min-width: 200px;
+    }
+
+    .dropdown-arrow {
+        transform: rotate(0deg);
+    }
+
+    .has-mega-menu:hover .dropdown-arrow {
+        transform: rotate(0deg);
+    }
+}
+
+/* Mega Menu Search Item Styles */
+.mega-menu-item.search-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.mega-menu-item .search-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #dc1b36;
+    transition: color 0.3s;
+}
+
+.mega-menu-item .search-toggle:hover,
+.mega-menu-item .search-toggle:focus {
+    color: var(--wp--preset--color--primary, #dc1b36);
+}
+
+/* Dropdown Search Form */
+.search-form-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 300px;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.mega-menu-item.search-item:hover .search-form-content,
+.mega-menu-item.search-item:focus-within .search-form-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-form .wp-block-search__input {
+    width: 100%;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.search-form .wp-block-search__button {
+    background: #dc1b36;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.3s;
+    border-radius: 3px;
+}
+
+.search-form .wp-block-search__button:hover {
+    color: #fff;
+    background: #000;
+}
+
+@media (max-width: 767px) {
+    .search-form-content {
+        min-width: 200px;
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 5px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .mega-menu-item.search-item {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+    border: none !important;
+}
+
+/* Show mega menu content on hover or focus-within of the parent menu item */
+.has-mega-menu:hover .mega-menu-content,
+.has-mega-menu:focus-within .mega-menu-content {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Hide by default */
+.mega-menu-content {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
 }

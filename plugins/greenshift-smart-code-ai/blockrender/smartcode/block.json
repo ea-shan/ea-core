@@ -1,7 +1,0 @@
-{
-	"apiVersion": 3,
-	"name": "greenshift-blocks/smartcode",
-	"category":"greenShiftCodeAi",
-	"editorStyle": "greenShiftAi-block-css",
-	"editorScript": "greenShiftAi-block-js"
-}
