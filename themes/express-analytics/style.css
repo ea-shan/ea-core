@@ -15,7 +15,7 @@ Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-me
 
 :root {
     --wp--preset--color--primary: #dc1b36;
-    --wp--preset--color--secondary: #a01024;
+    --wp--preset--color--secondary: #000000;
     --dark: #000000;
     --white: #ffffff;
 }
@@ -3621,7 +3621,8 @@ blockquote {
     line-height: 21px;
     letter-spacing: 1px;
     border-left: 5px solid var(--wp--preset--color--primary);
-    color: #fff
+    color: #fff;
+    border-radius: 10px;
 }
 
 address,
@@ -4935,4 +4936,150 @@ video.wp-block-cover__video-background.has-parallax {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+/* Vertical Menu */
+.vertical-menu-wrapper {
+    width: 250px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.vertical-nav-menu .wp-block-navigation__container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-nav-menu .wp-block-navigation-item {
+    width: 100%;
+    margin: 2px 0;
+    position: relative;
+}
+
+.vertical-nav-menu .wp-block-navigation-item__content {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #1a1a1a;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.vertical-nav-menu .wp-block-navigation-item__content:hover {
+    background: #f0f0f0;
+}
+
+.vertical-nav-menu .wp-block-navigation__submenu-container {
+    display: none;
+    flex-direction: column;
+    padding-left: 12px;
+    margin: 0;
+    position: relative;
+    left: 0;
+    top: 100%;
+    border-left: 2px solid #dc1b36;
+}
+
+.vertical-nav-menu .wp-block-navigation-item:hover>.wp-block-navigation__submenu-container {
+    display: flex;
+}
+
+.vertical-nav-menu .wp-block-navigation__submenu-container .wp-block-navigation-item {
+    margin: 1px 0;
+}
+
+.vertical-nav-menu .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+    font-size: 14px;
+    padding: 5px 12px;
+    line-height: 1.3;
+}
+
+.wp-block-wpbean-vertical-sidebar-menu-block>nav>ul>li>a:hover,
+.wp-block-wpbean-vertical-sidebar-menu-block>nav>ul>li>a:focus {
+    color: #fff !important;
+}
+
+.wp-block-wpbean-vertical-sidebar-menu-block>nav>ul>li>a {
+    color: #fff !important;
+}
+
+.wp-block-wpbean-vertical-sidebar-menu-block>nav>ul ul li>a {
+    color: #fff !important;
+}
+
+.wp-block-wpbean-vertical-sidebar-menu-block>nav>ul ul li>a:hover,
+.wp-block-wpbean-vertical-sidebar-menu-block>nav>ul ul li>a:focus {
+    background: #fff !important;
+}
+
+.wp-block-wpbean-vertical-sidebar-menu-block>nav>ul>li.wpb-submenu-opened>a {
+    background: #fff !important;
+    color: var(--wp--preset--color--primary) !important;
+}
+
+/* Container for the truncated text */
+.show_more {
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    /* Truncate after 7 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    transition: all 0.3s ease;
+    /* Smooth transition for expansion */
+    padding-right: 40px;
+    /* Make space for the button */
+    padding-bottom: 40px;
+    /* Make space for the button at bottom */
+}
+
+/* Expanded state */
+.show_more.expanded {
+    -webkit-line-clamp: unset;
+    /* Remove truncation */
+    overflow: visible;
+}
+
+/* Show More/Less button */
+.show_more_trigger {
+    background: #dc1b36;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 4px;
+}
+
+.show_more_trigger:hover {
+    background: #a8152a;
+    transform: scale(1.1);
+}
+
+.show_more_trigger:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(220, 27, 54, 0.2);
+}
+
+/* Keep trigger visible when expanded */
+.show_more.expanded+.show_more_trigger {
+    display: inline-flex;
 }

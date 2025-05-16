@@ -851,3 +851,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial check
     checkSticky();
 });
+

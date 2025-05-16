@@ -114,6 +114,7 @@ function express_analytics_scripts()
 	wp_enqueue_script('imagesloaded-js', get_template_directory_uri() . '/assets/js/imagesloaded.pkgd.min.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('isotope-js', get_template_directory_uri() . '/assets/js/isotope.pkgd.min.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('particles-js', get_template_directory_uri() . '/assets/js/lib/particles.min.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script('show-more-js', get_template_directory_uri() . '/assets/js/show-more.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('script-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery', 'particles-js'), '1.0.0', true);
 
 	// Remove ea-webinar scripts if plugin is not active
@@ -341,88 +342,88 @@ function expressanalytics_register_taxonomies()
 }
 add_action('init', 'expressanalytics_register_taxonomies');
 
-//Express Analytics Custom ACF Fields for Blocks.
+// //Express Analytics Custom ACF Fields for Blocks.
 
-add_filter(
-	'meta_field_block_get_acf_field',
-	function ($block_content, $post_id, $field, $raw_value) {
-		$field_name = $field['name'] ?? '';
+// add_filter(
+// 	'meta_field_block_get_acf_field',
+// 	function ($block_content, $post_id, $field, $raw_value) {
+// 		$field_name = $field['name'] ?? '';
 
-		// Hero Button Field
-		if ('hero_button_field' === $field_name) {
-			$button_text = get_field('hero_button_text', $post_id);
-			$button_url = get_field('hero_url', $post_id);
+// 		// Hero Button Field
+// 		if ('hero_button_field' === $field_name) {
+// 			$button_text = get_field('hero_button_text', $post_id);
+// 			$button_url = get_field('hero_url', $post_id);
 
-			// Validate both text and URL
-			if ($button_text && $button_url) {
-				$block_content = sprintf(
-					'<a href="%s" class="wp-block-button__link wp-element-button">%s</a>',
-					esc_url($button_url),
-					esc_html($button_text)
-				);
-			}
-		}
+// 			// Validate both text and URL
+// 			if ($button_text && $button_url) {
+// 				$block_content = sprintf(
+// 					'<a href="%s" class="wp-block-button__link wp-element-button">%s</a>',
+// 					esc_url($button_url),
+// 					esc_html($button_text)
+// 				);
+// 			}
+// 		}
 
-		return $block_content;
-	},
-	10,
-	4
-);
+// 		return $block_content;
+// 	},
+// 	10,
+// 	4
+// );
 
-//Custom ACF Fields for Video Block
-add_filter(
-	'meta_field_block_get_acf_field',
-	function ($block_content, $post_id, $field, $raw_value) {
-		$field_name = $field['name'] ?? '';
+// //Custom ACF Fields for Video Block
+// add_filter(
+// 	'meta_field_block_get_acf_field',
+// 	function ($block_content, $post_id, $field, $raw_value) {
+// 		$field_name = $field['name'] ?? '';
 
-		if ('hero_sol_video' === $field_name) {
-			$video_url = get_field('hero_sol_video', $post_id);
+// 		if ('hero_sol_video' === $field_name) {
+// 			$video_url = get_field('hero_sol_video', $post_id);
 
-			if ($video_url && filter_var($video_url, FILTER_VALIDATE_URL)) {
-				$block_content = sprintf(
-					'<video src="%s" loop muted autoplay playsinline></video>',
-					esc_url($video_url)
-				);
-			}
-		}
+// 			if ($video_url && filter_var($video_url, FILTER_VALIDATE_URL)) {
+// 				$block_content = sprintf(
+// 					'<video src="%s" loop muted autoplay playsinline></video>',
+// 					esc_url($video_url)
+// 				);
+// 			}
+// 		}
 
-		return $block_content;
-	},
-	10,
-	4
-);
-add_action('acf/init', 'set_acf_settings');
-function set_acf_settings()
-{
-	acf_update_setting('enable_shortcode', true);
-}
+// 		return $block_content;
+// 	},
+// 	10,
+// 	4
+// );
+// add_action('acf/init', 'set_acf_settings');
+// function set_acf_settings()
+// {
+// 	acf_update_setting('enable_shortcode', true);
+// }
 
-//Custom ACF Fields for CTA Button Block
-add_filter(
-	'meta_field_block_get_acf_field',
-	function ($block_content, $post_id, $field, $raw_value) {
-		$field_name = $field['name'] ?? '';
+// //Custom ACF Fields for CTA Button Block
+// add_filter(
+// 	'meta_field_block_get_acf_field',
+// 	function ($block_content, $post_id, $field, $raw_value) {
+// 		$field_name = $field['name'] ?? '';
 
-		// Hero Button Field
-		if ('cta_button' === $field_name) {
-			$button_text = get_field('cta_button_title', $post_id);
-			$button_url = get_field('cta_button_url', $post_id);
+// 		// Hero Button Field
+// 		if ('cta_button' === $field_name) {
+// 			$button_text = get_field('cta_button_title', $post_id);
+// 			$button_url = get_field('cta_button_url', $post_id);
 
-			// Validate both text and URL
-			if ($button_text && $button_url) {
-				$block_content = sprintf(
-					'<a href="%s" class="wp-block-button__link wp-element-button">%s</a>',
-					esc_url($button_url),
-					esc_html($button_text)
-				);
-			}
-		}
+// 			// Validate both text and URL
+// 			if ($button_text && $button_url) {
+// 				$block_content = sprintf(
+// 					'<a href="%s" class="wp-block-button__link wp-element-button">%s</a>',
+// 					esc_url($button_url),
+// 					esc_html($button_text)
+// 				);
+// 			}
+// 		}
 
-		return $block_content;
-	},
-	10,
-	4
-);
+// 		return $block_content;
+// 	},
+// 	10,
+// 	4
+// );
 
 // Disable theme update checks
 add_filter('site_transient_update_themes', function ($value) {
