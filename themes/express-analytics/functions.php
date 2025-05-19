@@ -650,12 +650,99 @@ function shantanu_restrict_svg_uploads($file)
 	return $file;
 }
 add_filter('wp_handle_upload_prefilter', 'shantanu_restrict_svg_uploads');
+
+// Shortcode to calculate reading time based on all page content
 function ea_estimated_reading_time($atts)
 {
-	global $post;
-	$content = $post->post_content;
-	$word_count = str_word_count(strip_tags($content));
-	$read_time = ceil($word_count / 200); // 200 wpm average reading speed
+	global $post, $rendered_content_cache;
+
+	// Initialize content array
+	$all_content = array();
+
+	// 1. Main post content
+	if ($post && ! empty($post->post_content)) {
+		$all_content[] = $post->post_content;
+	}
+
+	// 2. Repeater fields (ACF)
+	if ($post) {
+		// ACF Repeater
+		if (function_exists('have_rows') && have_rows('content_group', $post->ID)) {
+			while (have_rows('content_group', $post->ID)) {
+				the_row();
+				$all_content[] = get_sub_field('intro_post_para');
+				// Skip images as they don't contribute to word count
+			}
+		}
+	}
+	// 3. Repeater fields (ACF)
+	if ($post) {
+		// ACF Repeater
+		if (function_exists('have_rows') && have_rows('main_post_content', $post->ID)) {
+			while (have_rows('main_post_content', $post->ID)) {
+				the_row();
+				$all_content[] = get_sub_field('mpc_heading');
+				$all_content[] = get_sub_field('mpc_sub_heading');
+				$all_content[] = get_sub_field('mpc_content');
+				// Skip images as they don't contribute to word count
+			}
+		}
+	}
+
+	// 4. Repeater fields (ACF)
+	if ($post) {
+		// ACF Repeater
+		if (function_exists('have_rows') && have_rows('text_post_contents', $post->ID)) {
+			while (have_rows('text_post_contents', $post->ID)) {
+				the_row();
+				$all_content[] = get_sub_field('tpc_heading');
+				$all_content[] = get_sub_field('tpc_sub_heading');
+				$all_content[] = get_sub_field('tpc_content_1');
+				$all_content[] = get_sub_field('tpc_content_2');
+				// Skip images as they don't contribute to word count
+			}
+		}
+	}
+
+	// 5. Repeater fields (ACF)
+	if ($post) {
+		// ACF Repeater
+		if (function_exists('have_rows') && have_rows('modular_image_container', $post->ID)) {
+			while (have_rows('modular_image_container', $post->ID)) {
+				the_row();
+				$all_content[] = get_sub_field('mic_heading');
+				$all_content[] = get_sub_field('mic_sub_heading');
+				$all_content[] = get_sub_field('mic_content');
+				// Skip images as they don't contribute to word count
+			}
+		}
+	}
+
+	// 6. Repeater fields (ACF)
+	if ($post) {
+		// ACF Repeater
+		if (function_exists('have_rows') && have_rows('faq_contaner', $post->ID)) {
+			while (have_rows('faq_contaner', $post->ID)) {
+				the_row();
+				$all_content[] = get_sub_field('faq_question');
+				$all_content[] = get_sub_field('faq_answer');
+				// Skip images as they don't contribute to word count
+			}
+		}
+	}
+	// 7. Block content from Query Loop and other blocks
+	if (! empty($rendered_content_cache)) {
+		$all_content = array_merge($all_content, $rendered_content_cache);
+	}
+
+	// Combine and clean content
+	$combined_content = implode(' ', array_filter($all_content, 'is_string'));
+	$clean_content = strip_tags($combined_content); // Remove HTML tags
+	$word_count = str_word_count($clean_content);
+	$read_time = ceil($word_count / 200); // 200 wpm average
+
+	// Cache result for the request
+	wp_cache_set('reading_time_' . $post->ID, $read_time, '', 3600);
 
 	return $read_time . ' min read';
 }
