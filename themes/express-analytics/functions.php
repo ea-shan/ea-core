@@ -660,3 +660,12 @@ function ea_estimated_reading_time($atts)
 	return $read_time . ' min read';
 }
 add_shortcode('read_time', 'ea_estimated_reading_time');
+
+add_filter('render_block', 'custom_visibility_conditions_check', 11, 2);
+function custom_visibility_conditions_check($block_content, $block)
+{
+	if (isset($block['attrs']['id']) && $block['attrs']['id'] === 'gsbp-411c517' && $block['attrs']['id'] === 'gsbp-4eb6cda') {
+		$block_content = '<div class="gspb-hidden" style="display: none;">' . $block_content . '</div>';
+	}
+	return $block_content;
+}
