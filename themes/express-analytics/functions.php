@@ -94,7 +94,16 @@ function express_analytics_scripts()
 	// Add Font Awesome preload
 	add_action('wp_head', function () {
 		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>';
+
+		// Add Montserrat font preloads
+		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>';
+		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>';
+		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>';
+		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>';
 	}, 1);
+
+	// Add reCAPTCHA script
+	wp_enqueue_script('recaptcha', 'https://www.google.com/recaptcha/api.js', array(), null, true);
 
 	wp_enqueue_style('bootstrap-min-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
 	wp_enqueue_style('owl-carousel-min-css', get_template_directory_uri() . '/assets/css/owl.carousel.min.css');
@@ -487,10 +496,19 @@ function inject_category_into_stackable_heading($block_content, $block)
  */
 function express_analytics_add_cors_headers()
 {
-	if (strpos($_SERVER['REQUEST_URI'], '.woff2') !== false) {
+	// Check if the request is for a font file
+	if (
+		strpos($_SERVER['REQUEST_URI'], '.woff2') !== false ||
+		strpos($_SERVER['REQUEST_URI'], '.woff') !== false ||
+		strpos($_SERVER['REQUEST_URI'], '.ttf') !== false
+	) {
 		header('Access-Control-Allow-Origin: *');
 		header('Access-Control-Allow-Methods: GET');
 		header('Access-Control-Allow-Headers: *');
+	} else {
+		header('Access-Control-Allow-Origin: http://localhost:10019');
+		header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+		header('Access-Control-Allow-Headers: Content-Type');
 	}
 }
 add_action('init', 'express_analytics_add_cors_headers');

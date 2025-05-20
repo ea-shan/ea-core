@@ -980,7 +980,7 @@ if (!class_exists('GSPB_GreenShift_Settings')) {
 																		<option value="o1-mini" <?php selected($openaiapimodel, 'o1-mini'); ?>> o1-mini </option>
 																		<option value="o1-pro" <?php selected($openaiapimodel, 'o1-pro'); ?>> o1-pro </option>
 																		<option value="o4-mini" <?php selected($openaiapimodel, 'o4-mini'); ?>> o4-mini </option>
-																		<option value="gemini-2.5-pro-exp-03-25" <?php selected($openaiapimodel, 'gemini-2.5-pro-exp-03-25'); ?>> gemini-2.5-pro-exp-03-25 </option>
+																		<option value="gemini-2.5-pro-preview-05-06" <?php selected($openaiapimodel, 'gemini-2.5-pro-preview-05-06'); ?>> gemini-2.5-pro-preview-05-06 </option>
 																		<option value="gemini-2.5-flash-preview-04-17" <?php selected($openaiapimodel, 'gemini-2.5-flash-preview-04-17'); ?>> gemini-2.5-flash-preview-04-17 </option>
 																		<option value="gemini-2.0-flash" <?php selected($openaiapimodel, 'gemini-2.0-flash'); ?>> gemini-2.0-flash </option>
 																		<option value="claude-3-7-sonnet-latest" <?php selected($openaiapimodel, 'claude-3-7-sonnet-latest'); ?>> claude-3-7-sonnet-latest </option>
@@ -999,7 +999,7 @@ if (!class_exists('GSPB_GreenShift_Settings')) {
 																		<option value="gpt-4.1" <?php selected($aihelpermodel, 'gpt-4.1'); ?>> gpt-4.1 </option>
 																		<option value="gpt-4.1-mini" <?php selected($aihelpermodel, 'gpt-4.1-mini'); ?>> gpt-4.1-mini </option>
 																		<option value="o4-mini" <?php selected($aihelpermodel, 'o4-mini'); ?>> o4-mini </option>
-																		<option value="gemini-2.5-pro-exp-03-25" <?php selected($aihelpermodel, 'gemini-2.5-pro-exp-03-25'); ?>> gemini-2.5-pro-exp-03-25 </option>
+																		<option value="gemini-2.5-pro-preview-05-06" <?php selected($aihelpermodel, 'gemini-2.5-pro-preview-05-06'); ?>> gemini-2.5-pro-preview-05-06 </option>
 																		<option value="gemini-2.0-flash" <?php selected($aihelpermodel, 'gemini-2.0-flash'); ?>> gemini-2.0-flash </option>
 																		<option value="gemini-2.5-flash-preview-04-17" <?php selected($aihelpermodel, 'gemini-2.5-flash-preview-04-17'); ?>> gemini-2.5-flash-preview-04-17 </option>
 
@@ -1025,7 +1025,7 @@ if (!class_exists('GSPB_GreenShift_Settings')) {
 																<td>
 																	<select name="aidesignmodel">
 																		<option value="claude-3-7-sonnet-latest" <?php selected($aidesignmodel, 'claude-3-7-sonnet-latest'); ?>> claude-3-7-sonnet-latest </option>
-
+																		<option value="gemini-2.5-pro-preview-05-06" <?php selected($aidesignmodel, 'gemini-2.5-pro-preview-05-06'); ?>> gemini-2.5-pro-preview-05-06 </option>
 																		
 																		
 																	</select>
@@ -1070,7 +1070,8 @@ if (!class_exists('GSPB_GreenShift_Settings')) {
 															'charset' => [],
 															'defer' => [],
 															'src' => [],
-															'type' => []
+															'type' => [],
+															'data-key' => []
 														],
 														'link' => [
 															'href' => [],
@@ -1106,7 +1107,8 @@ if (!class_exists('GSPB_GreenShift_Settings')) {
 															'defer' => [],
 															'src' => [],
 															'type' => [],
-															'data-project' => []
+															'data-project' => [],
+															'data-key' => []
 														],
 														'link' => [
 															'href' => [],
@@ -1478,7 +1480,8 @@ if (!class_exists('GSPB_GreenShift_Settings')) {
 						'defer' => [],
 						'src' => [],
 						'type' => [],
-						'data-project' => []
+						'data-project' => [],
+						'data-key' => []
 					],
 					'link' => [
 						'href' => [],

@@ -1,51 +1,60 @@
 /* Montserrat Font Faces */
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/montserrat/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw5aXp-p7K4KLg.woff2') format('woff2');
+  src: url('../fonts/montserrat/Montserrat-Light.woff2') format('woff2'),
+    url('../fonts/montserrat/Montserrat-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/montserrat/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXp-p7K4KLg.woff2') format('woff2');
+  src: url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/montserrat/Montserrat-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/montserrat/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w5aXp-p7K4KLg.woff2') format('woff2');
+  src: url('../fonts/montserrat/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/montserrat/Montserrat-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/montserrat/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aXp-p7K4KLg.woff2') format('woff2');
+  src: url('../fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+    url('../fonts/montserrat/Montserrat-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/montserrat/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w5aXp-p7K4KLg.woff2') format('woff2');
+  src: url('../fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/montserrat/Montserrat-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
 }
 
-/* Example usage:
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+/* Base font settings */
+:root {
+  --font-montserrat: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
-*/
 
+/* Apply Montserrat to all text elements */
 body,
 html,
 input,
@@ -75,5 +84,14 @@ address,
 cite,
 figcaption,
 label {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: var(--font-montserrat);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* Example usage:
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+*/

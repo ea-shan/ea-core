@@ -8,7 +8,7 @@ Requires at least: 6.6
 Tested up to: 6.8
 Requires PHP: 7.3
 License: GPLv2 or later
-Stable tag: 11.5.2
+Stable tag: 11.5.3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 More than 20 special blocks for Gutenberg to build complex pages and animations with highest possible web vitals score.
@@ -111,6 +111,13 @@ Yes, we guarantee that Greenshift is built on top of google recommendations and 
 7. **Sliding panels, popups.** Build custom sliding panels, add any block, use for mega menus
 
 == Changelog ==
+
+= 11.5.4 =
+
+* Added: Gemini 2.5 model for AI design models. Also changed Gemini model to updated gemini-2.5-pro-preview-05-06 version. Please resave your model in Greenshift Settings - AI
+* Added: Few fixes for AI Helper tools
+* Added: When you duplicate block with local classes, it will reference to original block instead of copying all attributes of class
+* Added: fixes for accordion, model viewer, multiple conditions for interaction layers
 
 = 11.5.2 =
 
