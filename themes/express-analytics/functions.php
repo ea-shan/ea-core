@@ -96,10 +96,10 @@ function express_analytics_scripts()
 		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>';
 
 		// Add Montserrat font preloads
-		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>';
-		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>';
-		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>';
-		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>';
+		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat-webfont/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin>';
+		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat-webfont/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin>';
+		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat-webfont/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin>';
+		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat-webfont/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin>';
 	}, 1);
 
 	// Add reCAPTCHA script
