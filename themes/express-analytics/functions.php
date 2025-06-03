@@ -94,8 +94,7 @@ function express_analytics_scripts()
 	// Add Font Awesome preload
 	add_action('wp_head', function () {
 		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>';
-
-		// Add Montserrat font preloads
+		// Add Montserrat font preloads (only .woff)
 		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat-webfont/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin>';
 		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat-webfont/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin>';
 		echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/montserrat-webfont/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin>';
