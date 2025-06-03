@@ -194,7 +194,8 @@ class Element
 				}else if(isset($block['attrs']['tag']) && $block['attrs']['tag'] == 'a'){
 					$p = new \WP_HTML_Tag_Processor( $html );
 					$p->next_tag();
-					$value = GSPB_make_dynamic_text($block['attrs']['href'], $block['attrs'], $block, $block['attrs']['dynamiclink'], $block['attrs']['href']);
+					$href = !empty($block['attrs']['href']) ? $block['attrs']['href'] : '';
+					$value = GSPB_make_dynamic_text($href, $block['attrs'], $block, $block['attrs']['dynamiclink'], $href);
 					if($value){
 						$linknew = apply_filters('greenshiftseo_url_filter', $value);
 						$p->set_attribute( 'href', $linknew);

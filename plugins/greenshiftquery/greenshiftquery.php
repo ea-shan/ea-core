@@ -6,7 +6,7 @@
  * Author: Wpsoul
  * Author URI: https://greenshiftwp.com
  * Text Domain: greenshiftquery
- * Version: 5.6.1
+ * Version: 5.6.4
  */
 
 // Exit if accessed directly.
@@ -17,7 +17,7 @@ if (!defined('ABSPATH')) {
 // Define Dir URL
 define('GREENSHIFTQUERY_DIR_URL', plugin_dir_url(__FILE__));
 define('GREENSHIFTQUERY_DIR_PATH', plugin_dir_path(__FILE__));
-define('GREENSHIFTQUERY_PLUGIN_VER', '5.6.1');
+define('GREENSHIFTQUERY_PLUGIN_VER', '5.6.4');
 
 function gspb_query_is_parent_active()
 {

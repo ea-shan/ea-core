@@ -1407,6 +1407,24 @@ function gspb_get_post_parts_callback(WP_REST_Request $request)
                             } else {
                                 $args['number'] = 12;
                             }
+                            if (!empty($filters['orderby'])) {
+                                $args['orderby'] = sanitize_text_field($filters['orderby']);
+                            }
+                            if (!empty($filters['show_empty'])) {
+                                $args['hide_empty'] = false;
+                            }
+                            if (!empty($filters['order']) && $filters['order'] == 'DESC') {
+                                $args['order'] = sanitize_text_field($filters['order']);
+                            }
+                            if (!empty($filters['meta_key'])) {
+                                $args['meta_key'] = sanitize_text_field($filters['meta_key']);
+                                if (!empty($filters['meta_value'])) {
+                                    $args['meta_value'] = sanitize_text_field($filters['meta_value']);
+                                }
+                                if (!empty($filters['meta_compare'])) {
+                                    $args['meta_compare'] = sanitize_text_field($filters['meta_compare']);
+                                }
+                            }
                             $getrepeatable = get_terms($taxonomy, $args);
                         }
                     } else {
@@ -1697,6 +1715,8 @@ function gspb_get_post_parts_callback(WP_REST_Request $request)
                 if (!empty($filters['post_type'])) {
                     $args['post_type'] = sanitize_text_field($filters['post_type']);
                 }
+                $args['status'] = 'approve';
+                $args['type'] = 'comment';
                 $comments = get_comments($args);
                 if (!empty($comments)) {
                     $items = [];
@@ -2068,6 +2088,25 @@ function gspb_get_post_parts_callback(WP_REST_Request $request)
                 }
             }
             if (!empty($getrepeatable) && is_array($getrepeatable)) {
+                if (array_keys($getrepeatable) === range(0, count($getrepeatable) - 1)) {
+                    // Check if all values are scalar (string, number, boolean)
+                    $all_scalar = true;
+                    foreach ($getrepeatable as $value) {
+                        if (!is_scalar($value)) {
+                            $all_scalar = false;
+                            break;
+                        }
+                    }
+                    
+                    if ($all_scalar) {
+                        // Sequential array with scalar values only
+                        $arrays = [];
+                        foreach ($getrepeatable as $key => $value) {
+                            $arrays[$key]['index'] = $value;
+                        }
+                        $getrepeatable = $arrays;
+                    }
+                }
                 $result = $getrepeatable;
             }
             $result = !empty($result) ? $result : [

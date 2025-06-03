@@ -1028,6 +1028,7 @@ if (!class_exists('GSPB_Postfilters')) {
 					'ignore_sticky_posts' => 1,
 					'posts_per_page' => (int)$filter_args->show,
 					'post_type' => $filter_args->post_type,
+					'no_found_rows' => true,
 
 				);
 				if(!is_admin()){

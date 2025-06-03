@@ -174,6 +174,10 @@ class GridQuery
 			'type' => 'boolean',
 			'default' => false
 		),
+		'enableFacetWP' => array(
+			'type' => 'boolean',
+			'default' => false
+		),
 		'searchQueryId' => array(
 			'type' => 'string',
 			'default' => ''
@@ -290,7 +294,7 @@ class GridQuery
 			'enableSearchFilters' => '',
 			'searchQueryId' => '',
 			'filter_enable_pagination' => '',
-
+			'enableFacetWP' => '',
 		);
 		//print_r($settings);
 		$build_args = wp_parse_args($settings, $defaults);
@@ -358,6 +362,10 @@ class GridQuery
 				$paginationtype = "loadmore";
 			} else if ($filter_enable_pagination === '3'){
 				$paginationtype = "infinitescroll";
+			}
+
+			if($enableFacetWP){
+				$args['facetwp'] = true;
 			}
 
 			?>
@@ -565,6 +573,24 @@ class GridQuery
 				if ($post->post_type == 'post') {
 					$postdata['postCategories'] = get_the_term_list($postid, 'category', '', ', ', '');
 				}
+				
+				// Get all taxonomies for the current post
+				$taxonomies = get_object_taxonomies($post->post_type, 'names');
+				$postdata['itemTaxonomies'] = array();
+				
+				foreach ($taxonomies as $taxonomy) {
+					$terms = get_the_terms($postid, $taxonomy);
+					if (!empty($terms) && !is_wp_error($terms)) {
+						$postdata['itemTaxonomies'][$taxonomy] = array();
+						foreach ($terms as $term) {
+							$postdata['itemTaxonomies'][$taxonomy][] = array(
+								'title' => $term->name,
+								'link' => get_term_link($term)
+							);
+						}
+					}
+				}
+				
 				$postdata['imageSizes'] = gspb_get_image_sizes();
 				$postfull[] = (object) array_merge((array)$post, $postdata);
 			};
