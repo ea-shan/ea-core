@@ -506,7 +506,7 @@ function express_analytics_add_cors_headers()
 		header('Access-Control-Allow-Methods: GET');
 		header('Access-Control-Allow-Headers: *');
 	} else {
-		header('Access-Control-Allow-Origin: http://localhost:10019');
+		header('Access-Control-Allow-Origin: https://dev.expressanalytics.com');
 		header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 		header('Access-Control-Allow-Headers: Content-Type');
 	}
