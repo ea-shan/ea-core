@@ -6,7 +6,7 @@
  * Author: Wpsoul
  * Author URI: https://greenshiftwp.com
  * Plugin URI: https://greenshiftwp.com
- * Version: 11.7.2
+ * Version: 11.8.1
  * Text Domain: greenshift-animation-and-page-builder-blocks
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt

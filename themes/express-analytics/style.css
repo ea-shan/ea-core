@@ -5498,7 +5498,10 @@ h6 {
     font-size: 15px;
     color: #222;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 #ea-cookie-consent h3 {
@@ -5508,6 +5511,7 @@ h6 {
 
 #ea-cookie-consent p {
     margin: 0 0 12px 0;
+    text-align: center;
 }
 
 #ea-cookie-consent label {
@@ -5517,6 +5521,10 @@ h6 {
 
 .ea-cookie-actions {
     margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
 }
 
 .ea-cookie-actions button {
@@ -5525,161 +5533,40 @@ h6 {
     border: none;
     border-radius: 4px;
     padding: 8px 16px;
-    margin-right: 8px;
+    margin-right: 0;
     cursor: pointer;
     font-weight: 600;
+    margin-bottom: 8px;
+    width: auto;
+    min-width: 100px;
 }
 
 .ea-cookie-actions button:last-child {
     margin-right: 0;
 }
 
-/* Custom Ordered List Styling */
-.entry-content ol {
-    list-style: none;
-    padding-left: 0;
-    counter-reset: styled-counter;
-}
-
-.entry-content ol>li {
-    position: relative;
-    padding-left: 60px;
-    margin-bottom: 20px;
-    counter-increment: styled-counter;
-}
-
-.entry-content ol>li::before {
-    content: counter(styled-counter);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 30px;
-    height: 30px;
-    background: #fff;
-    border: 2px solid var(--wp--preset--color--primary);
-    color: var(--wp--preset--color--primary);
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Custom Unordered List Styling */
-.entry-content ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.entry-content ul li {
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 15px;
-}
-
-.entry-content ul li::before {
-    content: '\2192';
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: var(--wp--preset--color--primary);
-    font-weight: 600;
-    font-size: 20px;
-    counter-increment: none;
-    /* Reset any inherited counters */
-}
-
-.wp-block-navigation__submenu-container.has-mega-menu .wp-block-navigation-item__content,
-.wp-block-navigation__submenu-container.has-mega-menu .wp-block-navigation-item__label {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-
-
-/* Responsive Mega Menu Adjustments for 992px to 1234px */
-@media (min-width: 992px) and (max-width: 1234px) {
-    .mega-menu-nav {
-        gap: 8px;
-        /* Reduced from 15px */
+@media (max-width: 600px) {
+    #ea-cookie-consent {
+        max-width: 100vw;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        border-radius: 0;
+        padding: 16px 8px;
         font-size: 14px;
-        /* Reduced from 16px */
+        box-sizing: border-box;
     }
 
-    .mega-menu-item a {
-        padding: 10px 6px;
-        /* Reduced padding */
-        gap: 4px;
-        /* Reduced gap between icon and text */
+    .ea-cookie-actions {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
     }
 
-    .menu-icon {
-        width: 14px;
-        /* Reduced icon size */
-        height: 14px;
+    .ea-cookie-actions button {
+        width: 100%;
+        min-width: 0;
+        font-size: 15px;
+        padding: 10px 0;
     }
-
-    .dropdown-arrow {
-        width: 10px;
-        /* Reduced arrow size */
-        height: 10px;
-    }
-}
-
-
-
-/* Vapi Widget: Replace 'Talk with AI' with 'Chat with Support' */
-.vapi-widget-wrapper span {
-    font-size: 0.875rem !important;
-    position: relative;
-    color: #000 !important;
-    font-weight: 500 !important;
-}
-
-.vapi-widget-wrapper span::after {
-    content: 'Chat with EA Support';
-    font-size: 0.875rem;
-    font-weight: 600;
-    line-height: 1.2;
-    color: #fff;
-    position: absolute;
-    left: 0;
-    top: -10px;
-}
-
-/* Vapi Widget: Replace 'Talk with AI' with 'Chat with Support' in chat header */
-/* .vapi-widget-wrapper .font-medium  {
-    font-size: 1rem !important;
-    position: relative;
-    color: #000 !important;
-    font-weight: 500 !important;
-}
-.vapi-widget-wrapper .text-sm .text-gray-300 {
-    font-size: 0 !important;
-    position: relative;
-}
-.vapi-widget-wrapper .font-medium::after {
-    content: 'Chat with EA Support';
-    font-size: 1rem;
-    font-weight: 600;
-    color: #fff;
-    position: absolute;
-    left: 0;
-    top: 0;
-    white-space: nowrap;
-} */
-
-.wp-block-navigation-item__label {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px; /* space between image and text */
-  white-space: nowrap;
-}
-
-.wp-block-navigation-item__label img {
-  display: inline-block;
-  vertical-align: middle;
-  height: 20px;
-  width: 20px;
 }

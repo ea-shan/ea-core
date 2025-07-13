@@ -222,15 +222,15 @@ Determines how the block's content is handled:
   <!-- /wp:greenshift-blocks/element -->
   ```
 
-### 12.Scripts (`greenshift-blocks/smartcode`)
+### 12.Scripts
 
--   Use greenshift-blocks/smartcode block for scripts.
+-   If you need to use scripts, use native support for blocks inside attributes `customJs` and `customJsEnabled` parameters.
 
 -   *Example:*
     ```html
-    <!-- wp:greenshift-blocks/smartcode {"codeMode":"script","scriptcontent":"console.log('test script')"} -->
-    <div class="wp-block-greenshift-blocks-smartcode gspb-smartcode"></div>
-    <!-- /wp:greenshift-blocks/smartcode -->
+    <!-- wp:greenshift-blocks/element {"id":"gsbp-dfc6b73","textContent":"block with some script","localId":"gsbp-dfc6b73","isVariation":"divtext","customJs":"console.log('test');","customJsEnabled":true} -->
+    <div>block with some script</div>
+    <!-- /wp:greenshift-blocks/element -->
     ```
 
 ### 13.Animations (`styleAttributes`)
@@ -246,6 +246,51 @@ Determines how the block's content is handled:
         <h2 class="gsbp-2a59759">Scroll Animate</h2>
         <!-- /wp:greenshift-blocks/element -->
         ```
+
+### 14.Slider Blocks (`greenshift-blocks/swiper`)
+
+Slider blocks use the Swiper.js library and have extensive configuration options. Each slide is working as container and can include other blocks and background image. The basic structure includes:
+
+```html
+<!-- wp:greenshift-blocks/swiper {"id":"gsbp-2867323"} -->
+<div class="wp-block-greenshift-blocks-swiper gs-swiper gspb_slider-id-gsbp-2867323" style="position:relative"><div class="gs-swiper-init" data-slidesperview="1" data-spacebetween="10" data-spacebetweenmd="10" data-spacebetweensm="10" data-spacebetweenxs="10" data-speed="400" data-loop="false" data-vertical="false" data-verticalheight="500px" data-autoheight="false" data-grabcursor="false" data-freemode="false" data-centered="false" data-autoplay="false" data-autodelay="4000" data-effect="" data-coverflowshadow="false"><div class="swiper"><div class="swiper-wrapper"><!-- wp:greenshift-blocks/swipe {"imageurl":"https://placehold.co/600x400","imageid":14192,"imagealt":"","asImage":true,"id":"gsbp-316c7ed"} -->
+<div class="swiper-slide"><div class="wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-316c7ed"><div class="slider-overlaybg"></div><div class="slider-image-wrapper"><img src="https://placehold.co/600x400" alt="" loading="lazy" class="wp-image-14192" width="100%" height="100%"/></div><div class="slider-content-zone"><!-- wp:greenshift-blocks/element {"id":"gsbp-2a80cc3","textContent":"I am content of slider 1","localId":"gsbp-2a80cc3","isVariation":"divtext"} -->
+<div>I am content of slider 1</div>
+<!-- /wp:greenshift-blocks/element --></div></div></div>
+<!-- /wp:greenshift-blocks/swipe -->
+
+<!-- wp:greenshift-blocks/swipe {"imageurl":"https://placehold.co/600x400","imagealt":"","imageid":13743,"asImage":true,"id":"gsbp-719fec0"} -->
+<div class="swiper-slide"><div class="wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-719fec0"><div class="slider-overlaybg"></div><div class="slider-image-wrapper"><img src="https://placehold.co/600x400" alt="" loading="lazy" class="wp-image-13743" width="100%" height="100%"/></div><div class="slider-content-zone"><!-- wp:greenshift-blocks/element {"id":"gsbp-63e9af8","textContent":"I am content of Slider 2","localId":"gsbp-63e9af8","isVariation":"divtext"} -->
+<div>I am content of Slider 2</div>
+<!-- /wp:greenshift-blocks/element --></div></div></div>
+<!-- /wp:greenshift-blocks/swipe --></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div><div class="swiper-scrollbar"></div></div></div>
+<!-- /wp:greenshift-blocks/swiper -->
+```
+
+**Key Slider Parameters:**
+
+-   **`tabs`**: Number of slides (integer)
+-   **`slidesPerView`**: Array of responsive values for slides per view `[desktop, tablet, mobile_landscape, mobile_portrait]`
+-   **`spaceBetween`**: Array of responsive spacing between slides
+-   **`speed`**: Transition speed in milliseconds
+-   **`loop`**: Boolean for infinite loop
+-   **`autoplay`**: Boolean for automatic sliding
+-   **`autodelay`**: Delay between autoplay transitions in milliseconds
+-   **`navigationarrows`**: Boolean to show navigation arrows
+-   **`bullets`**: Boolean to show pagination bullets
+
+**Additional Slider Features:**
+
+-   **`centered`**: Center the active slide
+-   **`freemode`**: Enable free mode for momentum-based sliding
+-   **`vertical`**: Vertical sliding direction
+-   **`autoHeight`**: Auto-adjust height based on slide content
+-   **`parallax_enable`**: Enable parallax effects on slide content
+-   **`kenBurnsEnable`**: Enable Ken Burns zoom effect on images
+-   **`scrollbar`**: Show scrollbar navigation
+-   **`clicktoslide`**: Enable click-to-slide functionality
+-   **`enableKeyboard`**: Enable keyboard navigation
+-   **`enableMousewheel`**: Enable mousewheel navigation
 
 ### Preset / Interactive Blocks (`isVariation`)
 
