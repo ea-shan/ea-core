@@ -19,6 +19,7 @@
             gspbStylebook: './src/stylebook/index.js',
             gspbMotion: './src/motion/index.js',
             gspbMotionSpring: './src/motion/spring.js',
+            gspbMotionPlus: './src/motion/plus.js',
          },
          resolve: {
             fallback: {

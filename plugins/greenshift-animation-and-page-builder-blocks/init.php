@@ -112,6 +112,8 @@ if($enable_head_inline){
 
 function gspb_greenShift_register_scripts_blocks(){
 
+	wp_register_script( 'gspb-js-blocks', '', array(), '1.0', true );
+
 	//lazyload
 	wp_register_script(
 		'gs-lazyload',
@@ -120,6 +122,39 @@ function gspb_greenShift_register_scripts_blocks(){
 		'5.3.2',
 		true
 	);
+
+	wp_register_script(
+		'gspb-canvas-rive',
+		GREENSHIFT_DIR_URL . 'libs/canvas/rive.js',
+		array(),
+		'1.0',
+		true
+	);
+
+	wp_register_script(
+		'gspb-canvas-spline',
+		GREENSHIFT_DIR_URL . 'libs/canvas/spline.js',
+		array(),
+		'1.0',
+		true
+	);
+
+	wp_register_script(
+		'gspb-canvas-lottie',
+		GREENSHIFT_DIR_URL . 'libs/canvas/lottie.js',
+		array(),
+		'1.0',
+		true
+	);
+
+	wp_register_script(
+		'gspb-canvas-unicorn',
+		GREENSHIFT_DIR_URL . 'libs/canvas/unicorn.js',
+		array(),
+		'1.0',
+		true
+	);
+
 	wp_register_script(
 		'jslazyload',
 		GREENSHIFT_DIR_URL . 'libs/lazyloadjs/lazyload-scripts.min.js',
@@ -200,7 +235,7 @@ function gspb_greenShift_register_scripts_blocks(){
 		'gs-swiper-init',
 		GREENSHIFT_DIR_URL . 'libs/swiper/init.js',
 		array(),
-		'8.9.9.4',
+		'8.9.9.6',
 		true
 	);
 	wp_localize_script(
@@ -418,19 +453,19 @@ function gspb_greenShift_register_scripts_blocks(){
 		'3.1.3',
 		true
 	);
-	wp_localize_script(
-		'gsmodelviewer',
-		'gs_model_params',
-		array(
-			'pluginURL' => GREENSHIFT_DIR_URL
-		)
-	);
 	wp_register_script(
 		'gsmodelinit',
 		GREENSHIFT_DIR_URL . 'libs/modelviewer/index.js',
 		array(),
 		'1.11.4',
 		true
+	);
+	wp_localize_script(
+		'gsmodelinit',
+		'gs_model_params',
+		array(
+			'pluginURL' => GREENSHIFT_DIR_URL
+		)
 	);
 
 	wp_register_script(
@@ -653,7 +688,7 @@ function gspb_greenShift_register_scripts_blocks(){
 		'gspb_motion_spring',
 		GREENSHIFT_DIR_URL . 'build/gspbMotionSpring.js',
 		array(),
-		'10.18',
+		'12.6',
 		true
 	);
 
@@ -661,7 +696,7 @@ function gspb_greenShift_register_scripts_blocks(){
 		'gspb_motion_one',
 		GREENSHIFT_DIR_URL . 'build/gspbMotion.js',
 		array(),
-		'10.3',
+		'12.6.2',
 		true
 	);
 
@@ -1925,6 +1960,22 @@ function gspb_greenShift_editor_assets()
 		$stylebook_url = admin_url('admin.php?page=greenshift_stylebook');
 	}
 
+	$current_user = wp_get_current_user();
+	$current_user_roles = $current_user->roles;
+	$block_manager_settings = isset($sitesettings['block_manager']) ? $sitesettings['block_manager'] : array();
+	$disabled_blocks = array();
+	$disabled_variations = array();
+	$simplified_panels = false;
+	foreach($current_user_roles as $current_user_role){
+		if(!empty($block_manager_settings[$current_user_role])){
+			$disabled_blocks = (isset($block_manager_settings[$current_user_role]['disabled_blocks'])) ? array_merge($disabled_blocks, $block_manager_settings[$current_user_role]['disabled_blocks']) : $disabled_blocks;
+			$disabled_variations = (isset($block_manager_settings[$current_user_role]['disabled_variations'])) ? array_merge($disabled_variations, $block_manager_settings[$current_user_role]['disabled_variations']) : $disabled_variations;
+			$simplified_panels = (!empty($block_manager_settings[$current_user_role]['simplified_panels'])) ? true : false;
+		}
+	}
+	$disabled_blocks = array_unique($disabled_blocks);
+	$disabled_variations = array_unique($disabled_variations);
+
 	//$updatelink = str_replace('greenshift_dashboard-addons', 'greenshift_dashboard-pricing', $addonlink);
 	$localize_array = 		array(
 		'ajaxUrl' => admin_url('admin-ajax.php'),
@@ -1949,7 +2000,6 @@ function gspb_greenShift_editor_assets()
 		'enabledcroll' => (function_exists('greenshift_check_cron_exec')) ? '1' : '',
 		'stylebook_url' => $stylebook_url,
 		'hide_local_styles' => $hide_local_styles,
-		'simplified_panels' => $simplified_panels,
 		'row_padding_disable' => $row_padding_disable,
 		'show_element_block' => $show_element_block,
 		'default_unit' => $default_unit,
@@ -1965,8 +2015,13 @@ function gspb_greenShift_editor_assets()
 			'aidesignmodel' => !empty($sitesettings['aidesignmodel']) ? $sitesettings['aidesignmodel'] : '',
 			'googleapi' => !empty($sitesettings['googleapi']) ? $sitesettings['googleapi'] : '',
 		) : array(),
+		'isDarkMode' => !empty($sitesettings['dark_mode']) ? $sitesettings['dark_mode'] : '',
 		'nonce' => wp_create_nonce('gspb_nonce'),
+		'disabled_blocks' => $disabled_blocks,
+		'disabled_variations' => $disabled_variations,
+		'simplified_panels' => $simplified_panels,
 	);
+
 	
 	wp_localize_script(
 		'greenShift-library-script',
@@ -2359,6 +2414,10 @@ function gspb_global_assets()
 		if(!empty($options['dark_accent_scheme'])){
 			wp_enqueue_style('greenShift-dark-accent-css', GREENSHIFT_DIR_URL . 'templates/admin/dark_accent_ui.css', array(), '1.0');
 		}
+		if(!empty($options['dark_mode'])){
+			wp_enqueue_style('greenShift-dark-mode-css', GREENSHIFT_DIR_URL . 'templates/admin/black.css', array(), '1.3');
+		}
+
 	}
 }
 
@@ -2545,6 +2604,44 @@ function gspb_register_route()
 			),
 		]
 	]);
+
+	register_rest_route('greenshift/v1', '/update-custom-js', [
+        'methods' => 'POST',
+        'callback' => function(WP_REST_Request $request) {
+            $data = $request->get_params();
+			if(!empty($data) && is_array($data) && !empty($data['js'])){
+				$js = get_option('gspb_block_js');
+				if(!empty($js) && is_array($js)){
+					foreach($data['js'] as $item){
+						foreach($item as $key=>$value){
+							if(!empty($value)){
+								$js[$key] = $value;
+							} else {
+								unset($js[$key]);
+							}
+						}
+					}
+					update_option('gspb_block_js', $js);
+				} else {
+					$js = [];
+					foreach($data['js'] as $item){
+						foreach($item as $key=>$value){
+							if(!empty($value)){
+								$js[$key] = $value;
+							}
+						}
+					}
+					update_option('gspb_block_js', $js);
+				}
+				return rest_ensure_response(['success' => true, 'message' => 'Custom JS updated!']);
+			}else{
+				return rest_ensure_response(['success' => false, 'message' => 'No data to update']);
+			}
+        },
+        'permission_callback' => function () {
+            return current_user_can('manage_options');
+        }
+    ]);
 
 }
 

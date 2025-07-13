@@ -1269,35 +1269,57 @@ function greenshift_dynamic_placeholders($value, $extra_data = [], $runindex = 0
 	if($value && strpos($value, '{{') !== false){
 		if (strpos($value, '{{POST_ID}}') !== false){
 			global $post;
-			$value = str_replace('{{POST_ID}}', $post->ID, $value);
+			if(!empty($post) && is_object($post)){
+				$value = str_replace('{{POST_ID}}', $post->ID, $value);
+			}
 		}
 		if (strpos($value, '{{POST_TITLE}}') !== false){
 			global $post;
-			$value = str_replace('{{POST_TITLE}}', $post->post_title, $value);
+			if(!empty($post) && is_object($post)){
+				$value = str_replace('{{POST_TITLE}}', $post->post_title, $value);
+			}
 		}
 		if (strpos($value, '{{POST_URL}}') !== false){
 			global $post;
-			$value = str_replace('{{POST_URL}}', get_permalink($post->ID), $value);
+			if(!empty($post) && is_object($post)){
+				$value = str_replace('{{POST_URL}}', get_permalink($post->ID), $value);
+			}
 		}
 		if (strpos($value, '{{AUTHOR_ID}}') !== false){
 			global $post;
-			$value = str_replace('{{AUTHOR_ID}}', $post->post_author, $value);
+			if(!empty($post) && is_object($post)){
+				$value = str_replace('{{AUTHOR_ID}}', $post->post_author, $value);
+			}
 		}
 		if (strpos($value, '{{AUTHOR_NAME}}') !== false){
 			global $post;
-			$value = str_replace('{{AUTHOR_NAME}}', get_the_author_meta('display_name', $post->post_author), $value);
+			if(!empty($post) && is_object($post)){
+				$value = str_replace('{{AUTHOR_NAME}}', get_the_author_meta('display_name', $post->post_author), $value);
+			}
 		}
 		if (strpos($value, '{{CURRENT_USER_ID}}') !== false){
-			$value = str_replace('{{CURRENT_USER_ID}}', get_current_user_id(), $value);
+			$user_id = get_current_user_id();
+			if(!empty($user_id)){
+				$value = str_replace('{{CURRENT_USER_ID}}', $user_id, $value);
+			}
 		}
 		if (strpos($value, '{{CURRENT_USER_NAME}}') !== false){
-			$value = str_replace('{{CURRENT_USER_NAME}}', wp_get_current_user()->display_name, $value);
+			$current_user = wp_get_current_user();
+			if(!empty($current_user) && is_object($current_user)){
+				$value = str_replace('{{CURRENT_USER_NAME}}', $current_user->display_name, $value);
+			}
 		}
 		if (strpos($value, '{{CURRENT_OBJECT_ID}}') !== false){
-			$value = str_replace('{{CURRENT_OBJECT_ID}}', get_queried_object_id(), $value);
+			$current_object_id = get_queried_object_id();
+			if(!empty($current_object_id)){
+				$value = str_replace('{{CURRENT_OBJECT_ID}}', $current_object_id, $value);
+			}
 		}
 		if (strpos($value, '{{CURRENT_OBJECT_NAME}}') !== false){
-			$value = str_replace('{{CURRENT_OBJECT_NAME}}', get_queried_object()->name, $value);
+			$current_object = get_queried_object();
+			if(!empty($current_object) && is_object($current_object)){
+				$value = str_replace('{{CURRENT_OBJECT_NAME}}', $current_object->name, $value);
+			}
 		}
 		if (strpos($value, '{{INCREMENT:') !== false){
 			$pattern = '/\{INCREMENT:(.*?)\}/';
@@ -1335,10 +1357,12 @@ function greenshift_dynamic_placeholders($value, $extra_data = [], $runindex = 0
 			preg_match_all($pattern, $value, $matches);
 			if(!empty($matches[1])){
 				global $post;
-				$id = $post->ID;
-				foreach($matches[1] as $meta_key){
-					$meta_value = get_post_meta($id, $meta_key, true);
-					$value = str_replace('{{META:'.$meta_key.'}}', $meta_value, $value);
+				if(!empty($post) && is_object($post)){
+					$id = $post->ID;
+					foreach($matches[1] as $meta_key){
+						$meta_value = get_post_meta($id, $meta_key, true);
+						$value = str_replace('{{META:'.$meta_key.'}}', $meta_value, $value);
+					}
 				}
 			}
 		}
@@ -1347,8 +1371,10 @@ function greenshift_dynamic_placeholders($value, $extra_data = [], $runindex = 0
 			preg_match_all($pattern, $value, $matches);
 			if(!empty($matches[1])){
 				$term_id = get_queried_object_id();
-				foreach($matches[1] as $val){
-					$value = str_replace('{{TERM_META:'.$val.'}}', get_term_meta($term_id, $val, true), $value);
+				if(!empty($term_id)){
+					foreach($matches[1] as $val){
+						$value = str_replace('{{TERM_META:'.$val.'}}', get_term_meta($term_id, $val, true), $value);
+					}
 				}
 			}
 		}
@@ -1373,8 +1399,10 @@ function greenshift_dynamic_placeholders($value, $extra_data = [], $runindex = 0
 			preg_match_all($pattern, $value, $matches);
 			if(!empty($matches[1])){
 				$user_id = get_current_user_id();
-				foreach($matches[1] as $val){
-					$value = str_replace('{{USER_META:'.$val.'}}', get_user_meta($user_id, $val, true), $value);
+				if(!empty($user_id)){
+					foreach($matches[1] as $val){
+						$value = str_replace('{{USER_META:'.$val.'}}', get_user_meta($user_id, $val, true), $value);
+					}
 				}
 			}
 		} 
@@ -1428,8 +1456,35 @@ function greenshift_dynamic_placeholders($value, $extra_data = [], $runindex = 0
 				}
 			}
 		}
-		
+		if(strpos($value, '{{SITE_URL}}') !== false){
+			$value = str_replace('{{SITE_URL}}', home_url(), $value);
+		}
+		if(strpos($value, '{{PLUGIN_URL}}') !== false){
+			$value = str_replace('{{PLUGIN_URL}}', GREENSHIFT_DIR_URL, $value);
+		}
 	}
 	return $value;
 }
 //////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////
+// Script Delay
+//////////////////////////////////////////////////////////////////
+
+function gsbp_script_delay($js,  $random_id, $random_function){
+	return '
+	var '.$random_id.' = false;
+	const '.$random_function.' = (init = false) => {
+		if ('.$random_id.' === true) {
+			return;
+		}
+		'.$random_id.' = true;
+		' . $js . '
+	};
+
+	document.body.addEventListener("mouseover", '.$random_function.', {once:true});
+	document.body.addEventListener("touchmove", '.$random_function.', {once:true});
+	window.addEventListener("scroll", '.$random_function.', {once:true});
+	document.body.addEventListener("keydown", '.$random_function.', {once:true});
+	';
+}

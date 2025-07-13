@@ -18,13 +18,13 @@ class GSDynamicPanel{constructor(e={}){this.options={...e},this.injectStyles(),t
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: var(--wp--custom--lightbox--close-button--background-color, rgba(0, 0, 0, 0.5));
         border: none;
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: var(--wp--custom--close-button--color, #ffffff);
         transition: var(--gs-root-transition, all .3s ease-in-out);
         transform: scale(0);
         opacity: 0;
@@ -34,7 +34,6 @@ class GSDynamicPanel{constructor(e={}){this.options={...e},this.injectStyles(),t
         opacity: 1;
     }
     .gs-dynamicpanel.active .gs-dynamicpanel-close:hover {
-        background-color: rgba(0, 0, 0, 0.8);
         transform: scale(1.1);
     }
 `,document.head.appendChild(e)}createDynamicPanelElement(){let e=`

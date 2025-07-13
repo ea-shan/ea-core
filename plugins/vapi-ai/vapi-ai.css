@@ -1,0 +1,59 @@
+#vapi-ai-widget {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 16px;
+  background: #fafbfc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#vapi-ai-messages {
+  min-height: 120px;
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 12px;
+}
+
+.vapi-ai-user-msg {
+  background: #d1e7dd;
+  color: #1b4332;
+  padding: 8px 12px;
+  border-radius: 16px 16px 4px 16px;
+  margin: 6px 0 6px auto;
+  max-width: 80%;
+  text-align: right;
+}
+
+.vapi-ai-ai-msg {
+  background: #e9ecef;
+  color: #212529;
+  padding: 8px 12px;
+  border-radius: 16px 16px 16px 4px;
+  margin: 6px auto 6px 0;
+  max-width: 80%;
+  text-align: left;
+}
+
+#vapi-ai-user-input {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-right: 4px;
+}
+
+#vapi-ai-send,
+#vapi-ai-voice-call {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+#vapi-ai-send:hover,
+#vapi-ai-voice-call:hover {
+  background: #0056b3;
+}

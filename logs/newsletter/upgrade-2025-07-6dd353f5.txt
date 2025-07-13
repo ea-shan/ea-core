@@ -1,0 +1,39 @@
+11-07-2025 07:05:10 - INFO  - 8.9.2 - 6.5 MB/512 MB - sadmin > Start upgrade from 8.9.1
+11-07-2025 07:05:10 - INFO  - 8.9.2 - 6.5 MB/512 MB - sadmin > Array
+(
+    [`wp_newsletter_emails`] => Created table `wp_newsletter_emails`
+)
+
+11-07-2025 07:05:10 - INFO  - 8.9.2 - 6.5 MB/512 MB - sadmin > Array
+(
+    [`wp_newsletter_sent`] => Created table `wp_newsletter_sent`
+)
+
+11-07-2025 07:05:10 - INFO  - 8.9.2 - 6.5 MB/512 MB - sadmin > Array
+(
+    [`wp_newsletter`] => Created table `wp_newsletter`
+)
+
+11-07-2025 07:05:10 - INFO  - 8.9.2 - 6.5 MB/512 MB - sadmin > Array
+(
+    [`wp_newsletter_user_logs`] => Created table `wp_newsletter_user_logs`
+)
+
+11-07-2025 07:05:10 - INFO  - 8.9.2 - 6.5 MB/512 MB - sadmin > Array
+(
+    [`wp_newsletter_user_meta`] => Created table `wp_newsletter_user_meta`
+)
+
+11-07-2025 07:05:10 - INFO  - 8.9.2 - 6.5 MB/512 MB - sadmin > Array
+(
+    [`wp_newsletter_stats`] => Created table `wp_newsletter_stats`
+)
+
+11-07-2025 07:05:10 - INFO  - 8.9.2 - 6.5 MB/512 MB - sadmin > Array
+(
+    [`wp_newsletter_logs`] => Created table `wp_newsletter_logs`
+    [wp_newsletter_logs.status] => Changed type of wp_newsletter_logs.status from int(11) to int
+)
+
+11-07-2025 07:05:10 - INFO  - 8.9.2 - 6.5 MB/512 MB - sadmin > Backing up options of 8.9.1
+11-07-2025 07:05:10 - INFO  - 8.9.2 - 6.7 MB/512 MB - sadmin > End

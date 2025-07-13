@@ -325,7 +325,7 @@ class GridQuery
 		$data_attributes = \gspb_getDataAttributesfromDynamic($settings);
 		$wrapper_attributes = get_block_wrapper_attributes(
 			array(
-				'class' => $blockId . ' gspbgrid_list_builder wp-block-query ' . $alignClass . ' ' . $containerid . ' ' . $infinitescrollwrap .($isSlider ? ' swiper' : ''),
+				'class' => $blockId . ' gspbgrid_list_builder wp-block-query ' . $alignClass . ' ' . $containerid . ' ' . $infinitescrollwrap .($isSlider ? ' swiper' : '').($enableFacetWP ? ' facetwp-template' : ''),
 				...$data_attributes
 			)
 		);
@@ -347,6 +347,9 @@ class GridQuery
 
 			$args = apply_filters('gspb_module_args_query', $args);
 			$args = apply_filters('gspb_module_args_query_id', $args, $block_instance['attrs']['id']);
+			if($enableFacetWP){
+				$args['facetwp'] = true;
+			}
 			$wp_query = new \WP_Query($args);
 			do_action('gspb_after_module_args_query', $wp_query);
 
@@ -362,10 +365,6 @@ class GridQuery
 				$paginationtype = "loadmore";
 			} else if ($filter_enable_pagination === '3'){
 				$paginationtype = "infinitescroll";
-			}
-
-			if($enableFacetWP){
-				$args['facetwp'] = true;
 			}
 
 			?>

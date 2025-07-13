@@ -1141,7 +1141,6 @@ function gspb_handle_indexing_callback( WP_REST_Request $request ) {
 function gspb_index_posts( $post_type, $taxonomies, $page, $limit, $get_indexer_key ) {
 
 	global $wpdb;
-	$indexer_table = $wpdb->prefix.'gspb_filters_indexer';
 
 	$offset        = ( $page - 1 ) * $limit;
 	$indexer_table = $wpdb->prefix . 'gspb_filters_indexer';
@@ -1583,14 +1582,6 @@ function gspb_get_taxonomies_for_type( $post_type ) {
 	return $cache[ $post_type ];
 }
 
-
-
-//////////////////////////////////////////////////////////////////
-// Filter Indexer Activator
-//////////////////////////////////////////////////////////////////
-register_activation_hook( __FILE__, 'gspb_filter_filters_activation' );
-// Register the deactivation hook to remove the table
-register_deactivation_hook( __FILE__, 'gspb_filter_filters_deactivation' );
 
 /**
  * Creates the indexer table on plugin activation.

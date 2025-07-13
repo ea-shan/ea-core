@@ -9,7 +9,7 @@ class GSLightbox{constructor(e={}){this.options={linkAttribute:"href",iframeWidt
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: var(--wp--custom--lightbox--background-color, rgba(0, 0, 0, 0.8));
         opacity: 0;
         visibility: hidden;
         transition: var(--gs-root-transition, all .3s ease-in-out);
@@ -37,11 +37,11 @@ class GSLightbox{constructor(e={}){this.options={linkAttribute:"href",iframeWidt
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: var(--wp--custom--lightbox--close-button--background-color, rgba(0, 0, 0, 0.5));
         border: none;
         cursor: pointer;
         display: flex;
-        color: white;
+        color: var(--wp--custom--close-button--color, #ffffff);
         justify-content: center;
         align-items: center;
         transition: background-color 0.3s ease;

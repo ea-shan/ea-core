@@ -66,7 +66,7 @@ class Breadcrumbs{
 			)
 		);
 		
-		$out = '<div aria-label="Breadcrumb" ' .$wrapper_attributes . gspb_AnimationRenderProps($animation) . '>';
+		$out = '<div ' .$wrapper_attributes . gspb_AnimationRenderProps($animation) . '>';
 		$out .= $this->generate_breadcrumb($separator, $show_home, $homelabel, $disable_current);
 		$out .= '</div>';
 		return $out;
@@ -188,7 +188,7 @@ class Breadcrumbs{
 				}
 			} else {
 				// For other pages, display the page title
-				$out .= '<span class="gspb-current-breadcrumb" aria-current="page">' . get_the_title() . '</span>';
+				$out .= '<span class="gspb-current-breadcrumb">' . get_the_title() . '</span>';
 			}
 		}
 		return $out;

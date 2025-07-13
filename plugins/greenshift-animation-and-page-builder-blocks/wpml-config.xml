@@ -108,6 +108,7 @@
 			<key name="textContent" />
 			<key name="tooltipText" />
 			<key name="alt" />
+			<key name="href" />
 			<key name="title" />
 			<key name="textAnimated">
 				<key name="*" />

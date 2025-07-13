@@ -6,7 +6,7 @@
  * Author: Wpsoul
  * Author URI: https://greenshiftwp.com
  * Text Domain: greenshiftquery
- * Version: 5.6.4
+ * Version: 5.6.6
  */
 
 // Exit if accessed directly.
@@ -17,7 +17,7 @@ if (!defined('ABSPATH')) {
 // Define Dir URL
 define('GREENSHIFTQUERY_DIR_URL', plugin_dir_url(__FILE__));
 define('GREENSHIFTQUERY_DIR_PATH', plugin_dir_path(__FILE__));
-define('GREENSHIFTQUERY_PLUGIN_VER', '5.6.4');
+define('GREENSHIFTQUERY_PLUGIN_VER', '5.6.6');
 
 function gspb_query_is_parent_active()
 {
@@ -272,6 +272,14 @@ require_once GREENSHIFTQUERY_DIR_PATH . 'wishlist.php';
 //require_once GREENSHIFTQUERY_DIR_PATH . 'querypatterns.php';
 require_once GREENSHIFTQUERY_DIR_PATH . 'filterindexer.php';
 require_once GREENSHIFTQUERY_DIR_PATH . 'integrations.php';
+
+//////////////////////////////////////////////////////////////////
+// Filter Indexer Activator
+//////////////////////////////////////////////////////////////////
+register_activation_hook( __FILE__, 'gspb_filter_filters_activation' );
+// Register the deactivation hook to remove the table
+register_deactivation_hook( __FILE__, 'gspb_filter_filters_deactivation' );
+
 
 
 //////////////////////////////////////////////////////////////////

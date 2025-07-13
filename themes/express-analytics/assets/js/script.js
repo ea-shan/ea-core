@@ -145,6 +145,16 @@ const EAAnimation = {
 
         const ctx = canvas.getContext('2d');
 
+        const color1 = { r: 243, g: 192, b: 199 }; //rgb(243, 192, 199)
+        const color2 = { r: 187, g: 124, b: 246 }; //rgb(187, 124, 246)
+
+        function getGradientColor(opacity = 1, ratio = Math.random()) {
+            const r = Math.floor(color1.r * (1 - ratio) + color2.r * ratio);
+            const g = Math.floor(color1.g * (1 - ratio) + color2.g * ratio);
+            const b = Math.floor(color1.b * (1 - ratio) + color2.b * ratio);
+            return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+        }
+
         const baseParticlesNum = 150;
         const denseParticlesNum = 50;
         const techTextsNum = 30;
@@ -191,13 +201,15 @@ const EAAnimation = {
 
         function createParticle(isDense = false, x = Math.random() * canvas.width, y = Math.random() * canvas.height, isEarth = false) {
             const shapeTypes = ['circle', 'triangle', 'pentagon', 'hexagon', 'star', 'cube', 'hexagonMedium'];
+            const colorRatio = Math.random();
             return {
                 x,
                 y,
                 radius: Math.random() * 5 + 2,
                 speedX: isEarth ? 0 : (Math.random() - 0.5) * baseSpeed * (isDense ? 2.5 : 1),
                 speedY: isEarth ? 0 : (Math.random() - 0.5) * baseSpeed * (isDense ? 2.5 : 1),
-                color: `rgba(255, 255, 255, ${Math.random() * 0.4 + 0.2})`,
+                opacity: Math.random() * 0.4 + 0.2,
+                colorRatio,
                 connectionStrength: Math.random() * 0.4 + 0.4,
                 connectionDistance: Math.random() * 150 + 100,
                 shapeType: shapeTypes[Math.floor(Math.random() * shapeTypes.length)],
@@ -262,13 +274,14 @@ const EAAnimation = {
                 baseOpacity: 0.3,
                 animationPhase: Math.random() * Math.PI * 2,
                 isCode: texts.indexOf(texts[Math.floor(Math.random() * texts.length)]) % 2 === 0,
-                typeProgress: 0
+                typeProgress: 0,
+                colorRatio: Math.random()
             };
         }
 
         function createLineChart(x, y) {
             const dummyData = [20, 35, 15, 45, 30, 25];
-            return { x, y, points: dummyData, type: 'line', width: 100, height: 60, baseOpacity: 0.3, opacity: 0, scale: 0, animationPhase: Math.random() * Math.PI * 2 };
+            return { x, y, points: dummyData, type: 'line', width: 100, height: 60, baseOpacity: 0.3, opacity: 0, scale: 0, animationPhase: Math.random() * Math.PI * 2, colorRatio: Math.random() };
         }
 
         function createCandlestickChart(x, y) {
@@ -278,7 +291,7 @@ const EAAnimation = {
                 { open: 55, close: 58, high: 60, low: 52 },
                 { open: 58, close: 54, high: 59, low: 51 }
             ];
-            return { x, y, candles: dummyData, type: 'candlestick', width: 100, height: 60, baseOpacity: 0.3, opacity: 0, scale: 0, animationPhase: Math.random() * Math.PI * 2 };
+            return { x, y, candles: dummyData, type: 'candlestick', width: 100, height: 60, baseOpacity: 0.3, opacity: 0, scale: 0, animationPhase: Math.random() * Math.PI * 2, colorRatio: Math.random() };
         }
 
         function createBubbleChart(x, y) {
@@ -288,7 +301,7 @@ const EAAnimation = {
                 { x: 60, y: 20, r: 12, label: 'C' },
                 { x: 80, y: 40, r: 8, label: 'D' }
             ];
-            return { x, y, bubbles: dummyData, type: 'bubble', width: 100, height: 60, baseOpacity: 0.3, opacity: 0, scale: 0, animationPhase: Math.random() * Math.PI * 2 };
+            return { x, y, bubbles: dummyData, type: 'bubble', width: 100, height: 60, baseOpacity: 0.3, opacity: 0, scale: 0, animationPhase: Math.random() * Math.PI * 2, colorRatio: Math.random() };
         }
 
         function createSankeyChart(x, y) {
@@ -296,7 +309,7 @@ const EAAnimation = {
                 nodes: [{ x: 0, y: 0 }, { x: 100, y: -20 }, { x: 100, y: 20 }, { x: 200, y: 0 }],
                 links: [{ source: 0, target: 1, value: 30 }, { source: 0, target: 2, value: 20 }, { source: 1, target: 3, value: 25 }, { source: 2, target: 3, value: 15 }]
             };
-            return { x, y, nodes: dummyData.nodes, links: dummyData.links, type: 'sankey', baseOpacity: 0.3, opacity: 0, scale: 0, animationPhase: Math.random() * Math.PI * 2 };
+            return { x, y, nodes: dummyData.nodes, links: dummyData.links, type: 'sankey', baseOpacity: 0.3, opacity: 0, scale: 0, animationPhase: Math.random() * Math.PI * 2, colorRatio: Math.random() };
         }
 
         function drawShape(particle) {
@@ -314,7 +327,7 @@ const EAAnimation = {
                 case 'cube': drawCube(particle.radius * 1.5); break;
                 case 'hexagonMedium': drawPolygon(6, particle.radius * 2); break;
             }
-            ctx.fillStyle = particle.color;
+            ctx.fillStyle = getGradientColor(particle.opacity, particle.colorRatio);
             ctx.fill();
             ctx.restore();
         }
@@ -360,7 +373,7 @@ const EAAnimation = {
         function drawTechText(item) {
             ctx.save();
             ctx.translate(item.x, item.y);
-            ctx.fillStyle = `rgba(255, 255, 255, ${item.opacity})`;
+            ctx.fillStyle = getGradientColor(item.opacity, item.colorRatio);
             ctx.font = item.isCode ? '12px monospace' : '12px Arial';
             ctx.textAlign = 'left';
             const displayText = item.text.substring(0, Math.floor(item.typeProgress));
@@ -373,12 +386,16 @@ const EAAnimation = {
             ctx.translate(shape.x, shape.y);
             ctx.rotate(shape.rotation);
             ctx.scale(shape.scale, shape.scale);
+
+            const shapeColor = getGradientColor(shape.opacity, shape.colorRatio);
+            const shapeColorSankey = (linkValue) => getGradientColor(shape.opacity * (linkValue / 30), shape.colorRatio);
+
             switch (shape.type) {
                 case 'line':
                     ctx.beginPath();
                     ctx.moveTo(-shape.width / 2, 0); ctx.lineTo(shape.width / 2, 0);
                     ctx.moveTo(0, -shape.height / 2); ctx.lineTo(0, shape.height / 2);
-                    ctx.strokeStyle = `rgba(255, 255, 255, ${shape.opacity})`;
+                    ctx.strokeStyle = shapeColor;
                     ctx.lineWidth = 1;
                     ctx.stroke();
                     ctx.beginPath();
@@ -386,11 +403,11 @@ const EAAnimation = {
                         const x = -shape.width / 2 + (i * shape.width / (shape.points.length - 1));
                         const y = -value;
                         i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
-                        ctx.fillStyle = `rgba(255, 255, 255, ${shape.opacity})`;
+                        ctx.fillStyle = shapeColor;
                         ctx.font = '10px Arial';
                         ctx.fillText(value, x + 2, y - 5);
                     });
-                    ctx.strokeStyle = `rgba(255, 255, 255, ${shape.opacity})`;
+                    ctx.strokeStyle = shapeColor;
                     ctx.lineWidth = 1;
                     ctx.stroke();
                     break;
@@ -398,20 +415,21 @@ const EAAnimation = {
                     ctx.beginPath();
                     ctx.moveTo(-shape.width / 2, 0); ctx.lineTo(shape.width / 2, 0);
                     ctx.moveTo(0, -shape.height); ctx.lineTo(0, shape.height);
-                    ctx.strokeStyle = `rgba(255, 255, 255, ${shape.opacity})`;
+                    ctx.strokeStyle = shapeColor;
                     ctx.lineWidth = 1;
                     ctx.stroke();
                     shape.candles.forEach((candle, i) => {
                         const x = -shape.width / 2 + (i * shape.width / (shape.candles.length - 1));
                         ctx.beginPath();
                         ctx.moveTo(x, -candle.high); ctx.lineTo(x, -candle.low);
-                        ctx.strokeStyle = `rgba(255, 255, 255, ${shape.opacity})`;
+                        ctx.strokeStyle = shapeColor;
                         ctx.lineWidth = 1;
                         ctx.stroke();
                         ctx.beginPath();
                         ctx.rect(x - shape.width / (shape.candles.length * 2), -candle.close, shape.width / shape.candles.length, candle.close - candle.open);
+                        ctx.strokeStyle = shapeColor;
                         ctx.stroke();
-                        ctx.fillStyle = `rgba(255, 255, 255, ${shape.opacity})`;
+                        ctx.fillStyle = shapeColor;
                         ctx.font = '10px Arial';
                         ctx.fillText(candle.close, x + 2, -candle.close - 5);
                     });
@@ -420,7 +438,7 @@ const EAAnimation = {
                     ctx.beginPath();
                     ctx.moveTo(-shape.width / 2, 0); ctx.lineTo(shape.width / 2, 0);
                     ctx.moveTo(0, -shape.height / 2); ctx.lineTo(0, shape.height / 2);
-                    ctx.strokeStyle = `rgba(255, 255, 255, ${shape.opacity})`;
+                    ctx.strokeStyle = shapeColor;
                     ctx.lineWidth = 1;
                     ctx.stroke();
                     shape.bubbles.forEach(bubble => {
@@ -428,10 +446,10 @@ const EAAnimation = {
                         const y = -shape.height / 2 + bubble.y;
                         ctx.beginPath();
                         ctx.arc(x, y, bubble.r, 0, Math.PI * 2);
-                        ctx.strokeStyle = `rgba(255, 255, 255, ${shape.opacity})`;
+                        ctx.strokeStyle = shapeColor;
                         ctx.lineWidth = 1;
                         ctx.stroke();
-                        ctx.fillStyle = `rgba(255, 255, 255, ${shape.opacity})`;
+                        ctx.fillStyle = shapeColor;
                         ctx.font = '10px Arial';
                         ctx.textAlign = 'center';
                         ctx.fillText(bubble.label, x, y - bubble.r - 2);
@@ -444,15 +462,16 @@ const EAAnimation = {
                         ctx.beginPath();
                         ctx.moveTo(s.x, s.y);
                         ctx.quadraticCurveTo(s.x + 50, s.y, t.x, t.y);
-                        ctx.strokeStyle = `rgba(255, 255, 255, ${shape.opacity * (link.value / 30)})`;
+                        ctx.strokeStyle = shapeColorSankey(link.value);
                         ctx.lineWidth = link.value / 10;
                         ctx.stroke();
                     });
                     shape.nodes.forEach((node, i) => {
                         ctx.beginPath();
                         ctx.arc(node.x, node.y, 5, 0, Math.PI * 2);
-                        ctx.fillStyle = `rgba(255, 255, 255, ${shape.opacity})`;
+                        ctx.fillStyle = shapeColor;
                         ctx.fill();
+                        ctx.fillStyle = shapeColor;
                         ctx.fillText(i, node.x + 7, node.y);
                     });
                     break;
@@ -473,7 +492,9 @@ const EAAnimation = {
                         ctx.beginPath();
                         ctx.moveTo(p1.x, p1.y);
                         ctx.lineTo(p2.x, p2.y);
-                        ctx.strokeStyle = `rgba(255, 255, 255, ${opacity * 0.25 * p1.connectionStrength})`;
+                        const lineOpacity = opacity * 0.25 * p1.connectionStrength;
+                        const colorRatio = (p1.colorRatio + p2.colorRatio) / 2;
+                        ctx.strokeStyle = getGradientColor(lineOpacity, colorRatio);
                         ctx.lineWidth = 0.8;
                         ctx.stroke();
                     }
@@ -852,3 +873,73 @@ document.addEventListener('DOMContentLoaded', function () {
     checkSticky();
 });
 
+function initVerticalMenuToggle() {
+    const menuItems = document.querySelectorAll('.menu-item.has-submenu');
+
+    menuItems.forEach(item => {
+        const toggle = item.querySelector('.menu-title');
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                // Close all other expanded menu items
+                menuItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('expanded');
+                    }
+                });
+                // Toggle the clicked item
+                item.classList.toggle('expanded');
+            });
+        }
+    });
+}
+
+// Call the function when DOM is ready
+document.addEventListener('DOMContentLoaded', initVerticalMenuToggle);
+
+
+document.addEventListener('wpcf7mailsent', function (event) {
+    // Show the GreenShift block after form submission
+    const successBlock = document.querySelector('.gs-cf7-success');
+    if (successBlock) {
+        successBlock.style.display = 'block';
+        successBlock.classList.add('gsp-visible'); // optional for GSAP animation triggers
+    }
+}, false);
+
+
+document.getElementById('vapi-call-btn').onclick = () => vapi.start();
+
+const vapi = new Vapi.Voice({
+    apiKey: "YOUR_VAPI_API_KEY",
+    assistant: "YOUR_ASSISTANT_ID",
+    onTranscription: (message) => {
+        // We'll use this event to update our chat modal
+        addChatMessage(message.transcript);
+    }
+})
+
+const modal = document.getElementById('vapi-chat-modal');
+const closeBtn = document.getElementById('vapi-close-btn');
+const messagesDiv = document.getElementById('vapi-chat-messages');
+
+// Show the modal when call starts
+vapi.on('call-start', () => {
+    modal.style.display = 'flex';
+    messagesDiv.innerHTML = '<p><em>Connected, please speak…</em></p>';
+});
+
+// Append transcriptions as chat bubbles
+function addChatMessage(text) {
+    const p = document.createElement('p');
+    p.innerText = text;
+    messagesDiv.appendChild(p);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+// Hide the modal when call ends
+vapi.on('call-end', () => {
+    modal.style.display = 'none';
+});
+
+// Allow close manually too
+closeBtn.onclick = () => { modal.style.display = 'none'; };
